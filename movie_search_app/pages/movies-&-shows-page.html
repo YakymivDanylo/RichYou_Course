@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies & Shows Page</title>
+    <style>
+        body {
+            background-color: dimgray;
+        }
+    </style>
+</head>
+<body>
+<header class="navbar">
+    <img alt="StreamVibe Logo" src="../icons/logo-icon.svg">
+    <nav class="buttons-container">
+        <a href="home-page.html" class="button1">Home</a>
+        <a href="movies-&-shows-page.html" class="button2">Movies&Shows</a>
+        <a href="support-page.html" class="button1">Support</a>
+        <a href="subscription-page.html" class="button1">Subscription</a>
+    </nav>
+    <div class="buttons-icon-container">
+        <button aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg"></button>
+        <button aria-label="Notification"><img alt="Icon Notification" src="../icons/icon-notification.svg"></button>
+    </div>
+
+
+    <form id="search-form">
+        <label for="search-input">Пошук:</label>
+        <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
+        <button type="submit">Знайти</button>
+    </form>
+
+
+    <section id="search-results">
+        <h2>Результати пошуку</h2>
+        <div id="results-container">
+        </div>
+    </section>
+
+</header>
+<main class="main-content">
+    <section class="movie-banner">
+        <div class="container">
+            <img src="../icons/avengers-icon.svg" alt="Avengers">
+            <div class="film-content">
+                <h1 class="hero-title">Avengers: Endgame</h1>
+                <p class="hero-description">With the help of remaining allies, the Avengers must assemble once more to
+                    undo Thanos's actions and restore order to the universe, no matter what consequences they may
+                    face.</p>
+                <div class="hero-actions">
+                    <button class="primary-button">
+                        <img src="../icons/icon-play.svg" alt="">
+                        <span>Play Now</span>
+                    </button>
+                    <div class="secondary-actions">
+                        <button class="action-button" aria-label="Add to watchlist">
+                            <img src="../icons/icon-plus.svg" alt="">
+                        </button>
+                        <button class="action-button" aria-label="Like">
+                            <img src="../icons/icon-like.svg" alt="">
+                        </button>
+                        <button class="action-button" aria-label="Volume">
+                            <img src="../icons/icon-vol.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content-section movies-section">
+        <div class="container">
+            <h2 class="section-title">Movies</h2>
+
+
+            <article class="genre-section">
+                <header class="section-header" id="genres_movies">
+                    <h3 class="section-subtitle">Our Genres</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="card-grid">
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container1.svg" alt="Action movie scene" class="card-image">
+                                <img src="../icons/icon2-container1.svg" alt="Action movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container1.svg" alt="Action movie scene" class="card-image">
+                                <img src="../icons/icon4-container1.svg" alt="Action movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Action</h4>
+                            <button class="card-button" aria-label="View Action movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container2.svg" alt="Adventure movie scene" class="card-image">
+                                <img src="../icons/icon2-container2.svg" alt="Adventure movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container2.svg" alt="Adventure movie scene" class="card-image">
+                                <img src="../icons/icon4-container2.svg" alt="Adventure movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Adventure</h4>
+                            <button class="card-button" aria-label="View Adventure movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container3.svg" alt="Comedy movie scene" class="card-image">
+                                <img src="../icons/icon2-container3.svg" alt="Comedy movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container3.svg" alt="Comedy movie scene" class="card-image">
+                                <img src="../icons/icon4-container3.svg" alt="Comedy movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Comedy</h4>
+                            <button class="card-button" aria-label="View Comedy movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container4.svg" alt="Drama movie scene" class="card-image">
+                                <img src="../icons/icon2-container4.svg" alt="Drama movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container4.svg" alt="Drama movie scene" class="card-image">
+                                <img src="../icons/icon4-container4.svg" alt="Drama movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Drama</h4>
+                            <button class="card-button" aria-label="View Drama movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container5.svg" alt="Horror movie scene" class="card-image">
+                                <img src="../icons/icon2-container5.svg" alt="Horror movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container5.svg" alt="Horror movie scene" class="card-image">
+                                <img src="../icons/icon4-container5.svg" alt="Horror movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Horror</h4>
+                            <button class="card-button" aria-label="View Comedy movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+                </div>
+            </article>
+
+
+            <article class="top10-section">
+                <header class="section-header">
+                    <h3 class="section-subtitle" id="popular_movies">Popular Top 10 In Genres</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="card-grid">
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/action-icon1.svg" alt="Top action movies collage" class="card-image">
+                                <img src="../icons/action-icon2.svg" alt="Top action movies collage" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/action-icon3.svg" alt="Top action movies collage" class="card-image">
+                                <img src="../icons/action-icon4.svg" alt="Top action movies collage" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Action</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Action movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon2-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon4-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Adventure</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Adventure movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon2-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon4-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Comedy</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Comedy movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon2-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon4-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Drama</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Drama movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                </div>
+            </article>
+
+
+            <article class="trending-section" id="trending_movies">
+                <header class="section-header">
+                    <h3 class="section-subtitle">Trending Now</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon1.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 30min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>2K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon2.png" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 57min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>1.5K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon3.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>2h 10min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>1.8K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon4.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>2h 20min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>3K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon5.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 42min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>5K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </article>
+
+
+            <article class="new-releases-section" id="new_release_movies">
+                <header class="section-header">
+                    <h3 class="section-subtitle">New Releases</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon1.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">14 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon2.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">22 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon3.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">13 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon4.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">19 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon5.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">11 April 2023</span>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+
+            <article class="must-watch-section">
+                <header class="section-header">
+                    <h3 class="section-subtitle">Must-Watch Movies</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon1.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 57min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/half-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon2.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 30min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/empty-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon3.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 42min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/half-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon4.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>2h 10min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/empty-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="content-section movies-section">
+        <div class="container">
+            <h2 class="section-title">Shows</h2>
+
+
+            <article class="genre-section" >
+                <header class="section-header">
+                    <h3 class="section-subtitle" id="genres_shows">Our Genres</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="card-grid">
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container1.svg" alt="Action movie scene" class="card-image">
+                                <img src="../icons/icon2-container1.svg" alt="Action movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container1.svg" alt="Action movie scene" class="card-image">
+                                <img src="../icons/icon4-container1.svg" alt="Action movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Action</h4>
+                            <button class="card-button" aria-label="View Action movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container2.svg" alt="Adventure movie scene" class="card-image">
+                                <img src="../icons/icon2-container2.svg" alt="Adventure movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container2.svg" alt="Adventure movie scene" class="card-image">
+                                <img src="../icons/icon4-container2.svg" alt="Adventure movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Adventure</h4>
+                            <button class="card-button" aria-label="View Adventure movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container3.svg" alt="Comedy movie scene" class="card-image">
+                                <img src="../icons/icon2-container3.svg" alt="Comedy movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container3.svg" alt="Comedy movie scene" class="card-image">
+                                <img src="../icons/icon4-container3.svg" alt="Comedy movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Comedy</h4>
+                            <button class="card-button" aria-label="View Comedy movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container4.svg" alt="Drama movie scene" class="card-image">
+                                <img src="../icons/icon2-container4.svg" alt="Drama movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container4.svg" alt="Drama movie scene" class="card-image">
+                                <img src="../icons/icon4-container4.svg" alt="Drama movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Drama</h4>
+                            <button class="card-button" aria-label="View Drama movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="genre-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container5.svg" alt="Horror movie scene" class="card-image">
+                                <img src="../icons/icon2-container5.svg" alt="Horror movie scene" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container5.svg" alt="Horror movie scene" class="card-image">
+                                <img src="../icons/icon4-container5.svg" alt="Horror movie scene" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <h4 class="card-title">Horror</h4>
+                            <button class="card-button" aria-label="View Comedy movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+                </div>
+            </article>
+
+
+            <article class="top10-section">
+                <header class="section-header">
+                    <h3 class="section-subtitle" id="popular_shows">Popular Top 10 In Genres</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="card-grid">
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/action-icon1.svg" alt="Top action movies collage" class="card-image">
+                                <img src="../icons/action-icon2.svg" alt="Top action movies collage" class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/action-icon3.svg" alt="Top action movies collage" class="card-image">
+                                <img src="../icons/action-icon4.svg" alt="Top action movies collage" class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Action</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Action movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon2-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon4-container2.svg" alt="Top adventure movies collage"
+                                     class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Adventure</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Adventure movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon2-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon4-container3.svg" alt="Top comedy movies collage"
+                                     class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Comedy</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Comedy movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                    <article class="top10-card">
+                        <div class="card-images">
+                            <div class="image-row">
+                                <img src="../icons/icon1-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon2-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                            </div>
+                            <div class="image-row">
+                                <img src="../icons/icon3-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                                <img src="../icons/icon4-container4.svg" alt="Top drama movies collage"
+                                     class="card-image">
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <div class="top10-label">
+                                <span>Top 10 In</span>
+                                <h4 class="card-title">Drama</h4>
+                            </div>
+                            <button class="card-button" aria-label="View Top 10 Drama movies">
+                                <img src="../icons/icon-next.svg" alt="">
+                            </button>
+                        </footer>
+                    </article>
+
+                </div>
+            </article>
+
+
+            <article class="trending-section">
+                <header class="section-header">
+                    <h3 class="section-subtitle" id="trending_shows">Trending Now</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon1.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 30min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>2K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon2.png" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 57min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>1.5K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon3.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>2h 10min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>1.8K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon4.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>2h 20min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>3K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/trend-icon5.svg" alt="Movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 42min</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="../icons/eye-icon.svg" alt="Viewers">
+                                <span>5K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </article>
+
+
+            <article class="new-releases-section" id="new-release">
+                <header class="section-header">
+                    <h3 class="section-subtitle" id="new_release_shows">New Releases</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon1.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">14 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon2.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">22 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon3.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">13 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon4.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">19 April 2023</span>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/releas-icon5.svg" alt="New release movie poster" class="movie-poster">
+                        <div class="release-date">
+                            <span>Released on </span>
+                            <span class="date">11 April 2023</span>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+
+            <article class="must-watch-section">
+                <header class="section-header">
+                    <h3 class="section-subtitle">Must-Watch Movies</h3>
+                    <div class="section-controls">
+                        <button class="slider-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <div class="slider-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                        <button class="slider-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </header>
+
+                <div class="movie-grid">
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon1.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 57min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/half-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon2.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 30min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/empty-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon3.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>1h 42min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/half-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="movie-card">
+                        <img src="../icons/must-watch-icon4.svg" alt="Must watch movie poster" class="movie-poster">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img src="../icons/clock-icon.svg" alt="Duration">
+                                <span>2h 10min</span>
+                            </div>
+                            <div class="rating">
+                                <div class="stars">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/full-star-icon.svg" alt="Star">
+                                    <img src="../icons/empty-star-icon.svg" alt="Half star">
+                                </div>
+                                <span>20K</span>
+                            </div>
+                        </div>
+                    </article>
+
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Start your free trial today!</h2>
+                <p class="cta-text">Join StreamVibe now for unlimited access to thousands of movies and TV shows.</p>
+                <button class="cta-button">Start Free Trial</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <nav class="sub-container">
+            <div class="cta-background">
+                <img src="../icons/back-ground-img1.svg" alt="">
+                <img src="../icons/back-ground-img2.svg" alt="">
+                <img src="../icons/back-ground-img3.svg" alt="">
+                <img src="../icons/back-ground-img4.svg" alt="">
+            </div>
+            <h3 class="heading"><a href="home-page.html"> Home</a></h3>
+            <div class="links-container">
+                <a href="home-page.html/#categories" class="heading">Categories</a>
+                <a href="home-page.html/#device" class="heading">Devices</a>
+                <a href="home-page.html/#pricing" class="heading">Pricing</a>
+                <a href="home-page.html/#faq" class="heading">FAQ</a>
+            </div>
+        </nav>
+        <nav class="sub-container">
+            <h3 class="heading"><a href="movies-open-page.html"> Movie</a></h3>
+            <div class="links-container">
+                <a href="#genres_movies" class="heading">Genres</a>
+                <a href="#trending_movies" class="heading">Trending</a>
+                <a href="#new_release_movies" class="heading">New Release</a>
+                <a href="#popular_movies" class="heading">Popular</a>
+            </div>
+        </nav>
+        <nav class="sub-container">
+            <h3 class="heading"><a href="shows-open-page.html"> Shows</a></h3>
+            <div class="links-container">
+                <a href="#genres_shows" class="heading">Genres</a>
+                <a href="#trending_shows" class="heading">Trending</a>
+                <a href="#new_release_shows" class="heading">New Release</a>
+                <a href="#popular_shows" class="heading">Popular</a>
+            </div>
+        </nav>
+        <nav class="sub-container">
+            <h3 class="heading"><a href="support-page.html"> Support</a></h3>
+            <div class="links-container">
+                <a href="#" class="heading">Contact Us</a>
+            </div>
+        </nav>
+        <nav class="sub-container">
+            <h3 class="heading"><a href="subscription-page.html"> Subscription</a></h3>
+            <div class="links-container">
+                <a href="#" class="heading">Plans</a>
+                <a href="#" class="heading">Features</a>
+            </div>
+        </nav>
+        <nav class="sub-container">
+            <h3 class="heading">Connect With Us</h3>
+            <div class="links-container-app">
+                <button><img src="../icons/icon-facebook.svg" alt=""></button>
+                <button><img src="../icons/icon-twitter.svg" alt=""></button>
+                <button><img src="../icons/icon-linkedin.svg" alt=""></button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="line"></div>
+        <div class="container">
+            <p class="text-button">@2023 streamvibe, All Rights Reserved</p>
+            <nav class="buttons-container">
+                <a href="#" class="text-button">Terms of Use</a>
+                <div class="line"></div>
+                <a href="#" class="text-button">Privacy Policy</a>
+                <div class="line"></div>
+                <a href="#" class="text-button">Cookie Policy</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
