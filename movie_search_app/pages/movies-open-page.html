@@ -2,9 +2,333 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Movies Open Page</title>
 </head>
 <body>
+<header class="site-header">
+    <img class="logo" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
+    <nav class="main-nav">
+        <a href="home-page.html" class="nav-link">Home</a>
+        <a href="movies-&-shows-page.html" class="nav-link active">Movies&Shows</a>
+        <a href="support-page.html" class="nav-link">Support</a>
+        <a href="subscription-page.html" class="nav-link">Subscription</a>
+    </nav>
+    <div class="user-actions">
+        <button class="icon-button" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg"></button>
+        <button class="icon-button" aria-label="Notification"><img alt="Icon Notification" src="../icons/icon-notification.svg"></button>
+    </div>
 
+
+    <form id="search-form" class="search-form">
+        <label for="search-input">Пошук:</label>
+        <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
+        <button type="submit" class="search-button">Знайти</button>
+    </form>
+
+
+    <section id="search-results" class="search-results">
+        <h2 class="section-title">Результати пошуку</h2>
+        <div id="results-container" class="results-grid">
+        </div>
+    </section>
+
+</header>
+
+<main class="movie-page">
+    <section class="movie-hero">
+        <div class="movie-container">
+            <div class="movie-background">
+                <div class="background-grid">
+                    <div class="background-row">
+                        <img class="background-image" alt="Movie scene" src="../icons/kantara-icon.svg" >
+                    </div>
+                    <!-- Additional background rows would go here -->
+                </div>
+                <div class="fade-overlay"></div>
+            </div>
+
+            <article class="movie-info">
+                <h1 class="movie-title">Kantara</h1>
+                <p class="movie-description">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+
+                <div class="movie-actions">
+                    <button class="play-button">
+                        <img class="action-icon" alt="Play" src="../icons/icon-play.svg">
+                        <span>Play Now</span>
+                    </button>
+                    <div class="secondary-actions">
+                        <button class="action-button" aria-label="Add to watchlist">
+                            <img src="../icons/icon-plus.svg" alt="">
+                        </button>
+                        <button class="action-button" aria-label="Like">
+                            <img src="../icons/icon-like.svg" alt="">
+                        </button>
+                        <button class="action-button" aria-label="Volume">
+                            <img src="../icons/icon-vol.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="movie-details">
+        <div class="details-content">
+            <article class="movie-synopsis">
+                <h2 class="section-title">Description</h2>
+                <p class="synopsis-text">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+            </article>
+
+            <section class="movie-cast">
+                <div class="section-header">
+                    <h2 class="section-title">Cast</h2>
+                    <div class="section-controls">
+                        <button class="control-button" aria-label="Previous">
+                            <img src="../icons/icon-previous.svg" alt="">
+                        </button>
+                        <button class="control-button" aria-label="Next">
+                            <img src="../icons/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="cast-grid">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon1.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon2.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon3.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon4.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon5.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon6.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon7.svg">
+                    <img class="cast-image" alt="Cast member" src="../icons/member-icon8.svg">
+
+                </div>
+            </section>
+
+            <section class="movie-reviews">
+                <div class="section-header">
+                    <h2 class="section-title">Reviews</h2>
+                    <button class="add-review-button">
+                        <img class="review-icon" alt="Add review" src="../icons/icon-plus.svg">
+                        <span>Add Your Review</span>
+                    </button>
+                </div>
+
+                <div class="reviews-list">
+                    <article class="review-card">
+                        <header class="review-header">
+                            <h3 class="review-author">Aniket Roy</h3>
+                            <p class="review-location">From India</p>
+                            <div class="review-rating">
+                                <div class="stars">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon half" alt="Half star" src="../icons/half-star-icon.svg">
+                                </div>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                        </header>
+                        <p class="review-text">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn't watch it.</p>
+                    </article>
+
+                    <article class="review-card">
+                        <header class="review-header">
+                            <h3 class="review-author">Swaraj</h3>
+                            <p class="review-location">From India</p>
+                            <div class="review-rating">
+                                <div class="stars">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                </div>
+                                <span class="rating-value">5</span>
+                            </div>
+                        </header>
+                        <p class="review-text">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                    </article>
+                </div>
+
+                <div class="reviews-controls">
+                    <button class="control-button" aria-label="Previous review">
+                        <img src="../icons/icon-previous.svg" alt="">
+                    </button>
+                    <div class="review-indicators">
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
+                    </div>
+                    <button class="control-button" aria-label="Next review">
+                        <img src="../icons/icon-next.svg" alt="">
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <aside class="movie-meta">
+            <section class="meta-section">
+                <h3 class="meta-title">
+                    <img class="meta-icon" alt="Release year" src="../icons/calendar-icon.svg">
+                    Released Year
+                </h3>
+                <p class="meta-value">2022</p>
+            </section>
+
+            <section class="meta-section">
+                <h3 class="meta-title">
+                    <img class="meta-icon" alt="Languages" src="../icons/lang-icon.svg">
+                    Available Languages
+                </h3>
+                <ul class="language-list">
+                    <li class="language-item">English</li>
+                    <li class="language-item">Hindi</li>
+                    <li class="language-item">Tamil</li>
+                    <li class="language-item">Telegu</li>
+                    <li class="language-item">Kannada</li>
+                </ul>
+            </section>
+
+            <section class="meta-section">
+                <h3 class="meta-title">
+                    <img class="meta-icon" alt="Ratings" src="../icons/star-icon.png">
+                    Ratings
+                </h3>
+                <div class="rating-sources">
+                    <div class="rating-item">
+                        <span class="rating-source">IMDb</span>
+                        <div class="rating-stars">
+                            <div class="stars">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon half" alt="Half star" src="../icons/full-star-icon.svg">
+                            </div>
+                            <span class="rating-value">4.5</span>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <span class="rating-source">Streamvibe</span>
+                        <div class="rating-stars">
+                            <div class="stars">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon" alt="Star" src="../icons/empty-star-icon.svg">
+                            </div>
+                            <span class="rating-value">4</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="meta-section">
+                <h3 class="meta-title">
+                    <img class="meta-icon" alt="Genres" src="../icons/grid-icon.svg">
+                    Genres
+                </h3>
+                <ul class="genre-list">
+                    <li class="genre-item">Action</li>
+                    <li class="genre-item">Adventure</li>
+                </ul>
+            </section>
+
+            <section class="meta-section">
+                <h3 class="meta-title">Director</h3>
+                <article class="person-card">
+                    <img class="person-image" alt="Rishab Shetty" src="../icons/member-icon1.svg">
+                    <div class="person-info">
+                        <h4 class="person-name">Rishab Shetty</h4>
+                        <p class="person-location">From India</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="meta-section">
+                <h3 class="meta-title">Music</h3>
+                <article class="person-card">
+                    <img class="person-image" alt="B. Ajaneesh Loknath" src="../icons/member-icon2.svg">
+                    <div class="person-info">
+                        <h4 class="person-name">B. Ajaneesh Loknath</h4>
+                        <p class="person-location">From India</p>
+                    </div>
+                </article>
+            </section>
+        </aside>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <nav class="footer-nav">
+            <section class="footer-section">
+                <h3 class="footer-title">Home</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Categories</a>
+                    <a href="#" class="footer-link">Devices</a>
+                    <a href="#" class="footer-link">Pricing</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Movie</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Genres</a>
+                    <a href="#" class="footer-link">Trending</a>
+                    <a href="#" class="footer-link">New Release</a>
+                    <a href="#" class="footer-link">Popular</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Shows</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Genres</a>
+                    <a href="#" class="footer-link">Trending</a>
+                    <a href="#" class="footer-link">New Release</a>
+                    <a href="#" class="footer-link">Popular</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Support</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Subscription</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Plans</a>
+                    <a href="#" class="footer-link">Features</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Connect With Us</h3>
+                <div class="social-links">
+                    <button class="social-button"><img src="../icons/icon-facebook.svg" alt="Facebook"></button>
+                    <button class="social-button"><img src="../icons/icon-twitter.svg" alt="Twitter"></button>
+                    <button class="social-button"><img src="../icons/icon-linkedin.svg" alt="LinkedIn"></button>
+                </div>
+            </section>
+        </nav>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="divider"></div>
+        <div class="bottom-container">
+            <p class="copyright">@2023 streamvibe, All Rights Reserved</p>
+            <nav class="legal-links">
+                <a href="#" class="legal-link">Terms of Use</a>
+                <div class="divider"></div>
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <div class="divider"></div>
+                <a href="#" class="legal-link">Cookie Policy</a>
+            </nav>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
