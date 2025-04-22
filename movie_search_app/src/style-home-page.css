@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   background-color: #141414;
   font-family: "Manrope", sans-serif;
@@ -275,9 +276,9 @@ body {
 }
 
 .icon {
-  width: 28px;
+  width: 50px;
   position: relative;
-  height: 28px;
+  height: 50px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -358,7 +359,7 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 
 .button-icon {
@@ -447,7 +448,7 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .devices-section .section-container .text-content {
   align-self: stretch;
@@ -541,7 +542,7 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .faq-section .section-header {
   align-self: stretch;
@@ -682,7 +683,7 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .pricing-section .section-container {
   align-self: stretch;
@@ -877,7 +878,7 @@ body {
   text-align: left;
   font-size: 40px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .container-free-trial .background-image-trial {
   width: 1646px;
@@ -1036,7 +1037,7 @@ body {
   text-align: left;
   font-size: 20px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .footer-container .footer-nav {
   align-self: stretch;

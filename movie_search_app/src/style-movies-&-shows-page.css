@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+body {
+  background-color: #141414;
+  font-family: "Manrope", sans-serif;
+}
+
+.fade-out-bottom {
+  width: 1920px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 0;
+  left: calc(50% - 960px);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
+  height: 300px;
+  z-index: 3;
+}
+
 .footer-container {
   width: 100%;
   position: relative;
@@ -12,7 +29,7 @@
   text-align: left;
   font-size: 20px;
   color: #fff;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .footer-container .footer-nav {
   align-self: stretch;
@@ -133,7 +150,7 @@
   text-align: left;
   font-size: 18px;
   color: #bfbfbf;
-  font-family: Manrope sans-serif;
+  font-family: Manrope, sans-serif;
 }
 .navbar .logo-icon {
   width: 199px;
@@ -150,8 +167,8 @@
   z-index: 1;
 }
 .navbar .buttons-container .icon {
-  width: 100%;
-  height: 100%;
+  width: 50px;
+  height: 50px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -195,6 +212,145 @@
 
 .hidden-form {
   display: none;
+}
+
+.main-content .movie-banner {
+  width: 100%;
+  position: relative;
+  border-radius: 12px;
+  height: 835px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px 50px 20px;
+  box-sizing: border-box;
+  gap: 50px;
+  background-image: url("../icons/avengers-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: 38px;
+  color: #fff;
+  font-family: Manrope, sans-serif;
+}
+.main-content .movie-banner .container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.main-content .movie-banner .container .text-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 150px;
+  gap: 4px;
+  margin: 0;
+}
+.main-content .movie-banner .container .text-container .hero-title {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-size: 16px;
+  margin: 0;
+}
+.main-content .movie-banner .container .text-container .hero-description {
+  align-self: stretch;
+  position: relative;
+  font-size: 10px;
+  line-height: 150%;
+  font-weight: 500;
+  color: #999;
+}
+.main-content .movie-banner .hero-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+.main-content .movie-banner .hero-actions .primary-button {
+  border-radius: 8px;
+  background-color: #e50000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 24px;
+  gap: 4px;
+}
+.main-content .movie-banner .hero-actions .primary-button .button-icon {
+  width: 28px;
+  position: relative;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.main-content .movie-banner .hero-actions .primary-button .text {
+  position: relative;
+  line-height: 153%;
+  font-weight: 600;
+  color: white;
+}
+.main-content .movie-banner .hero-actions .secondary-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.main-content .movie-banner .hero-actions .secondary-actions .action-button .button-icon2 {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+}
+.main-content .movie-banner .buttons-container1 {
+  align-self: stretch;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.main-content .movie-banner .buttons-container1 .button-icon {
+  width: 56px;
+  border-radius: 8px;
+  height: 56px;
+}
+.main-content .movie-banner .buttons-container1 .indicators-container {
+  width: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+  z-index: 4;
+}
+.main-content .movie-banner .buttons-container1 .indicators-container .shape {
+  width: 23px;
+  position: relative;
+  border-radius: 100px;
+  background-color: #e50000;
+  height: 4px;
+  z-index: 4;
+}
+.main-content .movie-banner .buttons-container1 .indicators-container .shape1 {
+  flex: 1;
+  position: relative;
+  border-radius: 100px;
+  background-color: #333;
+  height: 4px;
+  z-index: 4;
 }
 
 /*# sourceMappingURL=style-movies-&-shows-page.css.map */

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../src/style-movies-&-shows-page.css" type="text/css">
 </head>
 <body>
-<header class="navbar">
+<header class="site-header">
     <div class="navbar">
         <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
         <div class="buttons-container">
@@ -46,30 +46,45 @@
 <main class="main-content">
     <section class="movie-banner">
         <div class="container">
-            <img src="../icons/avengers-icon.png" alt="Avengers">
-            <div class="film-content">
+            <div class=text-container">
                 <h1 class="hero-title">Avengers: Endgame</h1>
                 <p class="hero-description">With the help of remaining allies, the Avengers must assemble once more to
                     undo Thanos's actions and restore order to the universe, no matter what consequences they may
                     face.</p>
-                <div class="hero-actions">
-                    <button class="primary-button">
-                        <img src="../icons/icon-play.svg" alt="">
-                        <span>Play Now</span>
+            </div>
+            <div class="hero-actions">
+                <button class="primary-button">
+                    <img class="button-icon"  src="../icons/icon-play.svg" alt="">
+                    <span class="text">Play Now</span>
+                </button>
+                <div class="secondary-actions">
+                    <button class="action-button" aria-label="Add to watchlist">
+                        <img class="button-icon2" src="../icons/icon-plus2.svg" alt="">
                     </button>
-                    <div class="secondary-actions">
-                        <button class="action-button" aria-label="Add to watchlist">
-                            <img src="../icons/icon-plus.svg" alt="">
-                        </button>
-                        <button class="action-button" aria-label="Like">
-                            <img src="../icons/icon-like.svg" alt="">
-                        </button>
-                        <button class="action-button" aria-label="Volume">
-                            <img src="../icons/icon-vol.svg" alt="">
-                        </button>
-                    </div>
+                    <button class="action-button" aria-label="Like">
+                        <img class="button-icon" src="../icons/icon-like.svg" alt="">
+                    </button>
+                    <button class="action-button" aria-label="Volume">
+                        <img class="button-icon" src="../icons/icon-vol.svg" alt="">
+                    </button>
                 </div>
             </div>
+        </div>
+        <div class="fade-out-bottom">
+        </div>
+        <div class="buttons-container1">
+            <img class="button-icon" alt="" src="../icons/icon-previous.svg">
+            <div class="indicators-container">
+                <div class="shape">
+                </div>
+                <div class="shape1">
+                </div>
+                <div class="shape1">
+                </div>
+                <div class="shape1">
+                </div>
+            </div>
+            <img class="button-icon" alt="" src="../icons/icon-next.svg">
         </div>
     </section>
 
@@ -597,7 +612,7 @@
             <h2 class="section-title">Shows</h2>
 
 
-            <article class="genre-section" >
+            <article class="genre-section">
                 <header class="section-header">
                     <h3 class="section-subtitle" id="genres_shows">Our Genres</h3>
                     <div class="section-controls">
