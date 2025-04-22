@@ -881,7 +881,7 @@ body {
   font-family: Manrope, sans-serif;
 }
 .container-free-trial .background-image-trial {
-  width: 1646px;
+  width: 1800px;
   margin: 0 !important;
   position: absolute;
   top: calc(50% - 197.5px);
@@ -971,7 +971,7 @@ body {
   object-fit: cover;
 }
 .container-free-trial .background-image-trial .fade-out-left1 {
-  width: 1646px;
+  width: 100%;
   position: absolute;
   margin: 0 !important;
   top: calc(50% - 171.5px);
