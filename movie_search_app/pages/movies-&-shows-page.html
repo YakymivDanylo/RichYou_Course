@@ -3,45 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Movies & Shows Page</title>
-    <style>
-        body {
-            background-color: dimgray;
-        }
-    </style>
+    <link rel="stylesheet" href="../src/style-movies-&-shows-page.css" type="text/css">
 </head>
 <body>
 <header class="navbar">
-    <img alt="StreamVibe Logo" src="../icons/logo-icon.svg">
-    <nav class="main-nav">
-        <a href="home-page.html" class="nav-link">Home</a>
-        <a href="movies-&-shows-page.html" class="nav-link-active">Movies&Shows</a>
-        <a href="support-page.html" class="nav-link">Support</a>
-        <a href="subscription-page.html" class="nav-link">Subscription</a>
-    </nav>
-    <div class="buttons-icon-container">
-        <button aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg"></button>
-        <button aria-label="Notification"><img alt="Icon Notification" src="../icons/icon-notification.svg"></button>
+    <div class="navbar">
+        <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
+        <div class="buttons-container">
+            <button class="icon" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg">
+            </button>
+            <button class="icon" aria-label="Notification"><img alt="Icon Notification"
+                                                                src="../icons/icon-notification.svg"></button>
+        </div>
+        <nav class="buttons-container1">
+            <div class="button1">
+                <div class="text">Home</div>
+            </div>
+            <div class="text-button">Movies&Shows</div>
+            <div class="text-button">Support</div>
+            <div class="text-button">Subscription</div>
+        </nav>
     </div>
 
 
-    <form id="search-form">
-        <label for="search-input">Пошук:</label>
-        <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
-        <button type="submit">Знайти</button>
-    </form>
+    <div class="hidden-form">
+        <form id="search-form" class="search-form">
+            <label for="search-input">Пошук:</label>
+            <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
+            <button type="submit" class="search-button">Знайти</button>
+        </form>
 
 
-    <section id="search-results">
-        <h2>Результати пошуку</h2>
-        <div id="results-container">
-        </div>
-    </section>
+        <section id="search-results" class="search-results">
+            <h2 class="section-title">Результати пошуку</h2>
+            <div id="results-container" class="results-grid">
+            </div>
+        </section>
+    </div>
 
 </header>
+
 <main class="main-content">
     <section class="movie-banner">
         <div class="container">
-            <img src="../icons/avengers-icon.svg" alt="Avengers">
+            <img src="../icons/avengers-icon.png" alt="Avengers">
             <div class="film-content">
                 <h1 class="hero-title">Avengers: Endgame</h1>
                 <p class="hero-description">With the help of remaining allies, the Avengers must assemble once more to
@@ -1121,74 +1126,71 @@
         </div>
     </section>
 </main>
-<footer>
-    <div class="container">
-        <nav class="sub-container">
-            <div class="cta-background">
-                <img src="../icons/back-ground-img1.svg" alt="">
-                <img src="../icons/back-ground-img2.svg" alt="">
-                <img src="../icons/back-ground-img3.svg" alt="">
-                <img src="../icons/back-ground-img4.svg" alt="">
-            </div>
-            <h3 class="heading"><a href="home-page.html"> Home</a></h3>
-            <div class="links-container">
-                <a href="home-page.html/#categories" class="heading">Categories</a>
-                <a href="home-page.html/#device" class="heading">Devices</a>
-                <a href="home-page.html/#pricing" class="heading">Pricing</a>
-                <a href="home-page.html/#faq" class="heading">FAQ</a>
-            </div>
-        </nav>
-        <nav class="sub-container">
-            <h3 class="heading"><a href="movies-open-page.html"> Movie</a></h3>
-            <div class="links-container">
-                <a href="#genres_movies" class="heading">Genres</a>
-                <a href="#trending_movies" class="heading">Trending</a>
-                <a href="#new_release_movies" class="heading">New Release</a>
-                <a href="#popular_movies" class="heading">Popular</a>
-            </div>
-        </nav>
-        <nav class="sub-container">
-            <h3 class="heading"><a href="shows-open-page.html"> Shows</a></h3>
-            <div class="links-container">
-                <a href="#genres_shows" class="heading">Genres</a>
-                <a href="#trending_shows" class="heading">Trending</a>
-                <a href="#new_release_shows" class="heading">New Release</a>
-                <a href="#popular_shows" class="heading">Popular</a>
-            </div>
-        </nav>
-        <nav class="sub-container">
-            <h3 class="heading"><a href="support-page.html"> Support</a></h3>
-            <div class="links-container">
-                <a href="#" class="heading">Contact Us</a>
-            </div>
-        </nav>
-        <nav class="sub-container">
-            <h3 class="heading"><a href="subscription-page.html"> Subscription</a></h3>
-            <div class="links-container">
-                <a href="#" class="heading">Plans</a>
-                <a href="#" class="heading">Features</a>
-            </div>
-        </nav>
-        <nav class="sub-container">
-            <h3 class="heading">Connect With Us</h3>
-            <div class="links-container-app">
-                <button><img src="../icons/icon-facebook.svg" alt=""></button>
-                <button><img src="../icons/icon-twitter.svg" alt=""></button>
-                <button><img src="../icons/icon-linkedin.svg" alt=""></button>
-            </div>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <nav class="footer-nav">
+            <section class="footer-section">
+                <h3 class="footer-title">Home</h3>
+                <div class="footer-links">
+                    <a href="#categories" class="footer-link">Categories</a>
+                    <a href="#device" class="footer-link">Devices</a>
+                    <a href="#pricing" class="footer-link">Pricing</a>
+                    <a href="#faq" class="footer-link">FAQ</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Movie</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Genres</a>
+                    <a href="#" class="footer-link">Trending</a>
+                    <a href="#" class="footer-link">New Release</a>
+                    <a href="#" class="footer-link">Popular</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Shows</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Genres</a>
+                    <a href="#" class="footer-link">Trending</a>
+                    <a href="#" class="footer-link">New Release</a>
+                    <a href="#" class="footer-link">Popular</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Support</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Subscription</h3>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Plans</a>
+                    <a href="#" class="footer-link">Features</a>
+                </div>
+            </section>
+            <section class="footer-section">
+                <h3 class="footer-title">Connect With Us</h3>
+                <div class="footer-links-icons">
+                    <button class="footer-link"><img src="../icons/icon-facebook-stroke.svg" alt="Facebook"></button>
+                    <button class="footer-link"><img src="../icons/icon-twitter-stroke.svg" alt="Twitter"></button>
+                    <button class="footer-link"><img src="../icons/icon-linkedin-stroke.svg" alt="LinkedIn"></button>
+                </div>
+            </section>
         </nav>
     </div>
 
-    <div class="container">
-        <div class="line"></div>
-        <div class="container">
-            <p class="text-button">@2023 streamvibe, All Rights Reserved</p>
-            <nav class="buttons-container">
-                <a href="#" class="text-button">Terms of Use</a>
-                <div class="line"></div>
-                <a href="#" class="text-button">Privacy Policy</a>
-                <div class="line"></div>
-                <a href="#" class="text-button">Cookie Policy</a>
+    <div class="footer-bottom">
+        <div class="divider"></div>
+        <div class="bottom-container">
+            <p class="copyright">@2023 streamvibe, All Rights Reserved</p>
+            <nav class="legal-links">
+                <a href="#" class="legal-link">Terms of Use</a>
+                <div class="divider-link"></div>
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <div class="divider-link"></div>
+                <a href="#" class="legal-link">Cookie Policy</a>
             </nav>
         </div>
     </div>
