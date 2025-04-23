@@ -3,84 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Movies Open Page</title>
+    <link rel="stylesheet" type="text/css" href="../src/style-movies-open-page.css">
 </head>
 <body>
 <header class="site-header">
-    <img class="logo" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
-    <nav class="main-nav">
-        <a href="home-page.html" class="nav-link">Home</a>
-        <a href="movies-&-shows-page.html" class="nav-link-active">Movies&Shows</a>
-        <a href="support-page.html" class="nav-link">Support</a>
-        <a href="subscription-page.html" class="nav-link">Subscription</a>
-    </nav>
-    <div class="user-actions">
-        <button class="icon-button" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg"></button>
-        <button class="icon-button" aria-label="Notification"><img alt="Icon Notification" src="../icons/icon-notification.svg"></button>
+    <div class="navbar">
+        <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
+        <div class="buttons-container">
+            <button class="icon" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg">
+            </button>
+            <button class="icon" aria-label="Notification"><img alt="Icon Notification"
+                                                                src="../icons/icon-notification.svg"></button>
+        </div>
+        <nav class="buttons-container-slider">
+            <div class="button1">
+                <div class="text">Home</div>
+            </div>
+            <div class="text-button">Movies&Shows</div>
+            <div class="text-button">Support</div>
+            <div class="text-button">Subscription</div>
+        </nav>
     </div>
 
 
-    <form id="search-form" class="search-form">
-        <label for="search-input">Пошук:</label>
-        <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
-        <button type="submit" class="search-button">Знайти</button>
-    </form>
+    <div class="hidden-form">
+        <form id="search-form" class="search-form">
+            <label for="search-input">Пошук:</label>
+            <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
+            <button type="submit" class="search-button">Знайти</button>
+        </form>
 
 
-    <section id="search-results" class="search-results">
-        <h2 class="section-title">Результати пошуку</h2>
-        <div id="results-container" class="results-grid">
-        </div>
-    </section>
+        <section id="search-results" class="search-results">
+            <h2 class="section-header-title">Результати пошуку</h2>
+            <div id="results-container" class="results-grid">
+            </div>
+        </section>
+    </div>
 
 </header>
 
 <main class="movie-page">
-    <section class="movie-hero">
-        <div class="movie-container">
-            <div class="movie-background">
-                <div class="background-grid">
-                    <div class="background-row">
-                        <img class="background-image" alt="Movie scene" src="../icons/kantara-icon.svg" >
-                    </div>
-                </div>
-                <div class="fade-overlay"></div>
+    <section class="movie-banner">
+        <div class="container">
+            <div class=text-container">
+                <h1 class="hero-title">Kantara</h1>
+                <p class="hero-description">A fiery young man clashes with an unflinching forest officer in a south
+                    Indian village where spirituality, fate and folklore rule the lands.</p>
             </div>
-
-            <article class="movie-info">
-                <h1 class="movie-title">Kantara</h1>
-                <p class="movie-description">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
-
-                <div class="movie-actions">
-                    <button class="play-button">
-                       <span> <img class="action-icon" alt="Play" src="../icons/icon-play.svg"></span>
-                        <span>Play Now</span>
+            <div class="hero-actions">
+                <button class="primary-button">
+                    <img class="button-icon" src="../icons/icon-play.svg" alt="">
+                    <span class="text">Play Now</span>
+                </button>
+                <div class="secondary-actions">
+                    <button class="action-button" aria-label="Add to watchlist">
+                        <img class="button-icon2" src="../icons/icon-plus2.svg" alt="">
                     </button>
-                    <div class="secondary-actions">
-                        <button class="action-button" aria-label="Add to watchlist">
-                            <img src="../icons/icon-plus.svg" alt="">
-                        </button>
-                        <button class="action-button" aria-label="Like">
-                            <img src="../icons/icon-like.svg" alt="">
-                        </button>
-                        <button class="action-button" aria-label="Volume">
-                            <img src="../icons/icon-vol.svg" alt="">
-                        </button>
-                    </div>
+                    <button class="action-button" aria-label="Like">
+                        <img class="button-icon" src="../icons/icon-like.svg" alt="">
+                    </button>
+                    <button class="action-button" aria-label="Volume">
+                        <img class="button-icon" src="../icons/icon-vol.svg" alt="">
+                    </button>
                 </div>
-            </article>
+            </div>
+        </div>
+        <div class="fade-out-bottom">
+        </div>
+        <div class="buttons-container-slider">
+            <img class="button-icon" alt="" src="../icons/icon-previous.svg">
+            <div class="indicators-container">
+                <div class="shape">
+                </div>
+                <div class="shape1">
+                </div>
+                <div class="shape1">
+                </div>
+                <div class="shape1">
+                </div>
+            </div>
+            <img class="button-icon" alt="" src="../icons/icon-next.svg">
         </div>
     </section>
 
     <section class="movie-details">
-        <div class="details-content">
-            <article class="movie-synopsis">
-                <h2 class="section-title">Description</h2>
-                <p class="synopsis-text">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+        <div class="details-content-left">
+            <article class="movie-description">
+                <h2 class="section-header-title">Description</h2>
+                <p class="section-text">A fiery young man clashes with an unflinching forest officer in a south Indian
+                    village where spirituality, fate and folklore rule the lands.</p>
             </article>
 
             <section class="movie-cast">
-                <div class="section-header">
-                    <h2 class="section-title">Cast</h2>
+                <div class="section-header-reviews">
+                    <h2 class="section-header-title">Cast</h2>
                     <div class="section-controls">
                         <button class="control-button" aria-label="Previous">
                             <img src="../icons/icon-previous.svg" alt="">
@@ -104,19 +121,22 @@
             </section>
 
             <section class="movie-reviews">
-                <div class="section-header">
-                    <h2 class="section-title">Reviews</h2>
+
+                <div class="section-header-reviews">
+                    <h2 class="section-header-title">Reviews</h2>
                     <button class="add-review-button">
                         <img class="review-icon" alt="Add review" src="../icons/icon-plus.svg">
-                        <span>Add Your Review</span>
+                        <span class="section-text">Add Your Review</span>
                     </button>
                 </div>
 
-                <div class="reviews-list">
+                <div class="list-of-reviews">
                     <article class="review-card">
                         <header class="review-header">
-                            <h3 class="review-author">Aniket Roy</h3>
-                            <p class="review-location">From India</p>
+                            <div class="review-text">
+                                <h3 class="review-author">Aniket Roy</h3>
+                                <p class="review-location">From India</p>
+                            </div>
                             <div class="review-rating">
                                 <div class="stars">
                                     <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
@@ -128,20 +148,24 @@
                                 <span class="rating-value">4.5</span>
                             </div>
                         </header>
-                        <p class="review-text">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn't watch it.</p>
+                        <p class="review-text">This movie was recommended to me by a very dear friend who went for the
+                            movie by herself. I went to the cinemas to watch but had a houseful board so couldn't watch
+                            it.</p>
                     </article>
 
                     <article class="review-card">
                         <header class="review-header">
-                            <h3 class="review-author">Swaraj</h3>
-                            <p class="review-location">From India</p>
+                            <div class="review-text">
+                                <h3 class="review-author">Swaraj</h3>
+                                <p class="review-location">From India</p>
+                            </div>
                             <div class="review-rating">
                                 <div class="stars">
                                     <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
                                     <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
                                     <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
                                     <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
-                                    <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                    <img class="star-icon half" alt="Half star" src="../icons/full-star-icon.svg">
                                 </div>
                                 <span class="rating-value">5</span>
                             </div>
@@ -155,7 +179,7 @@
                         <img src="../icons/icon-previous.svg" alt="">
                     </button>
                     <div class="review-indicators">
-                        <span class="indicator active"></span>
+                        <span class="indicator-active"></span>
                         <span class="indicator"></span>
                         <span class="indicator"></span>
                         <span class="indicator"></span>
@@ -171,7 +195,7 @@
             <section class="meta-section">
                 <h3 class="meta-title">
                     <img class="meta-icon" alt="Release year" src="../icons/calendar-icon.svg">
-                    Released Year
+                    <p class="meta-text">Released Year</p>
                 </h3>
                 <p class="meta-value">2022</p>
             </section>
@@ -179,21 +203,21 @@
             <section class="meta-section">
                 <h3 class="meta-title">
                     <img class="meta-icon" alt="Languages" src="../icons/lang-icon.svg">
-                    Available Languages
+                    <p class="meta-text">Available Languages</p>
                 </h3>
-                <ul class="language-list">
-                    <li class="language-item">English</li>
-                    <li class="language-item">Hindi</li>
-                    <li class="language-item">Tamil</li>
-                    <li class="language-item">Telegu</li>
-                    <li class="language-item">Kannada</li>
-                </ul>
+                <div class="language-list">
+                    <div class="language-item"><p>English</p></div>
+                    <div class="language-item"><p>Hindi</p></div>
+                    <div class="language-item"><p>Tamil</p></div>
+                    <div class="language-item"><p>Telegu</p></div>
+                    <div class="language-item"><p>Kannada</p></div>
+                </div>
             </section>
 
             <section class="meta-section">
                 <h3 class="meta-title">
                     <img class="meta-icon" alt="Ratings" src="../icons/star-icon.png">
-                    Ratings
+                    <p class="meta-text">Ratings</p>
                 </h3>
                 <div class="rating-sources">
                     <div class="rating-item">
@@ -204,7 +228,7 @@
                                 <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
                                 <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
                                 <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
-                                <img class="star-icon half" alt="Half star" src="../icons/full-star-icon.svg">
+                                <img class="star-icon half" alt="Half star" src="../icons/half-star-icon.svg">
                             </div>
                             <span class="rating-value">4.5</span>
                         </div>
@@ -228,12 +252,12 @@
             <section class="meta-section">
                 <h3 class="meta-title">
                     <img class="meta-icon" alt="Genres" src="../icons/grid-icon.svg">
-                    Genres
+                    <p class="meta-text">Genres</p>
                 </h3>
-                <ul class="genre-list">
-                    <li class="genre-item">Action</li>
-                    <li class="genre-item">Adventure</li>
-                </ul>
+                <div class="genre-list">
+                    <div class="genre-item"><p>Action</p></div>
+                    <div class="genre-item"><p>Adventure</p></div>
+                </div>
             </section>
 
             <section class="meta-section">
@@ -259,20 +283,63 @@
             </section>
         </aside>
     </section>
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-background">
-                    <img src="../icons/back-ground-img1.svg" alt="">
-                    <img src="../icons/back-ground-img2.svg" alt="">
-                    <img src="../icons/back-ground-img3.svg" alt="">
-                    <img src="../icons/back-ground-img4.svg" alt="">
-                </div>
-                <h2 class="cta-title">Start your free trial today!</h2>
-                <p class="cta-text">Join StreamVibe now for unlimited access to thousands of movies and TV shows.</p>
-                <button class="cta-button">Start Free Trial</button>
+    <section class="container-free-trial">
+        <div class="background-image-trial">
+            <div class="image-container-trial">
+                <img class="image-icon1" alt="" src="../icons/Image.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-1.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-2.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-3.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-4.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-5.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-6.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-7.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-8.svg">
+            </div>
+            <div class="image-container1-trial">
+                <img class="image-icon1" alt="" src="../icons/Image-9.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-10.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-11.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-12.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-13.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-14.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-15.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-16.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-17.svg">
+            </div>
+            <div class="image-container2-trial">
+                <img class="image-icon1" alt="" src="../icons/Image-18.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-19.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-20.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-21.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-22.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-23.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-24.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-25.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-26.svg">
+            </div>
+            <div class="image-container3-trial">
+                <img class="image-icon1" alt="" src="../icons/Image-27.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-28.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-29.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-30.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-31.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-32.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-33.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-34.svg">
+                <img class="image-icon1" alt="" src="../icons/Image-35.svg">
+            </div>
+            <div class="fade-out-left1">
             </div>
         </div>
+        <article class="text-container-trial">
+            <h2 class="title">Start your free trial today!</h2>
+            <p class="text">This is a clear and concise call to action that encourages users to sign up for a
+                free trial of StreamVibe.</p>
+        </article>
+        <button class="primary-button-trial">
+            <div class="text-trial">Start a Free Trail</div>
+        </button>
     </section>
 </main>
 
@@ -282,10 +349,10 @@
             <section class="footer-section">
                 <h3 class="footer-title">Home</h3>
                 <div class="footer-links">
-                    <a href="#" class="footer-link">Categories</a>
-                    <a href="#" class="footer-link">Devices</a>
-                    <a href="#" class="footer-link">Pricing</a>
-                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#categories" class="footer-link">Categories</a>
+                    <a href="#device" class="footer-link">Devices</a>
+                    <a href="#pricing" class="footer-link">Pricing</a>
+                    <a href="#faq" class="footer-link">FAQ</a>
                 </div>
             </section>
             <section class="footer-section">
@@ -321,10 +388,10 @@
             </section>
             <section class="footer-section">
                 <h3 class="footer-title">Connect With Us</h3>
-                <div class="social-links">
-                    <button class="social-button"><img src="../icons/icon-facebook.svg" alt="Facebook"></button>
-                    <button class="social-button"><img src="../icons/icon-twitter.svg" alt="Twitter"></button>
-                    <button class="social-button"><img src="../icons/icon-linkedin.svg" alt="LinkedIn"></button>
+                <div class="footer-links-icons">
+                    <button class="footer-link"><img src="../icons/icon-facebook-stroke.svg" alt="Facebook"></button>
+                    <button class="footer-link"><img src="../icons/icon-twitter-stroke.svg" alt="Twitter"></button>
+                    <button class="footer-link"><img src="../icons/icon-linkedin-stroke.svg" alt="LinkedIn"></button>
                 </div>
             </section>
         </nav>
@@ -336,9 +403,9 @@
             <p class="copyright">@2023 streamvibe, All Rights Reserved</p>
             <nav class="legal-links">
                 <a href="#" class="legal-link">Terms of Use</a>
-                <div class="divider"></div>
+                <div class="divider-link"></div>
                 <a href="#" class="legal-link">Privacy Policy</a>
-                <div class="divider"></div>
+                <div class="divider-link"></div>
                 <a href="#" class="legal-link">Cookie Policy</a>
             </nav>
         </div>

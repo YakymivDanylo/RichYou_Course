@@ -55,6 +55,7 @@ body {
   position: relative;
   line-height: 150%;
   font-weight: 500;
+  font-family: 'Manrope', sans-serif;
 }
 
 .button {
@@ -84,9 +85,11 @@ body {
 .text-button {
   position: relative;
   line-height: 150%;
+  font-family: 'Manrope', sans-serif;
+  margin: 15px;
 }
 
-.buttons-container1 {
+.buttons-container-slider {
   margin: 0 !important;
   position: absolute;
   top: calc(50% - 42px);
@@ -469,7 +472,7 @@ body {
       padding: 0 300px 0 0;
       gap: 14px;
 
-      .section-title {
+      .section-header-title {
         align-self: stretch;
         position: relative;
         line-height: 150%;
@@ -566,7 +569,7 @@ body {
   color: #fff;
   font-family: Manrope, sans-serif;
 
-  .section-header {
+  .section-header-reviews {
     align-self: stretch;
     display: flex;
     flex-direction: row;
@@ -585,7 +588,7 @@ body {
       justify-content: flex-start;
       gap: 0;
 
-      .section-title {
+      .section-header-title {
         align-self: stretch;
         position: relative;
         line-height: 150%;
@@ -752,7 +755,7 @@ body {
       justify-content: flex-start;
       gap: 10px;
 
-      .section-title {
+      .section-header-title {
         align-self: stretch;
         position: relative;
         line-height: 150%;

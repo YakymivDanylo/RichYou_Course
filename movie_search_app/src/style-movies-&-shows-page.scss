@@ -190,8 +190,8 @@ body {
     }
   }
 
-  .buttons-container1 {
-    margin: 0 !important;
+  .buttons-container-slider {
+    margin: 15px !important;
     position: absolute;
     top: calc(50% - 42px);
     left: calc(50% - 281.5px);
@@ -348,7 +348,7 @@ body {
       }
     }
 
-    .buttons-container1 {
+    .buttons-container-slider {
       align-self: stretch;
       border-radius: 12px;
       display: flex;
@@ -424,7 +424,7 @@ body {
       justify-content: flex-start;
       padding: 10px 24px;
 
-      .section-title {
+      .section-header-title {
         position: relative;
         line-height: 150%;
         font-weight: 600;
@@ -448,7 +448,7 @@ body {
     text-align: left;
     font-size: 38px;
 
-    .section-header {
+    .section-header-reviews {
       align-self: stretch;
       display: flex;
       flex-direction: column;
@@ -535,7 +535,6 @@ body {
           justify-content: flex-start;
           padding: 15px;
           margin: 15px;
-          //TODO
           .card9 {
             flex: 1;
             border-radius: 12px;

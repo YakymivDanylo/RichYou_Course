@@ -49,6 +49,7 @@ body {
   position: relative;
   line-height: 150%;
   font-weight: 500;
+  font-family: "Manrope", sans-serif;
 }
 
 .button {
@@ -78,9 +79,11 @@ body {
 .text-button {
   position: relative;
   line-height: 150%;
+  font-family: "Manrope", sans-serif;
+  margin: 15px;
 }
 
-.buttons-container1 {
+.buttons-container-slider {
   margin: 0 !important;
   position: absolute;
   top: calc(50% - 42px);
@@ -459,7 +462,7 @@ body {
   padding: 0 300px 0 0;
   gap: 14px;
 }
-.devices-section .section-container .text-content .section-title {
+.devices-section .section-container .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
@@ -544,7 +547,7 @@ body {
   color: #fff;
   font-family: Manrope, sans-serif;
 }
-.faq-section .section-header {
+.faq-section .section-header-reviews {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -554,7 +557,7 @@ body {
   margin-right: 20px;
   margin-left: 20px;
 }
-.faq-section .section-header .text-content {
+.faq-section .section-header-reviews .text-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -562,14 +565,14 @@ body {
   justify-content: flex-start;
   gap: 0;
 }
-.faq-section .section-header .text-content .section-title {
+.faq-section .section-header-reviews .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   margin: 0;
   font-size: 38px;
 }
-.faq-section .section-header .text-content .section-text {
+.faq-section .section-header-reviews .text-content .section-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
@@ -577,7 +580,7 @@ body {
   color: #999;
   margin: 0;
 }
-.faq-section .section-header .primary-button {
+.faq-section .section-header-reviews .primary-button {
   border-radius: 8px;
   background-color: #e50000;
   display: flex;
@@ -587,7 +590,7 @@ body {
   padding: 18px 24px;
   font-size: 14px;
 }
-.faq-section .section-header .primary-button .text {
+.faq-section .section-header-reviews .primary-button .text {
   position: relative;
   line-height: 150%;
   font-weight: 600;
@@ -702,7 +705,7 @@ body {
   justify-content: flex-start;
   gap: 10px;
 }
-.pricing-section .section-container .text-content .section-title {
+.pricing-section .section-container .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
