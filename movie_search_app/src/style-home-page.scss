@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+
+$font-Manrope: 'Manrope', sans-serif;
+$font-Archivo: 'Archivo', sans-serif;
+$to-hide: none;
+$font-size-capital: 18px;
+$font-size-small: 14px;
+$black-08: #141414;
+$black-06: #0F0F0F;
+$black-10: #1a1a1a;
+$black-15: #262626;
+$black-20: #333;
+$red-45: #E50000;
+$gray-60: #999;
+$white: #fff;
+$zero-margin: 0;
+$border-radius-12: 12px;
+$border-radius-8: 8px;
+
 body {
   background-color: #141414;
   font-family: 'Manrope', sans-serif;
@@ -106,7 +125,6 @@ body {
   gap: 30px;
   z-index: 2;
 }
-
 .navbar {
   width: 100%;
   position: relative;
@@ -120,11 +138,75 @@ body {
   text-align: left;
   font-size: 18px;
   color: #bfbfbf;
-  font-family: Manrope sans-serif;
+  font-family: $font-Manrope;
+
+  .logo-icon {
+    width: 199px;
+    position: relative;
+    height: 60px;
+    z-index: 0;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    z-index: 1;
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+  }
+
+  .buttons-container-slider {
+    margin: 15px !important;
+    position: absolute;
+    top: calc(50% - 42px);
+    left: calc(50% - 281.5px);
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 4px solid #1f1f1f;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 40px 10px 10px;
+    gap: 30px;
+    z-index: 2;
+
+    .button1 {
+      border-radius: 8px;
+      background-color: #1a1a1a;
+      border: 1px solid #1a1a1a;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 14px 24px;
+      color: #fff;
+
+      .text {
+        position: relative;
+        line-height: 150%;
+        font-weight: 500;
+      }
+    }
+
+    .text-button {
+      position: relative;
+      line-height: 150%;
+    }
+  }
 }
 
 .hidden-form {
-  display: none;
+  display: $to-hide;
 }
 
 .image-icon {
