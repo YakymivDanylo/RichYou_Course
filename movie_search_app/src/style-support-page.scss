@@ -62,7 +62,7 @@ body {
   }
 
   .buttons-container-slider {
-    margin: 15px !important;
+    margin: 0 !important;
     position: absolute;
     top: calc(50% - 42px);
     left: calc(50% - 281.5px);
@@ -108,6 +108,7 @@ body {
 }
 
 .form-container {
+  margin: 115px 162px 150px 162px;
   display: flex;
   width: 1589px;
   align-items: flex-start;
@@ -182,7 +183,6 @@ body {
 
   .contact-form {
     display: flex;
-    //padding: 50px;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
@@ -344,13 +344,15 @@ body {
     }
 
     .form-group3 {
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 16px;
       align-self: stretch;
       padding: 50px;
-      .form-heading{
+
+      .form-heading {
         align-self: stretch;
         color: $white;
         font-family: $font-Manrope;
@@ -359,7 +361,8 @@ body {
         font-weight: 600;
         line-height: 150%;
       }
-      .form-message{
+
+      .form-message {
         display: flex;
         height: 163px;
         padding: 20px;
@@ -373,6 +376,56 @@ body {
     }
 
     .form-actions {
+      display: flex;
+      align-items: center;
+      gap: 70px;
+      align-self: stretch;
+      margin: 50px;
+
+      .check-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1 0 0;
+
+        .field-check-box {
+          width: 28px;
+          height: 28px;
+          border-radius: 4px;
+          border: 1px solid $black-15;
+          background: $black-08;
+        }
+
+        p {
+          color: $gray-60;
+          font-family: $font-Manrope;
+          font-size: $font-size-capital;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          flex: 1 0 0;
+        }
+      }
+
+      .submit-button {
+        display: flex;
+        padding: 18px 24px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: $border-radius-8;
+        background: $red-45;
+
+
+        p {
+          color: $white;
+          font-family: $font-Manrope;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+          margin: 0;
+        }
+      }
     }
 
   }

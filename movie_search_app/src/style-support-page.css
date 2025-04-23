@@ -41,7 +41,7 @@ body {
   flex-shrink: 0;
 }
 .navbar .buttons-container-slider {
-  margin: 15px !important;
+  margin: 0 !important;
   position: absolute;
   top: calc(50% - 42px);
   left: calc(50% - 281.5px);
@@ -83,6 +83,7 @@ body {
 }
 
 .form-container {
+  margin: 115px 162px 150px 162px;
   display: flex;
   width: 1589px;
   align-items: flex-start;
@@ -294,6 +295,7 @@ body {
   background: #141414;
 }
 .form-container .contact-form .form-group3 {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -320,6 +322,52 @@ body {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+}
+.form-container .contact-form .form-actions {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  align-self: stretch;
+  margin: 50px;
+}
+.form-container .contact-form .form-actions .check-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+}
+.form-container .contact-form .form-actions .check-box .field-check-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.form-container .contact-form .form-actions .check-box p {
+  color: #999;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  flex: 1 0 0;
+}
+.form-container .contact-form .form-actions .submit-button {
+  display: flex;
+  padding: 18px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: #E50000;
+}
+.form-container .contact-form .form-actions .submit-button p {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style-support-page.css.map */
