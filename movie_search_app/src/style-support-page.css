@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #141414;
+}
+
 .navbar {
   width: 100%;
   position: relative;
@@ -11,11 +18,308 @@
   text-align: left;
   font-size: 18px;
   color: #bfbfbf;
-  font-family: Manrope sans-serif;
+  font-family: "Manrope", sans-serif;
+}
+.navbar .logo-icon {
+  width: 199px;
+  position: relative;
+  height: 60px;
+  z-index: 0;
+}
+.navbar .buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  z-index: 1;
+}
+.navbar .buttons-container .icon {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.navbar .buttons-container-slider {
+  margin: 15px !important;
+  position: absolute;
+  top: calc(50% - 42px);
+  left: calc(50% - 281.5px);
+  border-radius: 12px;
+  background-color: #0f0f0f;
+  border: 4px solid #1f1f1f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 40px 10px 10px;
+  gap: 30px;
+  z-index: 2;
+}
+.navbar .buttons-container-slider .button1 {
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 24px;
+  color: #fff;
+}
+.navbar .buttons-container-slider .button1 .text {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+.navbar .buttons-container-slider .text-button {
+  position: relative;
+  line-height: 150%;
 }
 
 .hidden-form {
   display: none;
+}
+
+.form-container {
+  display: flex;
+  width: 1589px;
+  align-items: flex-start;
+  gap: 80px;
+}
+.form-container .aside-img {
+  display: flex;
+  width: 533px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.form-container .aside-img .title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+.form-container .aside-img .title-text .heading {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+.form-container .aside-img .title-text .paragraph {
+  margin-top: 14px;
+  align-self: stretch;
+  color: #999;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.form-container .aside-img .images {
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 6px solid #262626;
+  background: #0F0F0F;
+}
+.form-container .aside-img .images .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.form-container .aside-img .images .image-container .con-img {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.form-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background: #0F0F0F;
+}
+.form-container .contact-form .form-group1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 50px;
+  align-self: stretch;
+}
+.form-container .contact-form .form-group1 .form-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.form-container .contact-form .form-group1 .form-name .name-header {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.form-container .contact-form .form-group1 .form-name .name-input {
+  width: 413px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 77px;
+  align-self: stretch;
+  border-radius: 14px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.form-container .contact-form .form-group1 .form-surname {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.form-container .contact-form .form-group1 .form-surname .surname-header {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.form-container .contact-form .form-group1 .form-surname .surname-input {
+  width: 413px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 77px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.form-container .contact-form .form-group2 {
+  margin: 50px;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  align-self: stretch;
+}
+.form-container .contact-form .form-group2 .form-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.form-container .contact-form .form-group2 .form-email .email-heading {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.form-container .contact-form .form-group2 .form-email .email-input {
+  width: 413px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 77px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.form-container .contact-form .form-group2 .form-phone-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.form-container .contact-form .form-group2 .form-phone-number .phone-label {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.form-container .contact-form .form-group2 .form-phone-number .phone-input-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+.form-container .contact-form .form-group2 .form-phone-number .phone-input-group .country-select-wrapper {
+  display: flex;
+  padding: 0 12px;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.form-container .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 77px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.form-container .contact-form .form-group3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  padding: 50px;
+}
+.form-container .contact-form .form-group3 .form-heading {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.form-container .contact-form .form-group3 .form-message {
+  display: flex;
+  height: 163px;
+  padding: 20px;
+  align-items: flex-start;
+  gap: 77px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
 }
 
 /*# sourceMappingURL=style-support-page.css.map */

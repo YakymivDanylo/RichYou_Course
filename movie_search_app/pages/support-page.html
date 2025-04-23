@@ -7,32 +7,39 @@
 </head>
 <body>
 <header class="site-header">
-    <img class="logo" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
-    <nav class="main-nav">
-        <a href="home-page.html" class="nav-link">Home</a>
-        <a href="movies-&-shows-page.html" class="nav-link">Movies&Shows</a>
-        <a href="support-page.html" class="nav-link-active">Support</a>
-        <a href="subscription-page.html" class="nav-link">Subscription</a>
-    </nav>
-    <div class="user-actions">
-        <button class="icon-button" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg"></button>
-        <button class="icon-button" aria-label="Notification"><img alt="Icon Notification"
-                                                                   src="../icons/icon-notification.svg"></button>
+    <div class="navbar">
+        <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
+        <div class="buttons-container">
+            <button class="icon" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg">
+            </button>
+            <button class="icon" aria-label="Notification"><img alt="Icon Notification"
+                                                                src="../icons/icon-notification.svg"></button>
+        </div>
+        <nav class="buttons-container-slider">
+            <div class="button1">
+                <div class="text">Home</div>
+            </div>
+            <div class="text-button">Movies&Shows</div>
+            <div class="text-button">Support</div>
+            <div class="text-button">Subscription</div>
+        </nav>
     </div>
 
 
-    <form id="search-form" class="search-form">
-        <label for="search-input">Пошук:</label>
-        <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
-        <button type="submit" class="search-button">Знайти</button>
-    </form>
+    <div class="hidden-form">
+        <form id="search-form" class="search-form">
+            <label for="search-input">Пошук:</label>
+            <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
+            <button type="submit" class="search-button">Знайти</button>
+        </form>
 
 
-    <section id="search-results" class="search-results">
-        <h2 class="section-header-title">Результати пошуку</h2>
-        <div id="results-container" class="results-grid">
-        </div>
-    </section>
+        <section id="search-results" class="search-results">
+            <h2 class="section-header-title">Результати пошуку</h2>
+            <div id="results-container" class="results-grid">
+            </div>
+        </section>
+    </div>
 
 </header>
 
@@ -44,48 +51,59 @@
                 <p class="paragraph">We're here to help you with any problems you may be having with our product.</p>
             </div>
             <div class="images">
-                <img src="../icons/Image%20Container.svg" alt="">
-                <img src="../icons/Image%20Container-1.svg" alt="">
-                <img src="../icons/Image%20Container-2.svg" alt="">
-                <img src="../icons/Image%20Container-3.svg" alt="">
+                <div class="image-container">
+                    <img class="con-img" src="../icons/Image%20Container.svg" alt="">
+                    <img src="../icons/Image%20Container-1.svg" alt="">
+                    <img src="../icons/Image%20Container-2.svg" alt="">
+                    <img src="../icons/Image%20Container-3.svg" alt="">
+                </div>
             </div>
         </aside>
         <aside class="contact-form">
             <form id="support-form" method="POST">
-                <div class="form-group">
-                    <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
-
-                    <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email">
-
-                    <label for="phone" class="phone-label">Phone Number</label>
-                    <div class="phone-input-group">
-                        <div class="country-select-wrapper">
-                            <select class="country-code-select" id="countryCode" name="countryCode">
-                                <option value="+1" data-icon="../icons/indian-flag-icon.svg">in +1</option>
-                                <option value="+380" data-icon="ua-flag.png">Ua +380</option>
-                            </select>
-                        </div>
-                        <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                class="phone-number-input"
-                                placeholder="Enter Phone Number"
-                                pattern="[0-9]{10}"
-                        >
+                <div class="form-group1">
+                    <div class="form-name">
+                        <label class="name-header" for="firstName">First Name</label>
+                        <input class="name-input" type="text" id="firstName" name="firstName"
+                               placeholder="Enter First Name">
+                    </div>
+                    <div class="form-surname">
+                        <label class="surname-header" for="lastName">Last Name</label>
+                        <input class="surname-input" type="text" id="lastName" name="lastName"
+                               placeholder="Enter Last Name">
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+                <div class="form-group2">
+                    <div class="form-email">
+                        <label class="email-heading" for="email">Email</label>
+                        <input class="email-input" type="email" id="email" name="email" placeholder="Enter Your Email">
+                    </div>
+
+                    <div class="form-phone-number">
+                        <label for="phone" class="phone-label">Phone Number</label>
+                        <div class="phone-input-group">
+                            <div class="country-select-wrapper">
+                                <select class="country-code-select" id="countryCode" name="countryCode">
+                                    <option value="+1" data-icon="../icons/indian-flag-icon.svg">In +1</option>
+                                    <option value="+380" data-icon="ua-flag.png">Ua +380</option>
+                                </select>
+                            </div>
+                            <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    class="phone-number-input"
+                                    placeholder="Enter Phone Number"
+                                    pattern="[0-9]{10}"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group3">
+                    <label class="form-heading" for="message">Message</label>
+                    <textarea class="form-message" id="message" name="message" placeholder="Enter Your Message"></textarea>
                 </div>
 
                 <div class="form-actions">
@@ -103,7 +121,8 @@
         <header class="section-header-reviews">
             <article class="text-content">
                 <h2 class="section-header-title">Frequently Asked Questions</h2>
-                <p class="section-text">Got questions? We've got answers! Check out our FAQ section to find answers to the
+                <p class="section-text">Got questions? We've got answers! Check out our FAQ section to find answers to
+                    the
                     most common questions about StreamVibe.</p>
             </article>
             <button class="primary-button">Ask a Question</button>
