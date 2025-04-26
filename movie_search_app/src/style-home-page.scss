@@ -18,9 +18,17 @@ $zero-margin: 0;
 $border-radius-12: 12px;
 $border-radius-8: 8px;
 
+
 body {
   background-color: #141414;
-  font-family: 'Manrope', sans-serif;
+  font-family: $font-Manrope;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-icon {
@@ -74,7 +82,7 @@ body {
   position: relative;
   line-height: 150%;
   font-weight: 500;
-  font-family: 'Manrope', sans-serif;
+  font-family: $font-Manrope;
 }
 
 .button {
@@ -104,7 +112,7 @@ body {
 .text-button {
   position: relative;
   line-height: 150%;
-  font-family: 'Manrope', sans-serif;
+  font-family: $font-Manrope;
   margin: 15px;
 }
 
@@ -125,6 +133,7 @@ body {
   gap: 30px;
   z-index: 2;
 }
+
 .navbar {
   width: 100%;
   position: relative;
@@ -136,7 +145,7 @@ body {
   box-sizing: border-box;
   gap: 0;
   text-align: left;
-  font-size: 18px;
+  font-size: $font-size-capital;
   color: #bfbfbf;
   font-family: $font-Manrope;
 
@@ -266,6 +275,7 @@ body {
   gap: 15px;
   z-index: 3;
   margin: 0;
+
 }
 
 .image-icon36 {
@@ -342,7 +352,7 @@ body {
 .paragraph {
   align-self: stretch;
   position: relative;
-  font-size: 18px;
+  font-size: $font-size-capital;
   width: 100%;
   line-height: 150%;
   color: #999;
@@ -393,7 +403,7 @@ body {
   padding: 18px 24px;
   gap: 4px;
   text-align: left;
-  font-size: 18px;
+  font-size: $font-size-capital;
 }
 
 .sub-container1 {
@@ -415,7 +425,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 30px;
-  font-size: 18px;
+  font-size: $font-size-capital;
 }
 
 .sub-container2 {
@@ -438,22 +448,27 @@ body {
   text-align: center;
   font-size: 50px;
   color: #fff;
-  font-family: Manrope, sans-serif;
+  font-family: $font-Manrope;
   margin-bottom: 100px;
 }
 
-.container3 {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 80px;
-  text-align: left;
-  font-size: 38px;
-  color: #fff;
-  font-family: Manrope, sans-serif;
+.categories-section {
+  margin: 12.5rem 10.13rem 9.38rem 10.13rem;
+
+  .container3 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+    font-family: $font-Manrope;
+
+  }
 }
 
 .button-icon {
@@ -530,7 +545,7 @@ body {
 
 
 .devices-section {
-  margin-top: 35px;
+  margin: 0rem 10.13rem 9.38rem 10.13rem;
 
   .section-container {
     width: 100%;
@@ -543,7 +558,7 @@ body {
     text-align: left;
     font-size: 38px;
     color: #fff;
-    font-family: Manrope, sans-serif;
+    font-family: $font-Manrope;
 
     .text-content {
       align-self: stretch;
@@ -565,7 +580,7 @@ body {
       .section-text {
         align-self: stretch;
         position: relative;
-        font-size: 18px;
+        font-size: $font-size-capital;
         line-height: 150%;
         color: #999;
       }
@@ -627,7 +642,7 @@ body {
         .card-text {
           align-self: stretch;
           position: relative;
-          font-size: 18px;
+          font-size: $font-size-capital;
           line-height: 150%;
           color: #999;
         }
@@ -638,67 +653,571 @@ body {
 }
 
 .faq-section {
-  margin-top: 35px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 80px;
-  text-align: left;
-  font-size: 38px;
-  color: #fff;
-  font-family: Manrope, sans-serif;
+  margin: 0 10.13rem 9.38rem 10.13rem;
 
-  .section-header-reviews {
-    align-self: stretch;
+  .faq-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+    font-family: $font-Manrope;
+
+    .section-header-reviews {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 100px;
+      margin-right: 20px;
+      margin-left: 20px;
+
+
+      .text-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+
+        .section-header-title {
+          align-self: stretch;
+          position: relative;
+          line-height: 150%;
+          margin: 0;
+          font-size: 38px;
+        }
+
+        .section-text {
+          align-self: stretch;
+          position: relative;
+          font-size: $font-size-capital;
+          line-height: 150%;
+          color: #999;
+          margin: 0;
+        }
+      }
+
+      .primary-button {
+        border-radius: 8px;
+        background-color: #e50000;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0.5rem 2.4rem;
+        font-size: $font-size-small;
+
+        .text {
+          position: relative;
+          line-height: 150%;
+          font-weight: 600;
+          color: white;
+        }
+      }
+    }
+
+    .faq-container {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 80px;
+      font-size: 20px;
+
+      .faq-items {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .faq-item {
+          align-self: stretch;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 34px;
+          gap: 20px;
+
+          .item-number {
+            border-radius: 10px;
+            background-color: #1f1f1f;
+            border: 1px solid #262626;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 20px;
+            margin-left: 15px;
+
+            .number {
+              position: relative;
+              font-weight: 600;
+
+            }
+          }
+
+          .item-content {
+            margin-right: 15px;
+            align-self: stretch;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+            font-size: 22px;
+
+
+            .item-title {
+              align-self: stretch;
+              position: relative;
+              line-height: 150%;
+              font-weight: 500;
+            }
+
+            .gradient-line {
+              width: 100%;
+              height: 1px;
+              border: none;
+              background: linear-gradient(
+                              90deg,
+                              #333 0%,
+                              #333 25%,
+                              #ff0000 50%,
+                              #333 75%,
+                              #333 100%
+              );
+            }
+
+            .item-text {
+              align-self: stretch;
+              position: relative;
+              font-size: $font-size-capital;
+              line-height: 150%;
+              color: #999;
+            }
+          }
+
+          .toggle-icon {
+            margin-right: 30px;
+            width: 30px;
+            position: relative;
+            height: 30px;
+            overflow: hidden;
+            flex-shrink: 0;
+          }
+
+        }
+      }
+    }
+  }
+
+
+}
+
+
+.pricing-section {
+  margin: 0 10.13rem 8.44rem 10.13rem;
+
+  .pricing-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+    font-family: $font-Manrope;
+
+    .section-container {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 100px;
+
+      .text-content {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .section-header-title {
+          align-self: stretch;
+          position: relative;
+          line-height: 150%;
+          margin: 0;
+          font-size: 35px;
+        }
+
+        .section-text {
+          align-self: stretch;
+          position: relative;
+          font-size: $font-size-capital;
+          line-height: 150%;
+          color: #999;
+        }
+      }
+
+      .plan-tabs {
+        border-radius: 10px;
+        background-color: #0f0f0f;
+        border: 1px solid #262626;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        font-size: $font-size-capital;
+
+        .button-active {
+          border-radius: 10px;
+          background-color: #1f1f1f;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 24px;
+
+          .text {
+            position: relative;
+            line-height: 150%;
+            font-weight: 500;
+            color: white;
+          }
+        }
+
+        .button {
+          border-radius: 100px;
+          background-color: #1a1a1a;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 24px;
+          color: #999;
+
+          .text-tabs {
+            position: relative;
+            line-height: 150%;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .pricing-cards {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 30px;
+      font-size: 24px;
+
+      .plan-card {
+        flex: 1;
+        border-radius: 12px;
+        background-color: #1a1a1a;
+        border: 1px solid #262626;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px;
+        gap: 50px;
+
+        .card-content {
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 16px;
+
+          .plan-title {
+            align-self: stretch;
+            position: relative;
+            line-height: 150%;
+          }
+
+          .plan-text {
+            align-self: stretch;
+            position: relative;
+            font-size: $font-size-capital;
+            line-height: 150%;
+            color: #999;
+          }
+        }
+
+        .plan-price {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 4px;
+          font-size: 40px;
+
+          .price {
+            position: relative;
+            line-height: 73%;
+            font-weight: 600;
+          }
+
+          .period {
+            position: relative;
+            font-size: $font-size-capital;
+            line-height: 73%;
+            font-weight: 500;
+            color: #999;
+          }
+        }
+
+        .plan-actions {
+          align-self: stretch;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 20px;
+          font-size: $font-size-capital;
+
+          .button1 {
+            flex: 1;
+            border-radius: 8px;
+            background-color: #141414;
+            border: 1px solid #262626;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 24px;
+
+            .text3 {
+              position: relative;
+              line-height: 150%;
+              font-weight: 600;
+
+            }
+          }
+
+          .button2 {
+            flex: 1;
+            border-radius: 8px;
+            background-color: #e50000;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 24px;
+
+            .text3 {
+              position: relative;
+              line-height: 150%;
+              font-weight: 600;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.container-free-trial {
+  margin: 0 10.13rem 8.38rem 10.13rem;
+
+  .free-trial-wrapper {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 1px solid #262626;
+    box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
+    padding: 100px 80px;
+
     gap: 100px;
-    margin-right: 20px;
-    margin-left: 20px;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+    font-family: $font-Manrope;
 
+    .background-image-trial {
+      width: 1800px;
+      margin: 0 !important;
+      position: absolute;
+      top: calc(50% - 197.5px);
+      left: calc(50% - 798px);
+      height: 395px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+      z-index: 0;
 
-    .text-content {
+      .image-container-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 0;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container1-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 1;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container2-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 2;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container3-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 3;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .fade-out-left1 {
+        width: 100%;
+        position: absolute;
+        margin: 0 !important;
+        top: calc(50% - 171.5px);
+        right: 0;
+        background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
+        height: 395px;
+        mix-blend-mode: normal;
+        z-index: 4;
+      }
+
+    }
+
+    .text-container-trial {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      gap: 0;
+      gap: 14px;
+      z-index: 1;
 
-      .section-header-title {
+      .title {
         align-self: stretch;
         position: relative;
         line-height: 150%;
         margin: 0;
-        font-size: 38px;
+        font-size: 35px;
       }
 
-      .section-text {
+      .text {
         align-self: stretch;
         position: relative;
-        font-size: 18px;
+        font-size: $font-size-capital;
         line-height: 150%;
         color: #999;
         margin: 0;
       }
     }
 
-    .primary-button {
+    .primary-button-trial {
       border-radius: 8px;
       background-color: #e50000;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
+      align-items: center;
+      justify-content: center;
       padding: 18px 24px;
-      font-size: 14px;
+      z-index: 2;
+      font-size: $font-size-capital;
 
-      .text {
+      .text-trial {
         position: relative;
         line-height: 150%;
         font-weight: 600;
@@ -707,494 +1226,7 @@ body {
     }
   }
 
-  .faq-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 80px;
-    font-size: 20px;
 
-    .faq-items {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-
-      .faq-item {
-        align-self: stretch;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 34px;
-        gap: 20px;
-
-        .item-number {
-          border-radius: 10px;
-          background-color: #1f1f1f;
-          border: 1px solid #262626;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          padding: 20px;
-          margin-left: 15px;
-
-          .number {
-            position: relative;
-            font-weight: 600;
-
-          }
-        }
-
-        .item-content {
-          margin-right: 15px;
-          align-self: stretch;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 20px;
-          font-size: 22px;
-
-
-          .item-title {
-            align-self: stretch;
-            position: relative;
-            line-height: 150%;
-            font-weight: 500;
-          }
-
-          .gradient-line {
-            width: 100%;
-            height: 1px;
-            border: none;
-            background: linear-gradient(
-                            90deg,
-                            #333 0%,
-                            #333 25%,
-                            #ff0000 50%,
-                            #333 75%,
-                            #333 100%
-            );
-          }
-
-          .item-text {
-            align-self: stretch;
-            position: relative;
-            font-size: 18px;
-            line-height: 150%;
-            color: #999;
-          }
-        }
-
-        .toggle-icon {
-          margin-right: 30px;
-          width: 30px;
-          position: relative;
-          height: 30px;
-          overflow: hidden;
-          flex-shrink: 0;
-        }
-
-      }
-    }
-  }
-}
-
-
-.pricing-section {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 80px;
-  text-align: left;
-  font-size: 38px;
-  color: #fff;
-  font-family: Manrope, sans-serif;
-
-  .section-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 100px;
-
-    .text-content {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 10px;
-
-      .section-header-title {
-        align-self: stretch;
-        position: relative;
-        line-height: 150%;
-        margin: 0;
-        font-size: 35px;
-      }
-
-      .section-text {
-        align-self: stretch;
-        position: relative;
-        font-size: 18px;
-        line-height: 150%;
-        color: #999;
-      }
-    }
-
-    .plan-tabs {
-      border-radius: 10px;
-      background-color: #0f0f0f;
-      border: 1px solid #262626;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 10px;
-      font-size: 18px;
-
-      .button-active {
-        border-radius: 10px;
-        background-color: #1f1f1f;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 24px;
-
-        .text {
-          position: relative;
-          line-height: 150%;
-          font-weight: 500;
-          color: white;
-        }
-      }
-
-      .button {
-        border-radius: 100px;
-        background-color: #1a1a1a;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 24px;
-        color: #999;
-
-        .text-tabs {
-          position: relative;
-          line-height: 150%;
-          font-weight: 500;
-        }
-      }
-    }
-  }
-
-  .pricing-cards {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 30px;
-    font-size: 24px;
-
-    .plan-card {
-      flex: 1;
-      border-radius: 12px;
-      background-color: #1a1a1a;
-      border: 1px solid #262626;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 50px;
-      gap: 50px;
-
-      .card-content {
-        align-self: stretch;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 16px;
-
-        .plan-title {
-          align-self: stretch;
-          position: relative;
-          line-height: 150%;
-        }
-
-        .plan-text {
-          align-self: stretch;
-          position: relative;
-          font-size: 18px;
-          line-height: 150%;
-          color: #999;
-        }
-      }
-
-      .plan-price {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: center;
-        gap: 4px;
-        font-size: 40px;
-
-        .price {
-          position: relative;
-          line-height: 73%;
-          font-weight: 600;
-        }
-
-        .period {
-          position: relative;
-          font-size: 18px;
-          line-height: 73%;
-          font-weight: 500;
-          color: #999;
-        }
-      }
-
-      .plan-actions {
-        align-self: stretch;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 20px;
-        font-size: 18px;
-
-        .button1 {
-          flex: 1;
-          border-radius: 8px;
-          background-color: #141414;
-          border: 1px solid #262626;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          padding: 18px 24px;
-
-          .text3 {
-            position: relative;
-            line-height: 150%;
-            font-weight: 600;
-
-          }
-        }
-
-        .button2 {
-          flex: 1;
-          border-radius: 8px;
-          background-color: #e50000;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          padding: 18px 24px;
-
-          .text3 {
-            position: relative;
-            line-height: 150%;
-            font-weight: 600;
-            color: white;
-          }
-        }
-      }
-    }
-  }
-}
-
-.container-free-trial {
-  width: 100%;
-  position: relative;
-  border-radius: 12px;
-  background-color: #0f0f0f;
-  border: 1px solid #262626;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 100px 80px;
-  margin-top: 35px;
-  gap: 100px;
-  text-align: left;
-  font-size: 40px;
-  color: #fff;
-  font-family: Manrope, sans-serif;
-
-  .background-image-trial {
-    width: 1800px;
-    margin: 0 !important;
-    position: absolute;
-    top: calc(50% - 197.5px);
-    left: calc(50% - 798px);
-    height: 395px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-    z-index: 0;
-
-    .image-container-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 0;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .image-container1-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 1;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .image-container2-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 2;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .image-container3-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 3;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .fade-out-left1 {
-      width: 100%;
-      position: absolute;
-      margin: 0 !important;
-      top: calc(50% - 171.5px);
-      right: 0;
-      background: linear-gradient(89.97deg, #0f0f0f 2.08%, rgba(20, 15, 15, 0.97) 15.63%, rgba(34, 14, 14, 0.91) 28.13%, rgba(229, 0, 0, 0));
-      height: 395px;
-      mix-blend-mode: normal;
-      z-index: 4;
-    }
-
-  }
-
-  .text-container-trial {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 14px;
-    z-index: 1;
-
-    .title {
-      align-self: stretch;
-      position: relative;
-      line-height: 150%;
-      margin: 0;
-      font-size: 35px;
-    }
-
-    .text {
-      align-self: stretch;
-      position: relative;
-      font-size: 18px;
-      line-height: 150%;
-      color: #999;
-      margin: 0;
-    }
-  }
-
-  .primary-button-trial {
-    border-radius: 8px;
-    background-color: #e50000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 24px;
-    z-index: 2;
-    font-size: 18px;
-
-    .text-trial {
-      position: relative;
-      line-height: 150%;
-      font-weight: 600;
-      color: white;
-    }
-  }
 }
 
 .footer-container {
@@ -1211,7 +1243,7 @@ body {
   text-align: left;
   font-size: 20px;
   color: #fff;
-  font-family: Manrope, sans-serif;
+  font-family: $font-Manrope;
 
   .footer-nav {
     align-self: stretch;
@@ -1243,7 +1275,7 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         gap: 14px;
-        font-size: 18px;
+        font-size: $font-size-capital;
         color: #999;
 
         .footer-link {
@@ -1261,7 +1293,7 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         gap: 14px;
-        font-size: 18px;
+        font-size: $font-size-capital;
         color: #999;
 
         .footer-link {
@@ -1285,7 +1317,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 24px;
-  font-size: 18px;
+  font-size: $font-size-capital;;
   color: #999;
 
   .divider {
