@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
 body {
-  font-family: "Manrope", sans-serif;
   background-color: #141414;
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
@@ -53,7 +60,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 40px 10px 10px;
+  padding: 10px 40px 10px 40px;
   gap: 30px;
   z-index: 2;
 }
@@ -83,14 +90,16 @@ body {
 }
 
 .pricing-section-table {
+  margin: 9.38rem 10.12rem 8.44rem 10.12rem;
+}
+.pricing-section-table .table-wrapper {
   display: flex;
   width: 99.8125rem;
   flex-direction: column;
   align-items: flex-end;
   gap: 5rem;
-  margin: 7rem;
 }
-.pricing-section-table .pricing-header {
+.pricing-section-table .table-wrapper .pricing-header {
   display: flex;
   margin-top: 9.38rem;
   padding-right: 18.75rem;
@@ -99,17 +108,17 @@ body {
   gap: 0.875rem;
   align-self: stretch;
 }
-.pricing-section-table .pricing-header h2 {
+.pricing-section-table .table-wrapper .pricing-header h2 {
   align-self: stretch;
   color: #fff;
   font-family: "Manrope", sans-serif;
-  font-size: 3rem;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
   margin-bottom: 0;
 }
-.pricing-section-table .pricing-header p {
+.pricing-section-table .table-wrapper .pricing-header p {
   align-self: stretch;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -118,7 +127,7 @@ body {
   font-weight: 400;
   line-height: 150%;
 }
-.pricing-section-table .pricing-table-container {
+.pricing-section-table .table-wrapper .pricing-table-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -126,14 +135,14 @@ body {
   border-radius: 0.75rem;
   border: 1px solid #262626;
 }
-.pricing-section-table .pricing-table-container .header-row {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
   border: 1px solid #262626;
   background: #0F0F0F;
 }
-.pricing-section-table .pricing-table-container .header-row .header-row-column {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column {
   display: flex;
   padding: 1.875rem;
   justify-content: center;
@@ -141,7 +150,7 @@ body {
   gap: 0.625rem;
   flex: 1 0 0;
 }
-.pricing-section-table .pricing-table-container .header-row .header-row-column p {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column p {
   flex: 1 0 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -150,14 +159,14 @@ body {
   font-weight: 600;
   line-height: 150%;
 }
-.pricing-section-table .pricing-table-container .header-row .header-row-column-popular {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular {
   display: flex;
   padding: 1.875rem;
   align-items: center;
   gap: 0.5rem;
   flex: 1 0 0;
 }
-.pricing-section-table .pricing-table-container .header-row .header-row-column-popular p {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular p {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
@@ -165,31 +174,29 @@ body {
   font-weight: 600;
   line-height: 150%;
 }
-.pricing-section-table .pricing-table-container .header-row .header-row-column-popular .popular {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular .popular {
   display: flex;
-  padding: 0.375rem 0.625rem;
+  padding: 0.005rem 0.625rem;
   align-items: flex-start;
   gap: 0.625rem;
   border-radius: 0.125rem;
   background: #E50000;
 }
-.pricing-section-table .pricing-table-container .header-row .header-row-column-popular .popular p {
+.pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular .popular p {
   color: #fff;
-  leading-trim: both;
-  text-edge: cap;
   font-family: "Manrope", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
-.pricing-section-table .pricing-table-container .common-row {
+.pricing-section-table .table-wrapper .pricing-table-container .common-row {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
   border-bottom: 1px solid #262626;
 }
-.pricing-section-table .pricing-table-container .common-row .common-row-field {
+.pricing-section-table .table-wrapper .pricing-table-container .common-row .common-row-field {
   display: flex;
   padding: 1.875rem;
   justify-content: center;
@@ -198,7 +205,7 @@ body {
   flex: 1 0 0;
   border: 1px solid #262626;
 }
-.pricing-section-table .pricing-table-container .common-row .common-row-field p {
+.pricing-section-table .table-wrapper .pricing-table-container .common-row .common-row-field p {
   flex: 1 0 0;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -209,6 +216,9 @@ body {
 }
 
 .container-free-trial {
+  margin: 0 10.13rem 8.38rem 10.13rem;
+}
+.container-free-trial .free-trial-wrapper {
   width: 100%;
   position: relative;
   border-radius: 12px;
@@ -221,14 +231,13 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 100px 80px;
-  margin-top: 35px;
   gap: 100px;
   text-align: left;
   font-size: 40px;
   color: #fff;
-  font-family: Manrope, sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-.container-free-trial .background-image-trial {
+.container-free-trial .free-trial-wrapper .background-image-trial {
   width: 1800px;
   margin: 0 !important;
   position: absolute;
@@ -242,7 +251,7 @@ body {
   gap: 10px;
   z-index: 0;
 }
-.container-free-trial .background-image-trial .image-container-trial {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -252,7 +261,7 @@ body {
   gap: 20px;
   z-index: 0;
 }
-.container-free-trial .background-image-trial .image-container-trial .image-icon1 {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -261,7 +270,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .background-image-trial .image-container1-trial {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -271,7 +280,7 @@ body {
   gap: 20px;
   z-index: 1;
 }
-.container-free-trial .background-image-trial .image-container1-trial .image-icon1 {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -280,7 +289,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .background-image-trial .image-container2-trial {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -290,7 +299,7 @@ body {
   gap: 20px;
   z-index: 2;
 }
-.container-free-trial .background-image-trial .image-container2-trial .image-icon1 {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -299,7 +308,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .background-image-trial .image-container3-trial {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -309,7 +318,7 @@ body {
   gap: 20px;
   z-index: 3;
 }
-.container-free-trial .background-image-trial .image-container3-trial .image-icon1 {
+.container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -318,18 +327,18 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .background-image-trial .fade-out-left1 {
+.container-free-trial .free-trial-wrapper .background-image-trial .fade-out-left1 {
   width: 100%;
   position: absolute;
   margin: 0 !important;
   top: calc(50% - 171.5px);
   right: 0;
-  background: linear-gradient(89.97deg, #0f0f0f 2.08%, rgba(20, 15, 15, 0.97) 15.63%, rgba(34, 14, 14, 0.91) 28.13%, rgba(229, 0, 0, 0));
+  background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0) 168.98%);
   height: 395px;
   mix-blend-mode: normal;
   z-index: 4;
 }
-.container-free-trial .text-container-trial {
+.container-free-trial .free-trial-wrapper .text-container-trial {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -338,14 +347,14 @@ body {
   gap: 14px;
   z-index: 1;
 }
-.container-free-trial .text-container-trial .title {
+.container-free-trial .free-trial-wrapper .text-container-trial .title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   margin: 0;
   font-size: 35px;
 }
-.container-free-trial .text-container-trial .text {
+.container-free-trial .free-trial-wrapper .text-container-trial .text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
@@ -353,7 +362,7 @@ body {
   color: #999;
   margin: 0;
 }
-.container-free-trial .primary-button-trial {
+.container-free-trial .free-trial-wrapper .primary-button-trial {
   border-radius: 8px;
   background-color: #e50000;
   display: flex;
@@ -364,7 +373,7 @@ body {
   z-index: 2;
   font-size: 18px;
 }
-.container-free-trial .primary-button-trial .text-trial {
+.container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
   position: relative;
   line-height: 150%;
   font-weight: 600;
@@ -494,6 +503,9 @@ body {
 }
 
 .pricing-section {
+  margin: 7.69rem 10.13rem 8.44rem 10.13rem;
+}
+.pricing-section .pricing-wrapper {
   width: 100%;
   position: relative;
   display: flex;
@@ -504,10 +516,9 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: Manrope, sans-serif;
+  font-family: "Manrope", sans-serif;
 }
-.pricing-section .section-container {
-  margin-top: 7.69rem;
+.pricing-section .pricing-wrapper .section-container {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -515,7 +526,7 @@ body {
   justify-content: flex-start;
   gap: 100px;
 }
-.pricing-section .section-container .text-content {
+.pricing-section .pricing-wrapper .section-container .text-content {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -524,21 +535,21 @@ body {
   justify-content: flex-start;
   gap: 10px;
 }
-.pricing-section .section-container .text-content .section-header-title {
+.pricing-section .pricing-wrapper .section-container .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   margin: 0;
   font-size: 35px;
 }
-.pricing-section .section-container .text-content .section-description {
+.pricing-section .pricing-wrapper .section-container .text-content .section-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
   line-height: 150%;
   color: #999;
 }
-.pricing-section .section-container .plan-tabs {
+.pricing-section .pricing-wrapper .section-container .plan-tabs {
   border-radius: 10px;
   background-color: #0f0f0f;
   border: 1px solid #262626;
@@ -549,7 +560,7 @@ body {
   padding: 10px;
   font-size: 18px;
 }
-.pricing-section .section-container .plan-tabs .button-active {
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button-active {
   border-radius: 10px;
   background-color: #1f1f1f;
   display: flex;
@@ -558,13 +569,13 @@ body {
   justify-content: center;
   padding: 14px 24px;
 }
-.pricing-section .section-container .plan-tabs .button-active .text {
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
   position: relative;
   line-height: 150%;
   font-weight: 500;
   color: white;
 }
-.pricing-section .section-container .plan-tabs .button {
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button {
   border-radius: 100px;
   background-color: #1a1a1a;
   display: flex;
@@ -574,12 +585,12 @@ body {
   padding: 14px 24px;
   color: #999;
 }
-.pricing-section .section-container .plan-tabs .button .text-tabs {
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
   position: relative;
   line-height: 150%;
   font-weight: 500;
 }
-.pricing-section .pricing-cards {
+.pricing-section .pricing-wrapper .pricing-cards {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -588,7 +599,7 @@ body {
   gap: 30px;
   font-size: 24px;
 }
-.pricing-section .pricing-cards .plan-card {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card {
   flex: 1;
   border-radius: 12px;
   background-color: #1a1a1a;
@@ -600,7 +611,7 @@ body {
   padding: 50px;
   gap: 50px;
 }
-.pricing-section .pricing-cards .plan-card .card-content {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -608,19 +619,19 @@ body {
   justify-content: flex-start;
   gap: 16px;
 }
-.pricing-section .pricing-cards .plan-card .card-content .plan-title {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
 }
-.pricing-section .pricing-cards .plan-card .card-content .plan-text {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
   line-height: 150%;
   color: #999;
 }
-.pricing-section .pricing-cards .plan-card .plan-price {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -628,19 +639,19 @@ body {
   gap: 4px;
   font-size: 40px;
 }
-.pricing-section .pricing-cards .plan-card .plan-price .price {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .price {
   position: relative;
   line-height: 73%;
   font-weight: 600;
 }
-.pricing-section .pricing-cards .plan-card .plan-price .period {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .period {
   position: relative;
   font-size: 18px;
   line-height: 73%;
   font-weight: 500;
   color: #999;
 }
-.pricing-section .pricing-cards .plan-card .plan-actions {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -649,7 +660,7 @@ body {
   gap: 20px;
   font-size: 18px;
 }
-.pricing-section .pricing-cards .plan-card .plan-actions .button1 {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 {
   flex: 1;
   border-radius: 8px;
   background-color: #141414;
@@ -660,13 +671,13 @@ body {
   justify-content: center;
   padding: 18px 24px;
 }
-.pricing-section .pricing-cards .plan-card .plan-actions .button1 .text3 {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
   color: #fff;
 }
-.pricing-section .pricing-cards .plan-card .plan-actions .button2 {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
   flex: 1;
   border-radius: 8px;
   background-color: #e50000;
@@ -676,7 +687,7 @@ body {
   justify-content: center;
   padding: 18px 24px;
 }
-.pricing-section .pricing-cards .plan-card .plan-actions .button2 .text3 {
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
