@@ -21,6 +21,13 @@ $border-radius-8: 8px;
 body {
   font-family: $font-Manrope;
   background-color: $black-08;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
@@ -74,7 +81,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 40px 10px 10px;
+    padding: 10px 40px 10px 40px;
     gap: 30px;
     z-index: 2;
 
@@ -108,135 +115,256 @@ body {
 }
 
 .form-container {
-  margin: 115px 162px 150px 162px;
-  display: flex;
-  width: 1589px;
-  align-items: flex-start;
-  gap: 80px;
+  margin: 7.19rem 10.13rem 9.38rem 10.13rem;
 
-  .aside-img {
+  .form-wrapper {
     display: flex;
-    width: 34rem;
-    flex-direction: column;
+    width: 1589px;
     align-items: flex-start;
-    gap: 7rem;
-    flex-shrink: 0;
-    align-self: stretch;
+    gap: 3.125rem;
+    flex: 1 0 0;
 
-    .title-text {
+    .aside-img {
       display: flex;
+      width: 34rem;
       flex-direction: column;
       align-items: flex-start;
-      gap: 14px;
+      gap: 7rem;
+      flex-shrink: 0;
       align-self: stretch;
 
-      .heading {
-        align-self: stretch;
-        color: $white;
-        font-family: $font-Manrope;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
-        margin: 0;
-      }
-
-      .paragraph {
-        margin-bottom: 0;
-        margin-top: 14px;
-        align-self: stretch;
-        color: $gray-60;
-        font-family: $font-Manrope;
-        font-size: $font-size-capital;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-      }
-    }
-
-    .images {
-      display: flex;
-      align-items: center;
-      flex: 1 0 0;
-      align-self: stretch;
-      border-radius: 6px;
-      border: 6px solid $black-15;
-      background: $black-06;
-
-      .image-container {
+      .title-text {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
-        flex: 1 0 0;
+        gap: 14px;
         align-self: stretch;
 
-        .con-img {
+        .heading {
+          align-self: stretch;
+          color: $white;
+          font-family: $font-Manrope;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+          margin: 0;
+        }
+
+        .paragraph {
+          margin-bottom: 0;
+          margin-top: 14px;
+          align-self: stretch;
+          color: $gray-60;
+          font-family: $font-Manrope;
+          font-size: $font-size-capital;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+
+      .images {
+        display: flex;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;
+        border-radius: 6px;
+        border: 6px solid $black-15;
+        background: $black-06;
+
+        .image-container {
           display: flex;
+          flex-direction: column;
           align-items: flex-start;
           gap: 20px;
           flex: 1 0 0;
           align-self: stretch;
+
+          .con-img {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex: 1 0 0;
+            align-self: stretch;
+          }
         }
       }
     }
-  }
 
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-    flex: 1 0 0;
-    border-radius: $border-radius-12;
-    border: 1px solid $black-15;
-    background: $black-06;
-
-    .form-group1 {
+    .contact-form {
       display: flex;
+      flex-direction: column;
       align-items: flex-start;
       gap: 50px;
-      margin: 50px;
-      align-self: stretch;
+      flex: 1 0 0;
+      border-radius: $border-radius-12;
+      border: 1px solid $black-15;
+      background: $black-06;
 
-      .form-name {
+      .form-group1 {
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
-        flex: 1 0 0;
+        gap: 50px;
+        margin: 50px;
+        align-self: stretch;
 
-        .name-header {
-          align-self: stretch;
-          color: $white;
-          font-family: $font-Manrope;
-          font-size: $font-size-capital;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
+        .form-name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          flex: 1 0 0;
+
+          .name-header {
+            align-self: stretch;
+            color: $white;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+          }
+
+          .name-input {
+            width: 413px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            gap: 77px;
+            align-self: stretch;
+            border-radius: $font-size-small;
+            border: 1px solid $black-15;
+            background: $black-08;
+          }
         }
 
-        .name-input {
-          width: 413px;
+        .form-surname {
           display: flex;
-          padding: 20px;
-          align-items: center;
-          gap: 77px;
-          align-self: stretch;
-          border-radius: $font-size-small;
-          border: 1px solid $black-15;
-          background: $black-08;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          flex: 1 0 0;
+
+          .surname-header {
+            color: $white;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+          }
+
+          .surname-input {
+            width: 413px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            gap: 77px;
+            align-self: stretch;
+            border-radius: $border-radius-8;
+            border: 1px solid $black-15;
+            background: $black-08;
+          }
         }
       }
 
-      .form-surname {
+      .form-group2 {
+        margin: 50px;
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
+
+        .form-email {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          flex: 1 0 0;
+
+          .email-heading {
+            align-self: stretch;
+            color: $white;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+          }
+
+          .email-input {
+            width: 413px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            gap: 77px;
+            align-self: stretch;
+            border-radius: 8px;
+            border: 1px solid $black-15;
+            background: $black-08;
+          }
+
+        }
+
+        .form-phone-number {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 16px;
+          flex: 1 0 0;
+
+          .phone-label {
+            color: $white;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+          }
+
+          .phone-input-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            align-self: stretch;
+
+            .country-select-wrapper {
+              display: flex;
+              padding: 0 12px;
+              align-items: center;
+              gap: 6px;
+              align-self: stretch;
+              border-radius: $border-radius-8;
+              border: 1px solid $black-15;
+              background: $black-08;
+            }
+
+            .phone-number-input {
+              display: flex;
+              padding: 20px;
+              align-items: center;
+              gap: 77px;
+              flex: 1 0 0;
+              border-radius: $border-radius-8;
+              border: 1px solid $black-15;
+              background: $black-08;
+            }
+          }
+        }
+      }
+
+      .form-group3 {
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        flex: 1 0 0;
+        align-self: stretch;
+        padding: 50px;
 
-        .surname-header {
+        .form-heading {
+          align-self: stretch;
           color: $white;
           font-family: $font-Manrope;
           font-size: $font-size-capital;
@@ -245,11 +373,11 @@ body {
           line-height: 150%;
         }
 
-        .surname-input {
-          width: 413px;
+        .form-message {
           display: flex;
+          height: 163px;
           padding: 20px;
-          align-items: center;
+          align-items: flex-start;
           gap: 77px;
           align-self: stretch;
           border-radius: $border-radius-8;
@@ -257,243 +385,414 @@ body {
           background: $black-08;
         }
       }
-    }
 
-    .form-group2 {
-      margin: 50px;
-      display: flex;
-      align-items: flex-start;
-      gap: 50px;
-      align-self: stretch;
-
-      .form-email {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        flex: 1 0 0;
-
-        .email-heading {
-          align-self: stretch;
-          color: $white;
-          font-family: $font-Manrope;
-          font-size: $font-size-capital;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-        }
-
-        .email-input {
-          width: 413px;
-          display: flex;
-          padding: 20px;
-          align-items: center;
-          gap: 77px;
-          align-self: stretch;
-          border-radius: 8px;
-          border: 1px solid $black-15;
-          background: $black-08;
-        }
-
-      }
-
-      .form-phone-number {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        flex: 1 0 0;
-
-        .phone-label {
-          color: $white;
-          font-family: $font-Manrope;
-          font-size: $font-size-capital;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-        }
-
-        .phone-input-group {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          align-self: stretch;
-
-          .country-select-wrapper {
-            display: flex;
-            padding: 0 12px;
-            align-items: center;
-            gap: 6px;
-            align-self: stretch;
-            border-radius: $border-radius-8;
-            border: 1px solid $black-15;
-            background: $black-08;
-          }
-
-          .phone-number-input {
-            display: flex;
-            padding: 20px;
-            align-items: center;
-            gap: 77px;
-            flex: 1 0 0;
-            border-radius: $border-radius-8;
-            border: 1px solid $black-15;
-            background: $black-08;
-          }
-        }
-      }
-    }
-
-    .form-group3 {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
-      align-self: stretch;
-      padding: 50px;
-
-      .form-heading {
-        align-self: stretch;
-        color: $white;
-        font-family: $font-Manrope;
-        font-size: $font-size-capital;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
-      }
-
-      .form-message {
-        display: flex;
-        height: 163px;
-        padding: 20px;
-        align-items: flex-start;
-        gap: 77px;
-        align-self: stretch;
-        border-radius: $border-radius-8;
-        border: 1px solid $black-15;
-        background: $black-08;
-      }
-    }
-
-    .form-actions {
-      display: flex;
-      align-items: center;
-      gap: 70px;
-      align-self: stretch;
-      margin: 50px;
-
-      .check-box {
+      .form-actions {
         display: flex;
         align-items: center;
-        gap: 10px;
-        flex: 1 0 0;
+        gap: 70px;
+        align-self: stretch;
+        margin: 50px;
 
-        .field-check-box {
-          width: 28px;
-          height: 28px;
-          border-radius: 4px;
-          border: 1px solid $black-15;
-          background: $black-08;
-        }
-
-        p {
-          color: $gray-60;
-          font-family: $font-Manrope;
-          font-size: $font-size-capital;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
+        .check-box {
+          display: flex;
+          align-items: center;
+          gap: 10px;
           flex: 1 0 0;
+
+          .field-check-box {
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            border: 1px solid $black-15;
+            background: $black-08;
+          }
+
+          p {
+            color: $gray-60;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            flex: 1 0 0;
+          }
+        }
+
+        .submit-button {
+          display: flex;
+          padding: 18px 24px;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: $border-radius-8;
+          background: $red-45;
+
+
+          p {
+            color: $white;
+            font-family: $font-Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+            margin: 0;
+          }
         }
       }
 
-      .submit-button {
-        display: flex;
-        padding: 18px 24px;
-        align-items: flex-start;
-        gap: 10px;
-        border-radius: $border-radius-8;
-        background: $red-45;
-
-
-        p {
-          color: $white;
-          font-family: $font-Manrope;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-          margin: 0;
-        }
-      }
     }
-
   }
+
+
 }
 
 .faq-section {
-  margin-top: 35px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 80px;
-  text-align: left;
-  font-size: 38px;
-  color: #fff;
-  font-family: Manrope, sans-serif;
+  margin: 0 10.13rem 9.38rem 10.13rem;
 
-  .section-header-reviews {
-    align-self: stretch;
+  .faq-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+    font-family: $font-Manrope;
+
+    .section-header-reviews {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 100px;
+      margin-right: 20px;
+      margin-left: 20px;
+
+
+      .text-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+
+        .section-header-title {
+          align-self: stretch;
+          position: relative;
+          line-height: 150%;
+          margin: 0;
+          font-size: 38px;
+        }
+
+        .section-text {
+          align-self: stretch;
+          position: relative;
+          font-size: $font-size-capital;
+          line-height: 150%;
+          color: #999;
+          margin: 0;
+        }
+      }
+
+      .primary-button {
+        border-radius: 8px;
+        background-color: #e50000;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0.5rem 2.4rem;
+        font-size: $font-size-small;
+
+        .text {
+          position: relative;
+          line-height: 150%;
+          font-weight: 600;
+          color: white;
+        }
+      }
+    }
+
+    .faq-container {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 80px;
+      font-size: 20px;
+
+      .faq-items {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .faq-item {
+          align-self: stretch;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 34px;
+          gap: 20px;
+
+          .item-number {
+            border-radius: 10px;
+            background-color: #1f1f1f;
+            border: 1px solid #262626;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 20px;
+            margin-left: 15px;
+
+            .number {
+              position: relative;
+              font-weight: 600;
+
+            }
+          }
+
+          .item-content {
+            margin-right: 15px;
+            align-self: stretch;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+            font-size: 22px;
+
+
+            .item-title {
+              align-self: stretch;
+              position: relative;
+              line-height: 150%;
+              font-weight: 500;
+            }
+
+            .gradient-line {
+              width: 100%;
+              height: 1px;
+              border: none;
+              background: linear-gradient(
+                              90deg,
+                              #333 0%,
+                              #333 25%,
+                              #ff0000 50%,
+                              #333 75%,
+                              #333 100%
+              );
+            }
+
+            .item-text {
+              align-self: stretch;
+              position: relative;
+              font-size: $font-size-capital;
+              line-height: 150%;
+              color: #999;
+            }
+          }
+
+          .toggle-icon {
+            margin-right: 30px;
+            width: 30px;
+            position: relative;
+            height: 30px;
+            overflow: hidden;
+            flex-shrink: 0;
+          }
+
+        }
+      }
+    }
+  }
+
+
+}
+
+.container-free-trial {
+  margin: 0 10.13rem 8.38rem 10.13rem;
+
+  .free-trial-wrapper {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 1px solid #262626;
+    box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
+    padding: 100px 80px;
+
     gap: 100px;
-    margin-right: 20px;
-    margin-left: 20px;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+    font-family: $font-Manrope;
 
+    .background-image-trial {
+      width: 1800px;
+      margin: 0 !important;
+      position: absolute;
+      top: calc(50% - 197.5px);
+      left: calc(50% - 798px);
+      height: 395px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+      z-index: 0;
 
-    .text-content {
+      .image-container-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 0;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container1-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 1;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container2-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 2;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container3-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 3;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .fade-out-left1 {
+        width: 100%;
+        position: absolute;
+        margin: 0 !important;
+        top: calc(50% - 171.5px);
+        right: 0;
+        background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
+        height: 395px;
+        mix-blend-mode: normal;
+        z-index: 4;
+      }
+
+    }
+
+    .text-container-trial {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      gap: 0;
+      gap: 14px;
+      z-index: 1;
 
-      .section-header-title {
+      .title {
         align-self: stretch;
         position: relative;
         line-height: 150%;
         margin: 0;
-        font-size: 38px;
+        font-size: 35px;
       }
 
-      .section-text {
+      .text {
         align-self: stretch;
         position: relative;
-        font-size: 18px;
+        font-size: $font-size-capital;
         line-height: 150%;
         color: #999;
         margin: 0;
       }
     }
 
-    .primary-button {
+    .primary-button-trial {
       border-radius: 8px;
       background-color: #e50000;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
+      align-items: center;
+      justify-content: center;
       padding: 18px 24px;
-      font-size: 14px;
+      z-index: 2;
+      font-size: $font-size-capital;
 
-      .text {
+      .text-trial {
         position: relative;
         line-height: 150%;
         font-weight: 600;
@@ -502,282 +801,7 @@ body {
     }
   }
 
-  .faq-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 80px;
-    font-size: 20px;
 
-    .faq-items {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-
-      .faq-item {
-        align-self: stretch;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding: 34px;
-        gap: 20px;
-
-        .item-number {
-          border-radius: 10px;
-          background-color: #1f1f1f;
-          border: 1px solid #262626;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          padding: 20px;
-          margin-left: 15px;
-
-          .number {
-            position: relative;
-            font-weight: 600;
-
-          }
-        }
-
-        .item-content {
-          margin-right: 15px;
-          align-self: stretch;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 20px;
-          font-size: 22px;
-
-
-          .item-title {
-            align-self: stretch;
-            position: relative;
-            line-height: 150%;
-            font-weight: 500;
-          }
-
-          .gradient-line {
-            width: 100%;
-            height: 1px;
-            border: none;
-            background: linear-gradient(
-                            90deg,
-                            #333 0%,
-                            #333 25%,
-                            #ff0000 50%,
-                            #333 75%,
-                            #333 100%
-            );
-          }
-
-          .item-text {
-            align-self: stretch;
-            position: relative;
-            font-size: 18px;
-            line-height: 150%;
-            color: #999;
-          }
-        }
-
-        .toggle-icon {
-          margin-right: 30px;
-          width: 30px;
-          position: relative;
-          height: 30px;
-          overflow: hidden;
-          flex-shrink: 0;
-        }
-
-      }
-    }
-  }
-}
-
-.container-free-trial {
-  width: 100%;
-  position: relative;
-  border-radius: 12px;
-  background-color: #0f0f0f;
-  border: 1px solid #262626;
-  box-sizing: border-box;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 100px 80px;
-  margin-top: 35px;
-  gap: 100px;
-  text-align: left;
-  font-size: 40px;
-  color: #fff;
-  font-family: Manrope, sans-serif;
-
-  .background-image-trial {
-    width: 1800px;
-    margin: 0 !important;
-    position: absolute;
-    top: calc(50% - 197.5px);
-    left: calc(50% - 798px);
-    height: 395px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-    z-index: 0;
-
-    .image-container-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 0;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .image-container1-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 1;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .image-container2-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 2;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .image-container3-trial {
-      align-self: stretch;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 20px;
-      z-index: 3;
-
-      .image-icon1 {
-        align-self: stretch;
-        flex: 1;
-        position: relative;
-        max-width: 100%;
-        overflow: hidden;
-        max-height: 100px;
-        object-fit: cover;
-      }
-    }
-
-    .fade-out-left1 {
-      width: 100%;
-      position: absolute;
-      margin: 0 !important;
-      top: calc(50% - 171.5px);
-      right: 0;
-      background: linear-gradient(89.97deg, #0f0f0f 2.08%, rgba(20, 15, 15, 0.97) 15.63%, rgba(34, 14, 14, 0.91) 28.13%, rgba(229, 0, 0, 0));
-      height: 395px;
-      mix-blend-mode: normal;
-      z-index: 4;
-    }
-
-  }
-
-  .text-container-trial {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 14px;
-    z-index: 1;
-
-    .title {
-      align-self: stretch;
-      position: relative;
-      line-height: 150%;
-      margin: 0;
-      font-size: 35px;
-    }
-
-    .text {
-      align-self: stretch;
-      position: relative;
-      font-size: 18px;
-      line-height: 150%;
-      color: #999;
-      margin: 0;
-    }
-  }
-
-  .primary-button-trial {
-    border-radius: 8px;
-    background-color: #e50000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 24px;
-    z-index: 2;
-    font-size: 18px;
-
-    .text-trial {
-      position: relative;
-      line-height: 150%;
-      font-weight: 600;
-      color: white;
-    }
-  }
 }
 
 .footer-container {
