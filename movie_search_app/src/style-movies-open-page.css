@@ -1031,7 +1031,7 @@ a {
     align-items: center;
     gap: 16px;
     position: absolute;
-    right: 580px;
+    left: 580px;
     top: 18px;
     border-radius: 10px;
     border: 3px solid var(--Black-12, #1F1F1F);
