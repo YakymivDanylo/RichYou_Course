@@ -2257,21 +2257,31 @@ body {
   }
   .navbar {
     display: flex;
-    width: 91%;
-    padding: 1.5rem 5rem;
+    width: 390px;
+    padding: 40px 16px 14px 16px;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(6px);
   }
   .navbar .logo-icon {
     display: flex;
-    width: 10.36456rem;
+    width: 116.083px;
     justify-content: center;
     align-items: center;
-    gap: 0.15625rem;
+    gap: 1.75px;
     flex-shrink: 0;
   }
-  .navbar .buttons-container {
+  .navbar .burger-menu {
     display: flex;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 3px solid var(--Black-15, #262626);
+    background: var(--Black-10, #1A1A1A);
+  }
+  .navbar .buttons-container {
+    display: none;
     align-items: center;
     gap: 0.875rem;
   }
@@ -2345,65 +2355,64 @@ body {
   }
   .container {
     display: flex;
-    width: 92rem;
+    width: 390px;
     flex-direction: column;
     align-items: center;
-    gap: 3.25rem;
+    gap: -100px;
   }
   .container .sub-container-top {
     display: flex;
-    height: 43.6875rem;
+    height: 500px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.625rem;
+    align-items: center;
+    gap: 10px;
     align-self: stretch;
   }
   .container .sub-container-top .image-container {
     display: flex;
-    height: 12.5rem;
+    width: 1286px;
+    height: 144px;
     align-items: flex-start;
-    gap: 0.625rem;
+    gap: 10px;
     flex-shrink: 0;
-    align-self: stretch;
   }
   .container .sub-container-top .image-container .image-icon {
     flex: 1 0 0;
     align-self: stretch;
-    border-radius: 0.75rem;
+    border-radius: 12px;
   }
   .container .sub-container-top .fade-out-top {
-    width: 110rem;
-    height: 36.3125rem;
+    width: 390px;
+    height: 500px;
     position: absolute;
     background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%);
   }
   .container .sub-container-top .fade-out-bottom {
-    width: 110rem;
-    height: 36.3125rem;
+    width: 390px;
+    height: 324px;
     position: absolute;
     bottom: 0;
     background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%);
   }
   .container .sub-container-top .abstract-design-icon {
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 200px;
+    height: 200px;
     position: absolute;
-    left: 35.625rem;
-    top: 12.4375rem;
+    left: 95px;
+    top: 150px;
   }
   .container .sub-container-bottom {
     display: flex;
-    padding: 0 9.375rem;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 30px;
     align-self: stretch;
   }
   .container .sub-container-bottom .text-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.625rem;
+    gap: 10px;
     align-self: stretch;
   }
   .container .sub-container-bottom .text-container .heading {
@@ -2411,7 +2420,7 @@ body {
     align-self: stretch;
     color: #fff;
     text-align: center;
-    font-size: 3rem;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -2421,26 +2430,26 @@ body {
     align-self: stretch;
     color: #999;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
   }
   .container .sub-container-bottom .button {
     display: flex;
-    padding: 0.875rem 1.5rem;
+    padding: 14px 24px;
     align-items: center;
-    gap: 0.25rem;
-    border-radius: 0.5rem;
+    gap: 4px;
+    border-radius: 8px;
     background: #E50000;
   }
   .container .sub-container-bottom .button .icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
   }
   .container .sub-container-bottom .button .text {
-    color: #fff;
-    font-size: 0.875rem;
+    color: #FFF;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
