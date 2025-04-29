@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
 body {
+  width: 1920px;
   background-color: #141414;
   font-family: "Manrope", sans-serif;
   box-sizing: border-box;
@@ -26,14 +27,15 @@ a {
 
 .footer {
   display: flex;
-  width: 97%;
-  padding: 6.25rem 10.125rem 3.125rem 2.125rem;
+  width: 106%;
+  padding: 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 6.25rem;
   background: #0F0F0F;
 }
 .footer .footer-top {
+  margin: 80px 70px;
   display: flex;
   align-items: flex-start;
   gap: 1.875rem;
@@ -103,6 +105,7 @@ a {
   height: 1.5rem;
 }
 .footer .footer-bottom {
+  margin: 0 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -110,13 +113,13 @@ a {
   align-self: stretch;
 }
 .footer .footer-bottom .footer-line {
-  width: 115.75rem;
+  width: 100%;
   height: 0.0625rem;
   background: #262626;
 }
 .footer .footer-bottom .copyright {
   display: flex;
-  gap: 44rem;
+  gap: 63rem;
   align-items: center;
   align-self: stretch;
 }
@@ -147,7 +150,7 @@ a {
 
 .navbar {
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 30px 50px;
   justify-content: space-between;
   align-items: center;
@@ -175,7 +178,7 @@ a {
   align-items: center;
   gap: 30px;
   position: absolute;
-  right: 500px;
+  right: 635px;
   top: 22px;
   border-radius: 12px;
   border: 4px solid var(--Black-12, #1F1F1F);
@@ -1672,59 +1675,39 @@ a {
     font-weight: 500;
   }
   .container-free-trial {
-    margin: 0 10.13rem 8.38rem 10.13rem;
+    margin: 0 112px 134px 162px;
   }
   .container-free-trial .free-trial-wrapper {
-    width: 100%;
-    position: relative;
-    border-radius: 12px;
-    background-color: #0f0f0f;
-    border: 1px solid #262626;
-    box-sizing: border-box;
-    overflow: hidden;
     display: flex;
-    flex-direction: row;
+    width: 80rem;
+    padding: 5rem 3.75rem;
     align-items: center;
-    justify-content: flex-start;
-    padding: 100px 80px;
-    gap: 100px;
-    text-align: left;
-    font-size: 40px;
-    color: #fff;
-    font-family: "Manrope", sans-serif;
+    gap: 6.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid #262626;
+    background: #0F0F0F;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial {
-    width: 1800px;
-    margin: 0 !important;
-    position: absolute;
-    top: calc(50% - 197.5px);
-    left: calc(50% - 798px);
-    height: 395px;
     display: flex;
+    width: 90.0625rem;
+    height: 22.1875rem;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-    z-index: 0;
+    gap: 1.25rem;
+    position: absolute;
+    right: -0.0625rem;
+    top: -3.75rem;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial {
-    align-self: stretch;
-    flex: 1;
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
-    z-index: 0;
+    gap: 1.25rem;
+    flex: 1 0 0;
+    align-self: stretch;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial .image-icon1 {
+    flex: 1 0 0;
     align-self: stretch;
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100px;
-    object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial {
     align-self: stretch;
@@ -1737,13 +1720,8 @@ a {
     z-index: 1;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial .image-icon1 {
+    flex: 1 0 0;
     align-self: stretch;
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100px;
-    object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial {
     align-self: stretch;
@@ -1753,16 +1731,11 @@ a {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-    z-index: 2;
+    z-index: 1;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial .image-icon1 {
+    flex: 1 0 0;
     align-self: stretch;
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100px;
-    object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial {
     align-self: stretch;
@@ -1772,68 +1745,58 @@ a {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
-    z-index: 3;
+    z-index: 1;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial .image-icon1 {
+    flex: 1 0 0;
     align-self: stretch;
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100px;
-    object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .fade-out-left1 {
-    width: 100%;
+    width: 80.1875rem;
+    height: 18.625rem;
     position: absolute;
-    margin: 0 !important;
-    top: calc(50% - 171.5px);
-    right: 0;
+    left: 9.875rem;
+    bottom: 3.25rem;
     background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0) 168.98%);
-    height: 395px;
-    mix-blend-mode: normal;
-    z-index: 4;
   }
   .container-free-trial .free-trial-wrapper .text-container-trial {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 14px;
-    z-index: 1;
+    gap: 0.625rem;
+    flex: 1 0 0;
   }
   .container-free-trial .free-trial-wrapper .text-container-trial .title {
     align-self: stretch;
-    position: relative;
+    color: #fff;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
     line-height: 150%;
-    margin: 0;
-    font-size: 35px;
   }
   .container-free-trial .free-trial-wrapper .text-container-trial .text {
     align-self: stretch;
-    position: relative;
-    font-size: 18px;
-    line-height: 150%;
     color: #999;
-    margin: 0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
   }
   .container-free-trial .free-trial-wrapper .primary-button-trial {
-    border-radius: 8px;
-    background-color: #e50000;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding: 0.875rem 1.25rem;
     justify-content: center;
-    padding: 18px 24px;
-    z-index: 2;
-    font-size: 18px;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #E50000;
   }
   .container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
-    position: relative;
-    line-height: 150%;
+    color: #fff;
+    font-size: 0.875rem;
+    font-style: normal;
     font-weight: 600;
-    color: white;
+    line-height: 150%;
   }
   .fade-out-bottom {
     width: 1920px;
@@ -1847,30 +1810,31 @@ a {
   }
   .footer {
     display: flex;
-    width: 97%;
-    padding: 6.25rem 10.125rem 3.125rem 2.125rem;
+    width: 100rem;
+    padding: 0;
     flex-direction: column;
     align-items: flex-start;
-    gap: 6.25rem;
+    gap: 5rem;
     background: #0F0F0F;
   }
   .footer .footer-top {
+    margin: 3rem 3rem 0 3rem;
     display: flex;
     align-items: flex-start;
-    gap: 1.875rem;
+    gap: 1.25rem;
     align-self: stretch;
   }
   .footer .footer-top .item-footer-top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
     flex: 1 0 0;
   }
   .footer .footer-top .item-footer-top .header-footer-item {
     align-self: stretch;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -1879,13 +1843,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.875rem;
+    gap: 0.625rem;
     align-self: stretch;
   }
   .footer .footer-top .item-footer-top .ref-items .ref-thing {
     align-self: stretch;
     color: #999;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -1894,13 +1858,13 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
     flex: 1 0 0;
   }
   .footer .footer-top .links-footer-top .header-footer-item {
     align-self: stretch;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -1908,42 +1872,43 @@ a {
   .footer .footer-top .links-footer-top .ref-buttons-items {
     display: flex;
     align-items: flex-start;
-    gap: 0.875rem;
+    gap: 0.625rem;
   }
   .footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
     display: flex;
-    padding: 1rem;
+    padding: 0.75rem;
     align-items: flex-start;
     gap: 0.625rem;
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     border: 1px solid #262626;
     background: #1a1a1a;
   }
   .footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
   .footer .footer-bottom {
+    margin: 0 3rem 0 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 1.25rem;
     align-self: stretch;
   }
   .footer .footer-bottom .footer-line {
-    width: 111%;
+    width: 89rem;
     height: 0.0625rem;
     background: #262626;
   }
   .footer .footer-bottom .copyright {
     display: flex;
-    gap: 46%;
+    gap: 48rem;
     align-items: center;
     align-self: stretch;
   }
   .footer .footer-bottom .copyright p {
     color: #999;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -1951,18 +1916,18 @@ a {
   .footer .footer-bottom .copyright .copyright-buttons {
     display: flex;
     align-items: flex-start;
-    gap: 1.25rem;
+    gap: 1rem;
   }
   .footer .footer-bottom .copyright .copyright-buttons p {
     color: #999;
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
   }
   .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     width: 0.0625rem;
-    height: 1.6875rem;
+    height: 1.3125rem;
     background: #262626;
   }
 }
