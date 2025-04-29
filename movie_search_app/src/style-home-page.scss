@@ -2564,6 +2564,7 @@ body {
     font-family: $font-Manrope;
     box-sizing: border-box;
     overflow-x: hidden;
+
   }
 
   .navbar {
@@ -2838,6 +2839,7 @@ body {
       justify-content: center;
       align-items: flex-start;
       gap: 0;
+      overflow: hidden;
 
       .sub-container2 {
         display: flex;

@@ -2496,6 +2496,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 0;
+    overflow: hidden;
   }
   .categories-section .container3 .sub-container2 {
     display: flex;

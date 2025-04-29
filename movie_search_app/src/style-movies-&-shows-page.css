@@ -1938,7 +1938,7 @@ a {
     background: #262626;
   }
 }
-@media (max-width: 390px) {
+@media (min-width: 300px) and (max-width: 390px) {
   body {
     width: 390px;
     margin: 0;
@@ -2046,6 +2046,593 @@ a {
   .navbar .buttons-container1 .text-button {
     position: relative;
     line-height: 150%;
+  }
+  .hidden-form {
+    display: none;
+  }
+  .main-content .movie-banner {
+    margin: 40px 16px 80px 16px;
+  }
+  .main-content .movie-banner .movie-banner-wrapper {
+    width: 390px;
+    position: relative;
+    border-radius: 12px;
+    height: 835px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px 50px 20px;
+    box-sizing: border-box;
+    gap: 50px;
+    background-image: url("../icons/avengers-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .container .text-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 150px;
+    gap: 4px;
+    margin: 0;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .container .text-container .hero-title {
+    color: #fff;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    align-self: stretch;
+    margin: 0;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .container .text-container .hero-description {
+    align-self: stretch;
+    color: #999;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .hero-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: left;
+    font-size: 18px;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .hero-actions .primary-button {
+    border-radius: 8px;
+    background-color: #e50000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14px 24px;
+    gap: 4px;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .hero-actions .primary-button .button-icon {
+    width: 28px;
+    position: relative;
+    height: 28px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .hero-actions .primary-button .text {
+    position: relative;
+    line-height: 153%;
+    font-weight: 600;
+    color: white;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .buttons-container1 {
+    align-self: stretch;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    z-index: 3;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .buttons-container1 .button-icon {
+    width: 56px;
+    border-radius: 8px;
+    height: 56px;
+    background-color: #0F0F0F;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .buttons-container1 .indicators-container {
+    width: 81px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+    z-index: 4;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .buttons-container1 .indicators-container .shape {
+    width: 23px;
+    position: relative;
+    border-radius: 100px;
+    background-color: #e50000;
+    height: 4px;
+    z-index: 4;
+  }
+  .main-content .movie-banner .movie-banner-wrapper .buttons-container1 .indicators-container .shape1 {
+    flex: 1;
+    position: relative;
+    border-radius: 100px;
+    background-color: #333;
+    height: 4px;
+    z-index: 4;
+  }
+  .content-section {
+    margin: 11.25rem 10.12rem 9.37rem 10rem;
+  }
+  .content-section .movies-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+  }
+  .content-section .movies-wrapper .sub-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 50px;
+    z-index: 1;
+  }
+  .content-section .movies-wrapper .sub-container .container {
+    display: flex;
+    padding: 0.5rem 2rem;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #E50000;
+  }
+  .content-section .movies-wrapper .sub-container .container .section-title {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  .content-section .movies-wrapper .genre-section {
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px;
+    gap: 100px;
+    z-index: 0;
+    margin-top: -30px;
+    position: relative;
+    text-align: left;
+    font-size: 38px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 .section-subtitle {
+    flex: 1;
+    position: relative;
+    line-height: 150%;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container {
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 1px solid #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    gap: 16px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container .button-icon {
+    width: 56px;
+    border-radius: 8px;
+    height: 56px;
+    background-color: #1a1a1a;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container .indicators-container {
+    width: 81px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container .indicators-container .shape {
+    width: 23px;
+    position: relative;
+    border-radius: 100px;
+    background-color: #e50000;
+    height: 4px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container .indicators-container .shape1 {
+    flex: 1;
+    position: relative;
+    border-radius: 100px;
+    background-color: #333;
+    height: 4px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card {
+    height: 23rem;
+    gap: 10px;
+    flex: 1;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 7px 7px;
+    margin: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 {
+    flex: 1;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 377px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .image-icon36 {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 12px;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 {
+    align-self: stretch;
+    border-radius: 51px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px 6px 6px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 .text14 {
+    font-size: 11px;
+    flex: 1;
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+    margin: 0 0 0 0.3rem;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 .text14 .bold {
+    color: #bfbfbf;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 .sub-container12 {
+    display: flex;
+    padding: 0.375rem 0.625rem 0.375rem 0.375rem;
+    align-items: center;
+    gap: 0.125rem;
+    border-radius: 3.1875rem;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 .sub-container12 .icon9 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 .sub-container12 .text4 {
+    font-size: 12px;
+    position: relative;
+    line-height: 150%;
+    font-weight: 200;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 .sub-container13 {
+    display: flex;
+    padding: 0.375rem 0.625rem 0.375rem 0.375rem;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 3.1875rem;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 .sub-container13 .icon9 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container26 .sub-container13 .text4 {
+    font-size: 12px;
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-images {
+    align-self: stretch;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: 5px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-images .image-row {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    z-index: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-images .image-row .image-icon {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer .container-label {
+    border-radius: 5px;
+    background-color: #e50000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer .container-label .red-text {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer .card-title {
+    flex: 1;
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer .icon {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer1 .container-label {
+    border-radius: 5px;
+    background-color: #e50000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 10px;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer1 .container-label .red-text {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+    margin: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer1 .card-title {
+    flex: 1;
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+    margin: 0;
+  }
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card-footer1 .icon {
+    width: 30px;
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .sub-container11 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 16px;
+    color: #999;
+  }
+  .sub-container11 .card19 {
+    flex: 1;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    box-sizing: border-box;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  .sub-container11 .card19 .image-icon36 {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .sub-container11 .card19 .container38 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .sub-container11 .card19 .container38 .sub-container12 {
+    border-radius: 51px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 10px 6px 6px;
+    gap: 2px;
+  }
+  .sub-container11 .card19 .container38 .sub-container12 .icon9 {
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .sub-container11 .card19 .container38 .sub-container12 .text4 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .sub-container11 .card19 .container38 .sub-container27 {
+    border-radius: 51px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6px 10px;
+    gap: 4px;
+    font-size: 14px;
+  }
+  .sub-container11 .card19 .container38 .sub-container27 .icon20 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2px;
+  }
+  .sub-container11 .card19 .container38 .sub-container27 .icon20 .shape-icon {
+    width: 8.6px;
+    position: relative;
+    height: 16.3px;
+  }
+  .sub-container11 .card19 .container38 .sub-container27 .icon20 .shape20 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sub-container11 .card19 .container38 .sub-container27 .icon20 .shape20 .shape .shape-icon4 {
+    width: 8.6px;
+    position: relative;
+    height: 16.3px;
+  }
+  .sub-container11 .card19 .container38 .sub-container27 .text4 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
   }
   .container-free-trial {
     margin: 0 16px 80px 16px;
