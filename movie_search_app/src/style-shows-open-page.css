@@ -2501,7 +2501,7 @@ a {
   }
   .movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .episode-icon {
     display: flex;
-    padding: 34px 72px;
+    padding: 0;
     justify-content: center;
     align-items: center;
     gap: 10px;
