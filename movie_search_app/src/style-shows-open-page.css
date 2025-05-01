@@ -258,14 +258,20 @@ a {
   align-items: flex-start;
   gap: 20px;
 }
-.movie-details .details-content-left {
+.movie-details .movie-detail-wrapper {
+  display: flex;
+  width: 1601px;
+  align-items: flex-start;
+  gap: 20px;
+}
+.movie-details .movie-detail-wrapper .details-content-left {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 30px;
   flex: 1 0 0;
 }
-.movie-details .details-content-left .seasons-and-episodes {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes {
   display: flex;
   padding: 40px;
   flex-direction: column;
@@ -273,9 +279,9 @@ a {
   gap: 40px;
   align-self: stretch;
   border-radius: 12px;
-  background: #1a1a1a;
+  background: var(--Black-10, #1A1A1A);
 }
-.movie-details .details-content-left .seasons-and-episodes p {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes p {
   padding: 10px;
   align-self: stretch;
   color: #FFF;
@@ -285,14 +291,14 @@ a {
   font-weight: 600;
   line-height: 150%;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .closed-list {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list {
   display: flex;
   padding: 24px 50px;
   justify-content: space-between;
@@ -302,12 +308,12 @@ a {
   border: 1px solid #262626;
   background: #0F0F0F;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .closed-list .title-season {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .title-season {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .closed-list .title-season h3 {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .title-season h3 {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 24px;
@@ -315,7 +321,7 @@ a {
   font-weight: 600;
   line-height: 150%;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .closed-list .title-season p {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .title-season p {
   color: #999;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -323,7 +329,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .closed-list .icon-season {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .icon-season {
   display: flex;
   padding: 14px;
   align-items: center;
@@ -332,11 +338,11 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .closed-list .icon-season .icon {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .icon-season .icon {
   width: 24px;
   height: 24px;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list {
   display: flex;
   padding: 50px;
   flex-direction: column;
@@ -347,18 +353,18 @@ a {
   border: 1px solid #262626;
   background: #0F0F0F;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .title-season {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .title-season {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .title-season h3 {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .title-season h3 {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 24px;
@@ -366,7 +372,7 @@ a {
   font-weight: 600;
   line-height: 150%;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .title-season p {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .title-season p {
   color: #999;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -374,7 +380,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .icon-season {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .icon-season {
   display: flex;
   padding: 14px;
   align-items: center;
@@ -383,17 +389,17 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .icon-season .icon {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .icon-season .icon {
   width: 24px;
   height: 24px;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode {
   display: flex;
   padding: 40px 0;
   align-items: center;
@@ -402,7 +408,7 @@ a {
   border-top: 1px solid #262626;
   border-bottom: 1px solid #262626;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .number-episode {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .number-episode {
   padding-top: 0.6rem;
   width: 60px;
   color: #999;
@@ -412,7 +418,7 @@ a {
   font-weight: 600;
   line-height: 150%;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .episode-icon {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .episode-icon {
   display: flex;
   width: 172px;
   padding: 0;
@@ -421,19 +427,19 @@ a {
   gap: 10px;
   border-radius: 12px;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
   flex: 1 0 0;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header {
   display: flex;
   align-items: center;
   align-self: stretch;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header p {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header p {
   flex: 1 0 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -443,7 +449,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header .duration {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header .duration {
   display: flex;
   padding: 0 12px;
   align-items: center;
@@ -452,11 +458,11 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header .duration .clock {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header .duration .clock {
   width: 24px;
   height: 24px;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header .duration .time {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .episode-header .duration .time {
   color: #999;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -465,7 +471,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .description-episode-description {
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .description-episode .description-episode-description {
   align-self: stretch;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -475,7 +481,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .details-content-left .movie-description {
+.movie-details .movie-detail-wrapper .details-content-left .movie-description {
   display: flex;
   padding: 50px;
   flex-direction: column;
@@ -486,7 +492,7 @@ a {
   background: #1a1a1a;
   border: 1px solid #262626;
 }
-.movie-details .details-content-left .movie-description .section-header-title {
+.movie-details .movie-detail-wrapper .details-content-left .movie-description .section-header-title {
   margin: 0;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -495,7 +501,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .movie-description .section-text {
+.movie-details .movie-detail-wrapper .details-content-left .movie-description .section-text {
   margin: 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -504,7 +510,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .movie-cast {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast {
   display: flex;
   padding: 50px;
   flex-direction: column;
@@ -515,13 +521,13 @@ a {
   border: 1px solid #262626;
   background: #1a1a1a;
 }
-.movie-details .details-content-left .movie-cast .section-header-reviews {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .section-header-reviews {
   display: flex;
   align-items: center;
   gap: 30px;
   align-self: stretch;
 }
-.movie-details .details-content-left .movie-cast .section-header-reviews .section-header-title {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .section-header-reviews .section-header-title {
   flex: 1 0 0;
   color: #999;
   font-family: "Archivo", sans-serif;
@@ -530,12 +536,12 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .movie-cast .section-header-reviews .section-controls {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .section-header-reviews .section-controls {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
-.movie-details .details-content-left .movie-cast .section-header-reviews .section-controls .control-button {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .section-header-reviews .section-controls .control-button {
   display: flex;
   padding: 14px;
   align-items: center;
@@ -544,18 +550,18 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .movie-cast .cast-grid {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .cast-grid {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
 }
-.movie-details .details-content-left .movie-cast .cast-grid .cast-image {
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .cast-grid .cast-image {
   height: 109px;
   flex: 1 0 0;
   border-radius: 12px;
 }
-.movie-details .details-content-left .movie-reviews {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews {
   display: flex;
   padding: 50px;
   flex-direction: column;
@@ -567,13 +573,13 @@ a {
   border: 1px solid #262626;
   background: #1a1a1a;
 }
-.movie-details .details-content-left .movie-reviews .section-header-reviews {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews {
   display: flex;
   align-items: center;
   gap: 14px;
   align-self: stretch;
 }
-.movie-details .details-content-left .movie-reviews .section-header-reviews .section-header-title {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews .section-header-title {
   flex: 1 0 0;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -582,7 +588,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .movie-reviews .section-header-reviews .add-review-button {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews .add-review-button {
   display: flex;
   padding: 14px 16px;
   align-items: center;
@@ -591,11 +597,11 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .movie-reviews .section-header-reviews .add-review-button .review-icon {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews .add-review-button .review-icon {
   width: 30px;
   height: 30px;
 }
-.movie-details .details-content-left .movie-reviews .section-header-reviews .add-review-button .section-text {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews .add-review-button .section-text {
   margin: 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -604,13 +610,13 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card {
   display: flex;
   padding: 40px;
   flex-direction: column;
@@ -621,20 +627,20 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header {
   display: flex;
   align-items: center;
   gap: 41px;
   align-self: stretch;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-text {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex: 1 0 0;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-text .review-author {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-text .review-author {
   align-self: stretch;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -644,7 +650,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-text .review-location {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-text .review-location {
   align-self: stretch;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -654,7 +660,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating {
   display: flex;
   padding: 6px 10px;
   align-items: center;
@@ -663,16 +669,16 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating .stars {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating .stars {
   display: flex;
   align-items: flex-start;
   gap: 2px;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating .stars .star-icon {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating .stars .star-icon {
   width: 18px;
   height: 18px;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating .rating-value {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header .review-rating .rating-value {
   color: #999;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -680,7 +686,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .details-content-left .movie-reviews .list-of-reviews .review-card .review-text {
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-text {
   align-self: stretch;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -689,12 +695,12 @@ a {
   font-weight: 400;
   line-height: 150%;
 }
-.movie-details .details-content-left .reviews-controls {
+.movie-details .movie-detail-wrapper .details-content-left .reviews-controls {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.movie-details .details-content-left .reviews-controls .control-button {
+.movie-details .movie-detail-wrapper .details-content-left .reviews-controls .control-button {
   display: flex;
   padding: 14px;
   align-items: center;
@@ -703,28 +709,28 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .details-content-left .reviews-controls .review-indicators {
+.movie-details .movie-detail-wrapper .details-content-left .reviews-controls .review-indicators {
   display: flex;
   width: 81px;
   align-items: flex-start;
   gap: 3px;
 }
-.movie-details .details-content-left .reviews-controls .review-indicators .indicator-active {
+.movie-details .movie-detail-wrapper .details-content-left .reviews-controls .review-indicators .indicator-active {
   width: 23px;
   height: 4px;
   flex-shrink: 0;
   border-radius: 100px;
   background: #E50000;
 }
-.movie-details .details-content-left .reviews-controls .review-indicators .indicator {
+.movie-details .movie-detail-wrapper .details-content-left .reviews-controls .review-indicators .indicator {
   height: 4px;
   flex: 1 0 0;
   border-radius: 100px;
   background: #333;
 }
-.movie-details .movie-meta {
+.movie-details .movie-detail-wrapper .movie-meta {
   display: flex;
-  width: 519px;
+  width: 26rem;
   padding: 50px;
   flex-direction: column;
   align-items: flex-start;
@@ -734,14 +740,15 @@ a {
   border: 1px solid #262626;
   background: #1a1a1a;
 }
-.movie-details .movie-meta .meta-section {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section {
+  width: 27rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
   align-self: stretch;
 }
-.movie-details .movie-meta .meta-section .meta-title {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .meta-title {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -749,11 +756,11 @@ a {
   margin: 0;
   color: #fff;
 }
-.movie-details .movie-meta .meta-section .meta-title .meta-icon {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .meta-title .meta-icon {
   width: 24px;
   height: 24px;
 }
-.movie-details .movie-meta .meta-section .meta-title .meta-text {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .meta-title .meta-text {
   flex: 1 0 0;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -763,7 +770,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .movie-meta .meta-section .meta-value {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .meta-value {
   align-self: stretch;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -773,7 +780,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .movie-meta .meta-section .language-list {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
@@ -781,7 +788,7 @@ a {
   align-self: stretch;
   flex-wrap: wrap;
 }
-.movie-details .movie-meta .meta-section .language-list .language-item {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item {
   display: flex;
   padding: 8px 14px;
   align-items: flex-start;
@@ -790,7 +797,7 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .movie-meta .meta-section .language-list .language-item p {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item p {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -798,13 +805,13 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .movie-meta .meta-section .rating-sources {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
 }
-.movie-details .movie-meta .meta-section .rating-sources .rating-item {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item {
   display: flex;
   padding: 16px;
   flex-direction: column;
@@ -815,7 +822,7 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .movie-meta .meta-section .rating-sources .rating-item .rating-source {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item .rating-source {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -823,17 +830,17 @@ a {
   font-weight: 600;
   line-height: 150%;
 }
-.movie-details .movie-meta .meta-section .rating-sources .rating-item .rating-stars {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item .rating-stars {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-.movie-details .movie-meta .meta-section .rating-sources .rating-item .rating-stars .stars {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item .rating-stars .stars {
   display: flex;
   align-items: flex-start;
   gap: 2px;
 }
-.movie-details .movie-meta .meta-section .rating-sources .rating-item .rating-stars .rating-value {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item .rating-stars .rating-value {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -841,12 +848,12 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .movie-meta .meta-section .genre-list {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .genre-list {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
-.movie-details .movie-meta .meta-section .genre-list .genre-item {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .genre-list .genre-item {
   display: flex;
   padding: 8px 14px;
   align-items: flex-start;
@@ -855,7 +862,7 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .movie-meta .meta-section .genre-list .genre-item p {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .genre-list .genre-item p {
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -863,7 +870,7 @@ a {
   font-weight: 500;
   line-height: 150%;
 }
-.movie-details .movie-meta .meta-section .person-card {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card {
   display: flex;
   padding: 14px;
   align-items: center;
@@ -873,19 +880,19 @@ a {
   border: 1px solid #262626;
   background: #141414;
 }
-.movie-details .movie-meta .meta-section .person-card .person-image {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card .person-image {
   width: 56.56px;
   height: 60px;
   border-radius: 8px;
 }
-.movie-details .movie-meta .meta-section .person-card .person-info {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card .person-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   flex: 1 0 0;
 }
-.movie-details .movie-meta .meta-section .person-card .person-info .person-name {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card .person-info .person-name {
   align-self: stretch;
   color: #fff;
   font-family: "Manrope", sans-serif;
@@ -895,7 +902,7 @@ a {
   line-height: 150%;
   margin: 0;
 }
-.movie-details .movie-meta .meta-section .person-card .person-info .person-location {
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card .person-info .person-location {
   align-self: stretch;
   color: #999;
   font-family: "Manrope", sans-serif;
@@ -1421,6 +1428,12 @@ a {
   }
   .movie-details {
     margin: 0 77px 113px 60px;
+    display: flex;
+    width: 1286px;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .movie-details .movie-detail-wrapper {
     display: flex;
     width: 1286px;
     align-items: flex-start;
@@ -2635,12 +2648,12 @@ a {
   }
   .movie-details .movie-detail-wrapper .movie-reviews {
     width: 310px;
-    overflow: hidden;
     display: flex;
     padding: 24px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
     align-self: stretch;
     border-radius: 10px;
     border: 1px solid var(--Black-15, #262626);
@@ -2653,11 +2666,12 @@ a {
     align-self: stretch;
   }
   .movie-details .movie-detail-wrapper .movie-reviews .section-header-reviews .section-header-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
+    flex: 1 0 0;
+    color: var(--Grey-60, #999);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
   }
   .movie-details .movie-detail-wrapper .movie-reviews .section-header-reviews .add-review-button {
     display: flex;
@@ -2665,8 +2679,8 @@ a {
     align-items: center;
     gap: 4px;
     border-radius: 6px;
-    border: 1px solid #262626;
-    background: #141414;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-08, #141414);
   }
   .movie-details .movie-detail-wrapper .movie-reviews .section-header-reviews .add-review-button .review-icon {
     width: 24px;
@@ -2681,17 +2695,20 @@ a {
   }
   .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews {
     display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-  }
-  .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card {
-    display: flex;
-    padding: 30px;
+    padding: 24px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 12px;
+  }
+  .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
     border-radius: 12px;
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-06, #0F0F0F);
@@ -2713,17 +2730,17 @@ a {
     flex: 1 0 0;
   }
   .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card .review-header .review-text .review-author {
-    align-self: stretch;
-    color: #fff;
-    font-size: 18px;
+    display: flex;
+    color: var(--Absolute-White, #FFF);
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
   }
   .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card .review-header .review-text .review-location {
     align-self: stretch;
-    color: #999;
-    font-size: 16px;
+    color: var(--Grey-60, #999);
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
@@ -2745,9 +2762,10 @@ a {
   .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card .review-header .review-rating .stars .star-icon {
     width: 14px;
     height: 14px;
+    fill: var(--Red-45, #E50000);
   }
   .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card .review-header .review-rating .rating-value {
-    color: #999;
+    color: var(--Grey-60, #999);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -2755,8 +2773,8 @@ a {
   }
   .movie-details .movie-detail-wrapper .movie-reviews .list-of-reviews .review-card .review-text {
     align-self: stretch;
-    color: #999;
-    font-size: 16px;
+    color: var(--Grey-60, #999);
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -2768,10 +2786,8 @@ a {
     gap: 10px;
   }
   .movie-details .movie-detail-wrapper .reviews-controls .control-button {
-    width: 58px;
-    height: 54px;
     display: flex;
-    padding: 15px;
+    padding: 12px;
     align-items: center;
     gap: 10px;
     border-radius: 100px;

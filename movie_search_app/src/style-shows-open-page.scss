@@ -29,7 +29,7 @@ body {
   margin: 0;
 }
 
-.burger-menu{
+.burger-menu {
   display: none;
 }
 
@@ -307,108 +307,57 @@ a {
   align-items: flex-start;
   gap: 20px;
 
-
-  .details-content-left {
+  .movie-detail-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 30px;
-    flex: 1 0 0;
+    width: 1601px;
+    align-items: flex-start;
+    gap: 20px;
 
-    .seasons-and-episodes {
+
+    .details-content-left {
       display: flex;
-      padding: 40px;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 40px;
-      align-self: stretch;
-      border-radius: $border-radius-12;
-      background: $black-10;
+      align-items: flex-end;
+      gap: 30px;
+      flex: 1 0 0;
 
-      p {
-        padding: 10px;
-        align-self: stretch;
-        color: #FFF;
-        font-family: $font-Manrope;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
-      }
-
-      .list-seasons {
+      .seasons-and-episodes {
         display: flex;
+        padding: 40px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
+        gap: 40px;
         align-self: stretch;
+        border-radius: 12px;
+        background: var(--Black-10, #1A1A1A);
 
-        .closed-list {
-          display: flex;
-          padding: 24px 50px;
-          justify-content: space-between;
-          align-items: center;
+        p {
+          padding: 10px;
           align-self: stretch;
-          border-radius: $border-radius-12;
-          border: 1px solid $black-15;
-          background: $black-06;
-
-          .title-season {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            h3 {
-              color: $white;
-              font-family: $font-Manrope;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 150%;
-            }
-
-            p {
-              color: $gray-60;
-              font-family: $font-Manrope;
-              font-size: $font-size-capital;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 150%;
-            }
-          }
-
-          .icon-season {
-            display: flex;
-            padding: 14px;
-            align-items: center;
-            gap: 10px;
-            border-radius: 100px;
-            border: 1px solid $black-15;
-            background: $black-08;
-
-            .icon {
-              width: 24px;
-              height: 24px;
-            }
-          }
+          color: #FFF;
+          font-family: $font-Manrope;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
         }
 
-        .opened-list {
+        .list-seasons {
           display: flex;
-          padding: 50px;
           flex-direction: column;
           align-items: flex-start;
-          gap: 30px;
+          gap: 20px;
           align-self: stretch;
-          border-radius: 12px;
-          border: 1px solid $black-15;
-          background: $black-06;
 
-          .opened-list-header {
+          .closed-list {
             display: flex;
+            padding: 24px 50px;
             justify-content: space-between;
             align-items: center;
             align-self: stretch;
+            border-radius: $border-radius-12;
+            border: 1px solid $black-15;
+            background: $black-06;
 
             .title-season {
               display: flex;
@@ -450,220 +399,180 @@ a {
             }
           }
 
-          .opened-list-main {
+          .opened-list {
             display: flex;
+            padding: 50px;
             flex-direction: column;
             align-items: flex-start;
+            gap: 30px;
             align-self: stretch;
+            border-radius: 12px;
+            border: 1px solid $black-15;
+            background: $black-06;
 
-            .episode {
+            .opened-list-header {
               display: flex;
-              padding: 40px 0;
+              justify-content: space-between;
               align-items: center;
-              gap: 20px;
               align-self: stretch;
-              border-top: 1px solid $black-15;
-              border-bottom: 1px solid $black-15;
 
-              .number-episode {
-                padding-top: 0.6rem;
-                width: 60px;
-                color: $gray-60;
-                font-family: $font-Manrope;
-                font-size: 30px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 150%;
-              }
-
-              .episode-icon {
+              .title-season {
                 display: flex;
-                width: 172px;
-                padding: 0;
-                justify-content: center;
                 align-items: center;
                 gap: 10px;
-                border-radius: $border-radius-12;
-              }
 
-              .description-episode {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0;
-                flex: 1 0 0;
-
-                .episode-header {
-                  display: flex;
-                  align-items: center;
-                  align-self: stretch;
-
-                  p {
-                    flex: 1 0 0;
-                    color: $white;
-                    font-family: $font-Manrope;
-                    font-size: 20px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 150%;
-                    margin: 0;
-                  }
-
-                  .duration {
-                    display: flex;
-                    padding: 0 12px;
-                    align-items: center;
-                    gap: 4px;
-                    border-radius: $border-radius-8;
-                    border: 1px solid $black-15;
-                    background: $black-08;
-
-                    .clock {
-                      width: 24px;
-                      height: 24px;
-                    }
-
-                    .time {
-                      color: $gray-60;
-                      font-family: $font-Manrope;
-                      font-size: $font-size-capital;
-                      font-style: normal;
-                      font-weight: 500;
-                      line-height: 150%;
-                      margin: 0;
-                    }
-                  }
+                h3 {
+                  color: $white;
+                  font-family: $font-Manrope;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 150%;
                 }
 
-                .description-episode-description {
-                  align-self: stretch;
+                p {
                   color: $gray-60;
                   font-family: $font-Manrope;
-                  font-size: $font-size-small;
+                  font-size: $font-size-capital;
                   font-style: normal;
-                  font-weight: 400;
+                  font-weight: 500;
                   line-height: 150%;
-                  margin: 0;
+                }
+              }
+
+              .icon-season {
+                display: flex;
+                padding: 14px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 100px;
+                border: 1px solid $black-15;
+                background: $black-08;
+
+                .icon {
+                  width: 24px;
+                  height: 24px;
                 }
               }
             }
+
+            .opened-list-main {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-self: stretch;
+
+              .episode {
+                display: flex;
+                padding: 40px 0;
+                align-items: center;
+                gap: 20px;
+                align-self: stretch;
+                border-top: 1px solid $black-15;
+                border-bottom: 1px solid $black-15;
+
+                .number-episode {
+                  padding-top: 0.6rem;
+                  width: 60px;
+                  color: $gray-60;
+                  font-family: $font-Manrope;
+                  font-size: 30px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 150%;
+                }
+
+                .episode-icon {
+                  display: flex;
+                  width: 172px;
+                  padding: 0;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+                  border-radius: $border-radius-12;
+                }
+
+                .description-episode {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  gap: 0;
+                  flex: 1 0 0;
+
+                  .episode-header {
+                    display: flex;
+                    align-items: center;
+                    align-self: stretch;
+
+                    p {
+                      flex: 1 0 0;
+                      color: $white;
+                      font-family: $font-Manrope;
+                      font-size: 20px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 150%;
+                      margin: 0;
+                    }
+
+                    .duration {
+                      display: flex;
+                      padding: 0 12px;
+                      align-items: center;
+                      gap: 4px;
+                      border-radius: $border-radius-8;
+                      border: 1px solid $black-15;
+                      background: $black-08;
+
+                      .clock {
+                        width: 24px;
+                        height: 24px;
+                      }
+
+                      .time {
+                        color: $gray-60;
+                        font-family: $font-Manrope;
+                        font-size: $font-size-capital;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 150%;
+                        margin: 0;
+                      }
+                    }
+                  }
+
+                  .description-episode-description {
+                    align-self: stretch;
+                    color: $gray-60;
+                    font-family: $font-Manrope;
+                    font-size: $font-size-small;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin: 0;
+                  }
+                }
+              }
+            }
+
           }
-
         }
       }
-    }
 
-    .movie-description {
-      display: flex;
-      padding: 50px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 14px;
-      align-self: stretch;
-      border-radius: $border-radius-12;
-      background: $black-10;
-      border: 1px solid $black-15;
-
-      .section-header-title {
-
-        margin: $zero-margin;
-        color: $gray-60;
-        font-family: $font-Manrope;
-        font-size: $font-size-capital;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-      }
-
-      .section-text {
-        margin: $zero-margin;
-        color: $white;
-        font-family: $font-Manrope;
-        font-size: $font-size-capital;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 150%;
-      }
-    }
-
-    .movie-cast {
-      display: flex;
-      padding: 50px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-      align-self: stretch;
-      border-radius: $border-radius-12;
-      border: 1px solid $black-15;
-      background: $black-10;
-
-      .section-header-reviews {
+      .movie-description {
         display: flex;
-        align-items: center;
-        gap: 30px;
-        align-self: stretch;
-
-        .section-header-title {
-          flex: 1 0 0;
-          color: #999;
-          font-family: $font-Archivo;
-          font-size: $font-size-capital;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 150%;
-        }
-
-        .section-controls {
-          display: flex;
-          align-items: flex-start;
-          gap: 10px;
-
-          .control-button {
-            display: flex;
-            padding: 14px;
-            align-items: center;
-            gap: 10px;
-            border-radius: 100px;
-            border: 1px solid $black-15;
-            background: $black-08;
-          }
-        }
-      }
-
-      .cast-grid {
-        display: flex;
+        padding: 50px;
+        flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
-
-        .cast-image {
-          height: 109px;
-          flex: 1 0 0;
-          border-radius: $border-radius-12;
-        }
-      }
-    }
-
-    .movie-reviews {
-      display: flex;
-      padding: 50px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 40px;
-      align-self: stretch;
-      border-radius: $border-radius-12;
-      border: 1px solid $black-15;
-      background: $black-10;
-
-      .section-header-reviews {
-        display: flex;
-        align-items: center;
         gap: 14px;
         align-self: stretch;
+        border-radius: $border-radius-12;
+        background: $black-10;
+        border: 1px solid $black-15;
 
         .section-header-title {
-          flex: 1 0 0;
+
+          margin: $zero-margin;
           color: $gray-60;
           font-family: $font-Manrope;
           font-size: $font-size-capital;
@@ -672,291 +581,119 @@ a {
           line-height: 150%;
         }
 
-        .add-review-button {
+        .section-text {
+          margin: $zero-margin;
+          color: $white;
+          font-family: $font-Manrope;
+          font-size: $font-size-capital;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+        }
+      }
+
+      .movie-cast {
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
+        border-radius: $border-radius-12;
+        border: 1px solid $black-15;
+        background: $black-10;
+
+        .section-header-reviews {
           display: flex;
-          padding: 14px 16px;
           align-items: center;
-          gap: 4px;
-          border-radius: $border-radius-8;
-          border: 1px solid $black-15;
-          background: $black-08;
+          gap: 30px;
+          align-self: stretch;
 
-          .review-icon {
-            width: 30px;
-            height: 30px;
-          }
-
-          .section-text {
-            margin: $zero-margin;
-            color: $white;
-            font-family: $font-Manrope;
+          .section-header-title {
+            flex: 1 0 0;
+            color: #999;
+            font-family: $font-Archivo;
             font-size: $font-size-capital;
             font-style: normal;
             font-weight: 500;
             line-height: 150%;
           }
+
+          .section-controls {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+
+            .control-button {
+              display: flex;
+              padding: 14px;
+              align-items: center;
+              gap: 10px;
+              border-radius: 100px;
+              border: 1px solid $black-15;
+              background: $black-08;
+            }
+          }
+        }
+
+        .cast-grid {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          align-self: stretch;
+
+          .cast-image {
+            height: 109px;
+            flex: 1 0 0;
+            border-radius: $border-radius-12;
+          }
         }
       }
 
-      .list-of-reviews {
+      .movie-reviews {
         display: flex;
-        align-items: flex-start;
-        gap: 20px;
+        padding: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
         align-self: stretch;
+        border-radius: $border-radius-12;
+        border: 1px solid $black-15;
+        background: $black-10;
 
-        .review-card {
+        .section-header-reviews {
           display: flex;
-          padding: 40px;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 20px;
-          flex: 1 0 0;
-          border-radius: $border-radius-12;
-          border: 1px solid $black-15;
-          background: $black-08;
+          align-items: center;
+          gap: 14px;
+          align-self: stretch;
 
-          .review-header {
-            display: flex;
-            align-items: center;
-            gap: 41px;
-            align-self: stretch;
-
-            .review-text {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: flex-start;
-              flex: 1 0 0;
-
-              .review-author {
-                align-self: stretch;
-                color: $white;
-                font-family: $font-Manrope;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-                margin: $zero-margin;
-              }
-
-              .review-location {
-                align-self: stretch;
-                color: $gray-60;
-                font-family: $font-Manrope;
-                font-size: $font-size-capital;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-                margin: $zero-margin;
-              }
-            }
-
-            .review-rating {
-              display: flex;
-              padding: 6px 10px;
-              align-items: center;
-              gap: 4px;
-              border-radius: 51px;
-              border: 1px solid $black-15;
-              background: $black-08;
-
-              .stars {
-                display: flex;
-                align-items: flex-start;
-                gap: 2px;
-
-                .star-icon {
-                  width: 18px;
-                  height: 18px;
-                }
-              }
-
-              .rating-value {
-                color: $gray-60;
-                font-family: $font-Manrope;
-                font-size: $font-size-capital;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-              }
-            }
-          }
-
-          .review-text {
-            align-self: stretch;
+          .section-header-title {
+            flex: 1 0 0;
             color: $gray-60;
             font-family: $font-Manrope;
             font-size: $font-size-capital;
             font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-        }
-      }
-    }
-
-    .reviews-controls {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      .control-button {
-        display: flex;
-        padding: 14px;
-        align-items: center;
-        gap: 10px;
-        border-radius: 100px;
-        border: 1px solid $black-15;
-        background: $black-08;
-      }
-
-      .review-indicators {
-        display: flex;
-        width: 81px;
-        align-items: flex-start;
-        gap: 3px;
-
-        .indicator-active {
-          width: 23px;
-          height: 4px;
-          flex-shrink: 0;
-          border-radius: 100px;
-          background: $red-45;
-        }
-
-        .indicator {
-          height: 4px;
-          flex: 1 0 0;
-          border-radius: 100px;
-          background: $black-20;
-        }
-      }
-    }
-  }
-
-  .movie-meta {
-    display: flex;
-    width: 519px;
-    padding: 50px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    border: 1px solid $black-15;
-    background: $black-10;
-
-    .meta-section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 14px;
-      align-self: stretch;
-
-      .meta-title {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        align-self: stretch;
-        margin: 0;
-        color: $white;
-
-
-        .meta-icon {
-          width: 24px;
-          height: 24px;
-        }
-
-        .meta-text {
-          flex: 1 0 0;
-          color: $gray-60;
-          font-family: $font-Manrope;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 150%;
-          margin: 0;
-        }
-
-      }
-
-      .meta-value {
-        align-self: stretch;
-        color: $white;
-        font-family: $font-Manrope;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
-        margin: 0;
-      }
-
-      .language-list {
-        display: flex;
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 10px;
-        align-self: stretch;
-        flex-wrap: wrap;
-
-        .language-item {
-          display: flex;
-          padding: 8px 14px;
-          align-items: flex-start;
-          gap: 10px;
-          border-radius: $border-radius-8;
-          border: 1px solid $black-15;
-          background: $black-08;
-
-          p {
-            color: $white;
-            font-family: $font-Manrope;
-            font-size: $font-size-capital;
-            font-style: normal;
             font-weight: 500;
             line-height: 150%;
           }
-        }
-      }
 
-      .rating-sources {
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
-
-        .rating-item {
-          display: flex;
-          padding: 16px;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 4px;
-          flex: 1 0 0;
-          border-radius: $border-radius-8;
-          border: 1px solid $black-15;
-          background: $black-08;
-
-          .rating-source {
-            color: $white;
-            font-family: $font-Manrope;
-            font-size: $font-size-capital;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 150%;
-          }
-
-          .rating-stars {
+          .add-review-button {
             display: flex;
+            padding: 14px 16px;
             align-items: center;
             gap: 4px;
+            border-radius: $border-radius-8;
+            border: 1px solid $black-15;
+            background: $black-08;
 
-            .stars {
-              display: flex;
-              align-items: flex-start;
-              gap: 2px;
+            .review-icon {
+              width: 30px;
+              height: 30px;
             }
 
-            .rating-value {
+            .section-text {
+              margin: $zero-margin;
               color: $white;
               font-family: $font-Manrope;
               font-size: $font-size-capital;
@@ -966,82 +703,354 @@ a {
             }
           }
         }
-      }
 
-      .genre-list {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-
-        .genre-item {
+        .list-of-reviews {
           display: flex;
-          padding: 8px 14px;
           align-items: flex-start;
-          gap: 10px;
-          border-radius: $border-radius-8;
-          border: 1px solid $black-15;
-          background: $black-08;
+          gap: 20px;
+          align-self: stretch;
 
-          p {
-            color: $white;
-            font-family: $font-Manrope;
-            font-size: $font-size-capital;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 150%;
+          .review-card {
+            display: flex;
+            padding: 40px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            flex: 1 0 0;
+            border-radius: $border-radius-12;
+            border: 1px solid $black-15;
+            background: $black-08;
+
+            .review-header {
+              display: flex;
+              align-items: center;
+              gap: 41px;
+              align-self: stretch;
+
+              .review-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                flex: 1 0 0;
+
+                .review-author {
+                  align-self: stretch;
+                  color: $white;
+                  font-family: $font-Manrope;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 150%;
+                  margin: $zero-margin;
+                }
+
+                .review-location {
+                  align-self: stretch;
+                  color: $gray-60;
+                  font-family: $font-Manrope;
+                  font-size: $font-size-capital;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 150%;
+                  margin: $zero-margin;
+                }
+              }
+
+              .review-rating {
+                display: flex;
+                padding: 6px 10px;
+                align-items: center;
+                gap: 4px;
+                border-radius: 51px;
+                border: 1px solid $black-15;
+                background: $black-08;
+
+                .stars {
+                  display: flex;
+                  align-items: flex-start;
+                  gap: 2px;
+
+                  .star-icon {
+                    width: 18px;
+                    height: 18px;
+                  }
+                }
+
+                .rating-value {
+                  color: $gray-60;
+                  font-family: $font-Manrope;
+                  font-size: $font-size-capital;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 150%;
+                }
+              }
+            }
+
+            .review-text {
+              align-self: stretch;
+              color: $gray-60;
+              font-family: $font-Manrope;
+              font-size: $font-size-capital;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
           }
         }
       }
 
-      .person-card {
+      .reviews-controls {
         display: flex;
-        padding: 14px;
         align-items: center;
         gap: 10px;
-        align-self: stretch;
-        border-radius: $border-radius-8;
-        border: 1px solid $black-15;
-        background: $black-08;
 
-        .person-image {
-          width: 56.56px;
-          height: 60px;
-          border-radius: $border-radius-8;
+        .control-button {
+          display: flex;
+          padding: 14px;
+          align-items: center;
+          gap: 10px;
+          border-radius: 100px;
+          border: 1px solid $black-15;
+          background: $black-08;
         }
 
-        .person-info {
+        .review-indicators {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          width: 81px;
           align-items: flex-start;
-          flex: 1 0 0;
+          gap: 3px;
 
-          .person-name {
-            align-self: stretch;
-            color: $white;
+          .indicator-active {
+            width: 23px;
+            height: 4px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            background: $red-45;
+          }
+
+          .indicator {
+            height: 4px;
+            flex: 1 0 0;
+            border-radius: 100px;
+            background: $black-20;
+          }
+        }
+      }
+    }
+
+    .movie-meta {
+      display: flex;
+      width: 26rem;
+      padding: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      border: 1px solid $black-15;
+      background: $black-10;
+
+      .meta-section {
+        width:27rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        align-self: stretch;
+
+        .meta-title {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          align-self: stretch;
+          margin: 0;
+          color: $white;
+
+
+          .meta-icon {
+            width: 24px;
+            height: 24px;
+          }
+
+          .meta-text {
+            flex: 1 0 0;
+            color: $gray-60;
             font-family: $font-Manrope;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: 150%;
-            margin: $zero-margin;
+            margin: 0;
           }
 
-          .person-location {
-            align-self: stretch;
-            color: $gray-60;
-            font-family: $font-Manrope;
-            font-size: $font-size-small;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 150%;
-            margin: $zero-margin;
+        }
+
+        .meta-value {
+          align-self: stretch;
+          color: $white;
+          font-family: $font-Manrope;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+          margin: 0;
+        }
+
+        .language-list {
+          display: flex;
+          align-items: flex-start;
+          align-content: flex-start;
+          gap: 10px;
+          align-self: stretch;
+          flex-wrap: wrap;
+
+          .language-item {
+            display: flex;
+            padding: 8px 14px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: $border-radius-8;
+            border: 1px solid $black-15;
+            background: $black-08;
+
+            p {
+              color: $white;
+              font-family: $font-Manrope;
+              font-size: $font-size-capital;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
           }
         }
-      }
 
+        .rating-sources {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          align-self: stretch;
+
+          .rating-item {
+            display: flex;
+            padding: 16px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+            flex: 1 0 0;
+            border-radius: $border-radius-8;
+            border: 1px solid $black-15;
+            background: $black-08;
+
+            .rating-source {
+              color: $white;
+              font-family: $font-Manrope;
+              font-size: $font-size-capital;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 150%;
+            }
+
+            .rating-stars {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+
+              .stars {
+                display: flex;
+                align-items: flex-start;
+                gap: 2px;
+              }
+
+              .rating-value {
+                color: $white;
+                font-family: $font-Manrope;
+                font-size: $font-size-capital;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+              }
+            }
+          }
+        }
+
+        .genre-list {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+
+          .genre-item {
+            display: flex;
+            padding: 8px 14px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: $border-radius-8;
+            border: 1px solid $black-15;
+            background: $black-08;
+
+            p {
+              color: $white;
+              font-family: $font-Manrope;
+              font-size: $font-size-capital;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+        }
+
+        .person-card {
+          display: flex;
+          padding: 14px;
+          align-items: center;
+          gap: 10px;
+          align-self: stretch;
+          border-radius: $border-radius-8;
+          border: 1px solid $black-15;
+          background: $black-08;
+
+          .person-image {
+            width: 56.56px;
+            height: 60px;
+            border-radius: $border-radius-8;
+          }
+
+          .person-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex: 1 0 0;
+
+            .person-name {
+              align-self: stretch;
+              color: $white;
+              font-family: $font-Manrope;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+              margin: $zero-margin;
+            }
+
+            .person-location {
+              align-self: stretch;
+              color: $gray-60;
+              font-family: $font-Manrope;
+              font-size: $font-size-small;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+              margin: $zero-margin;
+            }
+          }
+        }
+
+      }
     }
   }
+
 }
 
 .container-free-trial {
@@ -1370,7 +1379,7 @@ a {
   }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
   body {
     width: 1440px;
     font-family: $font-Manrope;
@@ -1379,7 +1388,7 @@ a {
     overflow-x: hidden;
   }
 
-  .burger-menu{
+  .burger-menu {
     display: none;
   }
 
@@ -1555,6 +1564,7 @@ a {
             border-radius: 8px;
             border: 1px solid var(--Black-15, #262626);
             background: var(--Black-06, #0F0F0F);
+
             .button-icon2 {
               width: 24px;
               height: 24px;
@@ -1634,6 +1644,13 @@ a {
     width: 1286px;
     align-items: flex-start;
     gap: 20px;
+
+    .movie-detail-wrapper {
+      display: flex;
+      width: 1286px;
+      align-items: flex-start;
+      gap: 20px;
+    }
 
 
     .details-content-left {
@@ -1912,6 +1929,7 @@ a {
         }
       }
     }
+
     .movie-meta {
       display: flex;
       width: 416px;
@@ -3024,14 +3042,13 @@ a {
       }
 
       .movie-reviews {
-
         width: 310px;
-        overflow: hidden;
         display: flex;
         padding: 24px;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
         align-self: stretch;
         border-radius: 10px;
         border: 1px solid var(--Black-15, #262626);
@@ -3044,11 +3061,12 @@ a {
           align-self: stretch;
 
           .section-header-title {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
-            align-self: stretch;
+            flex: 1 0 0;
+            color: var(--Grey-60, #999);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
           }
 
           .add-review-button {
@@ -3057,8 +3075,8 @@ a {
             align-items: center;
             gap: 4px;
             border-radius: 6px;
-            border: 1px solid $black-15;
-            background: $black-08;
+            border: 1px solid var(--Black-15, #262626);
+            background: var(--Black-08, #141414);
 
             .review-icon {
               width: 24px;
@@ -3077,17 +3095,20 @@ a {
 
         .list-of-reviews {
           display: flex;
+          padding: 24px;
+          flex-direction: column;
           align-items: flex-start;
           gap: 16px;
           align-self: stretch;
+          border-radius: 12px;
 
           .review-card {
             display: flex;
-            padding: 30px;
+            padding: 24px;
             flex-direction: column;
             align-items: flex-start;
             gap: 16px;
-            flex: 1 0 0;
+            align-self: stretch;
             border-radius: 12px;
             border: 1px solid var(--Black-15, #262626);
             background: var(--Black-06, #0F0F0F);
@@ -3110,9 +3131,9 @@ a {
                 flex: 1 0 0;
 
                 .review-author {
-                  align-self: stretch;
-                  color: $white;
-                  font-size: 18px;
+                  display: flex;
+                  color: var(--Absolute-White, #FFF);
+                  font-size: 16px;
                   font-style: normal;
                   font-weight: 500;
                   line-height: 150%;
@@ -3120,8 +3141,8 @@ a {
 
                 .review-location {
                   align-self: stretch;
-                  color: $gray-60;
-                  font-size: 16px;
+                  color: var(--Grey-60, #999);
+                  font-size: 14px;
                   font-style: normal;
                   font-weight: 500;
                   line-height: 150%;
@@ -3145,11 +3166,12 @@ a {
                   .star-icon {
                     width: 14px;
                     height: 14px;
+                    fill: var(--Red-45, #E50000);
                   }
                 }
 
                 .rating-value {
-                  color: $gray-60;
+                  color: var(--Grey-60, #999);
                   font-size: 14px;
                   font-style: normal;
                   font-weight: 500;
@@ -3160,8 +3182,8 @@ a {
 
             .review-text {
               align-self: stretch;
-              color: $gray-60;
-              font-size: 16px;
+              color: var(--Grey-60, #999);
+              font-size: 14px;
               font-style: normal;
               font-weight: 400;
               line-height: 150%;
@@ -3177,10 +3199,8 @@ a {
         gap: 10px;
 
         .control-button {
-          width: 58px;
-          height: 54px;
           display: flex;
-          padding: 15px;
+          padding: 12px;
           align-items: center;
           gap: 10px;
           border-radius: 100px;
