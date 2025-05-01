@@ -128,6 +128,7 @@ a {
   align-items: center;
   justify-content: flex-end;
   gap: 30px;
+  z-index: 4;
 }
 .movie-banner .movie-wrapper .container .text-container {
   align-self: stretch;
@@ -193,15 +194,24 @@ a {
   justify-content: flex-start;
   gap: 10px;
 }
-.movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
-  width: 100%;
+.movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button {
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 10px;
   border-radius: 8px;
-  height: 100%;
+  border: 1px solid var(--Black-15, #262626);
+  background: var(--Black-06, #0F0F0F);
+}
+.movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
+  width: 24px;
+  border-radius: 8px;
+  height: 24px;
 }
 .movie-banner .movie-wrapper .buttons-container-slider {
   align-self: stretch;
   border-radius: 12px;
-  display: flex;
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -1168,7 +1178,7 @@ a {
   .movie-banner .movie-wrapper .buttons-container-slider {
     align-self: stretch;
     border-radius: 12px;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
