@@ -4,6 +4,10 @@
   display: none;
 }
 
+.burger-menu {
+  display: none;
+}
+
 body {
   margin: 0;
   background-color: #141414;
@@ -702,6 +706,9 @@ a {
 }
 
 @media (max-width: 1440px) {
+  .burger-menu {
+    display: none;
+  }
   .table-for-mobile {
     display: none;
   }
