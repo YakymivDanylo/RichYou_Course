@@ -22,140 +22,6 @@ a {
   display: none;
 }
 
-.fade-out-bottom {
-  width: 1920px;
-  position: absolute;
-  margin: 0 !important;
-  bottom: 0;
-  left: calc(50% - 960px);
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
-  height: 300px;
-  z-index: 3;
-}
-
-.footer {
-  display: flex;
-  width: 106%;
-  padding: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6.25rem;
-  background: #0F0F0F;
-}
-.footer .footer-top {
-  margin: 80px 70px;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.875rem;
-  align-self: stretch;
-}
-.footer .footer-top .item-footer-top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex: 1 0 0;
-}
-.footer .footer-top .item-footer-top .header-footer-item {
-  align-self: stretch;
-  color: #fff;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
-.footer .footer-top .item-footer-top .ref-items {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.875rem;
-  align-self: stretch;
-}
-.footer .footer-top .item-footer-top .ref-items .ref-thing {
-  align-self: stretch;
-  color: #999;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-}
-.footer .footer-top .links-footer-top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex: 1 0 0;
-}
-.footer .footer-top .links-footer-top .header-footer-item {
-  align-self: stretch;
-  color: #fff;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
-.footer .footer-top .links-footer-top .ref-buttons-items {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.875rem;
-}
-.footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
-  display: flex;
-  padding: 1rem;
-  align-items: flex-start;
-  gap: 0.625rem;
-  border-radius: 0.5rem;
-  border: 1px solid #262626;
-  background: #1a1a1a;
-}
-.footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.footer .footer-bottom {
-  margin: 0 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
-  align-self: stretch;
-}
-.footer .footer-bottom .footer-line {
-  width: 100%;
-  height: 0.0625rem;
-  background: #262626;
-}
-.footer .footer-bottom .copyright {
-  display: flex;
-  gap: 63rem;
-  align-items: center;
-  align-self: stretch;
-}
-.footer .footer-bottom .copyright p {
-  color: #999;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.footer .footer-bottom .copyright .copyright-buttons {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
-}
-.footer .footer-bottom .copyright .copyright-buttons p {
-  color: #999;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.footer .footer-bottom .copyright .copyright-buttons .copyright-line {
-  width: 0.0625rem;
-  height: 1.6875rem;
-  background: #262626;
-}
-
 .navbar {
   display: flex;
   width: 100%;
@@ -177,8 +43,9 @@ a {
   gap: 30px;
 }
 .navbar .buttons-container .icon {
-  width: 34px;
-  height: 34px;
+  background: none;
+  width: 46px;
+  height: 41px;
 }
 .navbar .buttons-container-slider {
   display: flex;
@@ -261,6 +128,17 @@ a {
   line-height: 150%;
 }
 
+.fade-out-bottom {
+  width: 1920px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 0;
+  left: calc(50% - 960px);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
+  height: 300px;
+  z-index: 3;
+}
+
 .hidden-form {
   display: none;
 }
@@ -338,6 +216,7 @@ a {
   gap: 20px;
   text-align: left;
   font-size: 18px;
+  z-index: 4;
 }
 .main-content .movie-banner .movie-banner-wrapper .hero-actions .primary-button {
   border-radius: 8px;
@@ -368,6 +247,15 @@ a {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
+}
+.main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions .action-button {
+  display: flex;
+  padding: 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Black-15, #262626);
+  background: var(--Black-06, #0F0F0F);
 }
 .main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
   width: 100%;
@@ -586,7 +474,7 @@ a {
   padding: 6px 10px 6px 6px;
 }
 .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 .text14 {
-  font-size: 11px;
+  font-size: 17px;
   flex: 1;
   position: relative;
   line-height: 150%;
@@ -1018,6 +906,129 @@ a {
   color: white;
 }
 
+.footer {
+  display: flex;
+  width: 106%;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.25rem;
+  background: #0F0F0F;
+}
+.footer .footer-top {
+  margin: 80px 70px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.875rem;
+  align-self: stretch;
+}
+.footer .footer-top .item-footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+.footer .footer-top .item-footer-top .header-footer-item {
+  align-self: stretch;
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.footer .footer-top .item-footer-top .ref-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+  align-self: stretch;
+}
+.footer .footer-top .item-footer-top .ref-items .ref-thing {
+  align-self: stretch;
+  color: #999;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.footer .footer-top .links-footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex: 1 0 0;
+}
+.footer .footer-top .links-footer-top .header-footer-item {
+  align-self: stretch;
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.footer .footer-top .links-footer-top .ref-buttons-items {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+.footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+}
+.footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer .footer-bottom {
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+.footer .footer-bottom .footer-line {
+  width: 100%;
+  height: 0.0625rem;
+  background: #262626;
+}
+.footer .footer-bottom .copyright {
+  display: flex;
+  gap: 63rem;
+  align-items: center;
+  align-self: stretch;
+}
+.footer .footer-bottom .copyright p {
+  color: #999;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.footer .footer-bottom .copyright .copyright-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.footer .footer-bottom .copyright .copyright-buttons p {
+  color: #999;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.footer .footer-bottom .copyright .copyright-buttons .copyright-line {
+  width: 0.0625rem;
+  height: 1.6875rem;
+  background: #262626;
+}
+
 @media (max-width: 1440px) {
   .tabs-for-mobile {
     display: none;
@@ -1055,11 +1066,11 @@ a {
   .navbar .buttons-container {
     display: flex;
     align-items: center;
-    gap: 0.875rem;
+    gap: 1.875rem;
   }
   .navbar .buttons-container .icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 3rem;
+    height: 2.5rem;
   }
   .navbar .buttons-container-slider {
     display: flex;
@@ -1433,6 +1444,7 @@ a {
     padding: 6px 10px 6px 6px;
   }
   .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 .text14 {
+    font-size: 12px;
     flex: 1;
     position: relative;
     line-height: 150%;

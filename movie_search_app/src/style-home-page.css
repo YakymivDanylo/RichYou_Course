@@ -34,11 +34,12 @@ body {
   width: 10.36456rem;
   justify-content: center;
   align-items: center;
-  gap: 0.15625rem;
+  gap: 2.15625rem;
 }
 .navbar .buttons-container .icon {
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
+  background: none;
 }
 .navbar .buttons-container-slider {
   display: flex;
@@ -1260,13 +1261,14 @@ body {
     flex-shrink: 0;
   }
   .navbar .buttons-container {
+    width: 8rem;
     display: flex;
     align-items: center;
     gap: 0.875rem;
   }
   .navbar .buttons-container .icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 44px;
+    height: 40px;
   }
   .navbar .buttons-container-slider {
     display: flex;

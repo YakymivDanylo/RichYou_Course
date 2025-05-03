@@ -1032,11 +1032,11 @@ a {
   .navbar .buttons-container {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 0.875rem;
   }
   .navbar .buttons-container .icon {
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 40px;
     overflow: hidden;
     flex-shrink: 0;
     background: #141414;

@@ -41,157 +41,7 @@ a {
   display: none
 }
 
-.fade-out-bottom {
-  width: 1920px;
-  position: absolute;
-  margin: 0 !important;
-  bottom: 0;
-  left: calc(50% - 960px);
-  background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
-  height: 300px;
-  z-index: 3;
-}
 
-.footer {
-
-  display: flex;
-  width: 106%;
-  padding: 0;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6.25rem;
-  background: $black-06;
-
-  .footer-top {
-    margin: 80px 70px;
-    display: flex;
-    align-items: flex-start;
-    gap: 1.875rem;
-    align-self: stretch;
-
-    .item-footer-top {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.5rem;
-      flex: 1 0 0;
-
-      .header-footer-item {
-        align-self: stretch;
-        color: $white;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
-      }
-
-      .ref-items {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.875rem;
-        align-self: stretch;
-
-        .ref-thing {
-          align-self: stretch;
-          color: $gray-60;
-          font-size: 1.125rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 150%;
-        }
-      }
-    }
-
-    .links-footer-top {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.5rem;
-      flex: 1 0 0;
-
-      .header-footer-item {
-        align-self: stretch;
-        color: $white;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 150%;
-      }
-
-      .ref-buttons-items {
-        display: flex;
-        align-items: flex-start;
-        gap: 0.875rem;
-
-        .ref-button {
-          display: flex;
-          padding: 1rem;
-          align-items: flex-start;
-          gap: 0.625rem;
-          border-radius: 0.5rem;
-          border: 1px solid $black-15;
-          background: $black-10;
-
-          .ref-icon {
-            width: 1.5rem;
-            height: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-
-  .footer-bottom {
-    margin: 0 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    align-self: stretch;
-
-    .footer-line {
-      width: 100%;
-      height: 0.0625rem;
-      background: #262626;
-    }
-
-    .copyright {
-      display: flex;
-      gap: 63rem;
-      align-items: center;
-      align-self: stretch;
-
-      p {
-        color: $gray-60;
-        font-size: 1.125rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-      }
-
-      .copyright-buttons {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
-
-        p {
-          color: $gray-60;
-          font-size: 1.125rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
-
-        .copyright-line {
-          width: 0.0625rem;
-          height: 1.6875rem;
-          background: #262626;
-        }
-      }
-    }
-  }
-}
 
 .navbar {
   display: flex;
@@ -215,8 +65,9 @@ a {
     gap: 30px;
 
     .icon {
-      width: 34px;
-      height: 34px;
+      background: none;
+      width: 46px;
+      height: 41px;
     }
   }
 
@@ -310,6 +161,17 @@ a {
   }
 }
 
+.fade-out-bottom {
+  width: 1920px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 0;
+  left: calc(50% - 960px);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
+  height: 300px;
+  z-index: 3;
+}
+
 .hidden-form {
   display: none;
 }
@@ -392,6 +254,7 @@ a {
         gap: 20px;
         text-align: left;
         font-size: 18px;
+        z-index:4;
 
         .primary-button {
           border-radius: 8px;
@@ -427,6 +290,13 @@ a {
           gap: 10px;
 
           .action-button {
+            display: flex;
+            padding: 14px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--Black-15, #262626);
+            background: var(--Black-06, #0F0F0F);
             .button-icon2 {
               width: 100%;
               border-radius: 8px;
@@ -666,7 +536,7 @@ a {
                 padding: 6px 10px 6px 6px;
 
                 .text14 {
-                  font-size: 11px;
+                  font-size: 17px;
                   flex: 1;
                   position: relative;
                   line-height: 150%;
@@ -1163,6 +1033,146 @@ a {
 
 }
 
+.footer {
+
+  display: flex;
+  width: 106%;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.25rem;
+  background: $black-06;
+
+  .footer-top {
+    margin: 80px 70px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+
+    .item-footer-top {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex: 1 0 0;
+
+      .header-footer-item {
+        align-self: stretch;
+        color: $white;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+      }
+
+      .ref-items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.875rem;
+        align-self: stretch;
+
+        .ref-thing {
+          align-self: stretch;
+          color: $gray-60;
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .links-footer-top {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex: 1 0 0;
+
+      .header-footer-item {
+        align-self: stretch;
+        color: $white;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+      }
+
+      .ref-buttons-items {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.875rem;
+
+        .ref-button {
+          display: flex;
+          padding: 1rem;
+          align-items: flex-start;
+          gap: 0.625rem;
+          border-radius: 0.5rem;
+          border: 1px solid $black-15;
+          background: $black-10;
+
+          .ref-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+
+    .footer-line {
+      width: 100%;
+      height: 0.0625rem;
+      background: #262626;
+    }
+
+    .copyright {
+      display: flex;
+      gap: 63rem;
+      align-items: center;
+      align-self: stretch;
+
+      p {
+        color: $gray-60;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+      .copyright-buttons {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        p {
+          color: $gray-60;
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+
+        .copyright-line {
+          width: 0.0625rem;
+          height: 1.6875rem;
+          background: #262626;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1440px) {
 
   .tabs-for-mobile{
@@ -1205,11 +1215,11 @@ a {
     .buttons-container {
       display: flex;
       align-items: center;
-      gap: 0.875rem;
+      gap: 1.875rem;
 
       .icon {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 3rem;
+        height: 2.5rem;
       }
     }
 
@@ -1628,6 +1638,7 @@ a {
                   padding: 6px 10px 6px 6px;
 
                   .text14 {
+                    font-size: 12px;
                     flex: 1;
                     position: relative;
                     line-height: 150%;
