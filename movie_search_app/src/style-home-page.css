@@ -6,54 +6,61 @@ a {
 }
 
 body {
-  width: 1920px;
-  margin: 0;
+  width: 100%;
   background-color: #141414;
   font-family: "Manrope", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  margin: 0;
 }
-
-.navbar {
+body main {
+  width: 100%;
   display: flex;
-  width: 90%;
-  padding: 30px 162px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .site-header {
+  width: 100%;
+  display: flex;
+  z-index: 1;
+}
+body .site-header .navbar {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
   align-items: center;
 }
-.navbar .logo-icon {
+body .site-header .navbar .logo-icon {
   display: flex;
   width: 199px;
   justify-content: center;
   align-items: center;
   gap: 3px;
-  flex-shrink: 0;
 }
-.navbar .buttons-container {
+body .site-header .navbar .buttons-container {
   display: flex;
   width: 10.36456rem;
   justify-content: center;
   align-items: center;
   gap: 2.15625rem;
 }
-.navbar .buttons-container .icon {
+body .site-header .navbar .buttons-container .icon {
   width: 44px;
   height: 44px;
   background: none;
 }
-.navbar .buttons-container-slider {
+body .site-header .navbar .buttons-container-slider {
   display: flex;
   padding: 10px 40px;
   align-items: center;
   gap: 20px;
-  position: absolute;
-  right: 680px;
-  top: 22px;
   border-radius: 12px;
   border: 4px solid var(--Black-12, #1F1F1F);
   background: var(--Black-06, #0F0F0F);
 }
-.navbar .buttons-container-slider .button-active {
+body .site-header .navbar .buttons-container-slider .button-active {
   display: flex;
   padding: 14px 24px;
   align-items: center;
@@ -62,29 +69,27 @@ body {
   border: 1px solid var(--Black-10, #1A1A1A);
   background: var(--Black-10, #1A1A1A);
 }
-.navbar .buttons-container-slider .button-active .text {
+body .site-header .navbar .buttons-container-slider .button-active .text {
   color: #FFF;
-  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 27px */
 }
-.navbar .buttons-container-slider .text {
+body .site-header .navbar .buttons-container-slider .text {
   color: var(--Grey-75, #BFBFBF);
-  font-family: "Manrope", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 27px */
 }
-.navbar .buttons-container-slider .icon {
+body .site-header .navbar .buttons-container-slider .icon {
   width: 50px;
   height: 50px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.navbar .buttons-container1 {
+body .site-header .navbar .buttons-container1 {
   margin: 0 !important;
   position: absolute;
   top: calc(50% - 42px);
@@ -101,7 +106,7 @@ body {
   gap: 30px;
   z-index: 2;
 }
-.navbar .buttons-container1 .button1 {
+body .site-header .navbar .buttons-container1 .button1 {
   border-radius: 8px;
   background-color: #1a1a1a;
   border: 1px solid #1a1a1a;
@@ -112,25 +117,22 @@ body {
   padding: 14px 24px;
   color: #fff;
 }
-.navbar .buttons-container1 .button1 .text {
+body .site-header .navbar .buttons-container1 .button1 .text {
   position: relative;
   line-height: 150%;
   font-weight: 500;
 }
-.navbar .buttons-container1 .text-button {
+body .site-header .navbar .buttons-container1 .text-button {
   position: relative;
   line-height: 150%;
 }
-
-.burger-menu {
+body .site-header .burger-menu {
   display: none;
 }
-
-.hidden-form {
+body .site-header .hidden-form {
   display: none;
 }
-
-.sub-container2 .buttons-container {
+body .sub-container2 .buttons-container {
   border-radius: 12px;
   background-color: #0f0f0f;
   border: 1px solid #1f1f1f;
@@ -141,21 +143,17 @@ body {
   padding: 16px;
   gap: 16px;
 }
-
-.sub-container2 .buttons-container .button-icon {
+body .sub-container2 .buttons-container .button-icon {
   width: 56px;
   border-radius: 8px;
   height: 56px;
 }
-
-.text {
+body .text {
   position: relative;
   line-height: 150%;
   font-weight: 500;
-  font-family: "Manrope", sans-serif;
 }
-
-.button {
+body .button {
   border-radius: 8px;
   background-color: #1a1a1a;
   border: 1px solid #1a1a1a;
@@ -166,8 +164,7 @@ body {
   padding: 14px 24px;
   color: #fff;
 }
-
-.button1 {
+body .button1 {
   border-radius: 8px;
   background-color: #1a1a1a;
   border: 1px solid #1a1a1a;
@@ -178,19 +175,13 @@ body {
   padding: 14px 24px;
   color: #fff;
 }
-
-.text-button {
+body .text-button {
   position: relative;
   line-height: 150%;
-  font-family: "Manrope", sans-serif;
   margin: 15px;
 }
-
-.buttons-container-slider {
+body .buttons-container-slider {
   margin: 0 !important;
-  position: absolute;
-  top: calc(50% - 42px);
-  left: calc(50% - 281.5px);
   border-radius: 12px;
   background-color: #0f0f0f;
   border: 4px solid #1f1f1f;
@@ -203,8 +194,7 @@ body {
   gap: 30px;
   z-index: 2;
 }
-
-.image-icon {
+body .image-icon {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -214,8 +204,7 @@ body {
   max-height: 100%;
   object-fit: cover;
 }
-
-.image-container {
+body .image-container {
   margin: 0;
   display: flex;
   align-items: flex-start;
@@ -223,8 +212,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
 }
-
-.image-icon36 {
+body .image-icon36 {
   width: 1920px;
   position: absolute;
   margin: 0 !important;
@@ -236,30 +224,27 @@ body {
   mix-blend-mode: overlay;
   z-index: 4;
 }
-
-.fade-out-top {
-  width: 100%;
+body .fade-out-top {
+  width: 114%;
   position: absolute;
   margin: 0 !important;
   top: 0;
-  left: calc(50% - 1019px);
+  left: calc(47% - 1019px);
   background: linear-gradient(180deg, #141414, rgba(20, 20, 20, 0));
   height: 581px;
   z-index: 5;
 }
-
-.fade-out-bottom {
-  width: 100%;
+body .fade-out-bottom {
+  width: 114%;
   position: absolute;
   margin: 0 !important;
   bottom: 0;
-  left: calc(50% - 1019px);
+  left: calc(47% - 1019px);
   background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
   height: 581px;
   z-index: 6;
 }
-
-.abstract-design-icon {
+body .abstract-design-icon {
   width: 470px;
   position: absolute;
   margin: 0 !important;
@@ -268,10 +253,10 @@ body {
   height: 470px;
   z-index: 7;
 }
-
-.sub-container-top {
+body .sub-container-top {
+  width: 100%;
   align-self: stretch;
-  height: 860px;
+  height: 861px;
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -281,19 +266,17 @@ body {
   position: relative;
   gap: 20px;
 }
-
-.text-container1 .heading {
+body .text-container1 .heading {
   margin: 0;
 }
-
-.heading {
+body .heading {
+  margin: 0;
   align-self: stretch;
   position: relative;
   line-height: 150%;
   width: 100%;
 }
-
-.paragraph {
+body .paragraph {
   align-self: stretch;
   position: relative;
   font-size: 18px;
@@ -301,8 +284,7 @@ body {
   line-height: 150%;
   color: #999;
 }
-
-.text-container {
+body .text-container {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -311,8 +293,7 @@ body {
   gap: 14px;
   width: 100%;
 }
-
-.text-container1 {
+body .text-container1 {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -321,22 +302,19 @@ body {
   gap: 5px;
   margin: 0;
 }
-
-.icon {
+body .icon {
   width: 50px;
   position: relative;
   height: 50px;
   overflow: hidden;
   flex-shrink: 0;
 }
-
-.text {
+body .text {
   position: relative;
   line-height: 150%;
   font-weight: 600;
 }
-
-.button {
+body .button {
   border-radius: 8px;
   background-color: #e50000;
   display: flex;
@@ -348,8 +326,7 @@ body {
   text-align: left;
   font-size: 18px;
 }
-
-.sub-container-bottom {
+body .sub-container-bottom {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -357,11 +334,9 @@ body {
   justify-content: flex-start;
   padding: 0 412px;
   gap: 50px;
-  margin-top: -64px;
   position: relative;
 }
-
-.sub-container-grid {
+body .sub-container-grid {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -370,8 +345,7 @@ body {
   gap: 30px;
   font-size: 18px;
 }
-
-.sub-container2 {
+body .sub-container2 {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -380,9 +354,8 @@ body {
   gap: 30px;
   font-size: 28px;
 }
-
-.container {
-  width: 106%;
+body .container {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -391,14 +364,14 @@ body {
   text-align: center;
   font-size: 50px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
   margin-bottom: 100px;
+  z-index: 0;
 }
-
-.categories-section {
-  margin: 12.5rem 10.13rem 9.38rem 10.13rem;
+body .categories-section {
+  margin: 0;
+  width: 1600px;
 }
-.categories-section .container3 {
+body .categories-section .container3 {
   width: 100%;
   position: relative;
   display: flex;
@@ -409,17 +382,14 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
 }
-
-.button-icon {
+body .button-icon {
   width: 56px;
   border-radius: 8px;
   height: 56px;
   background-color: #1a1a1a;
 }
-
-.indicators-container {
+body .indicators-container {
   width: 81px;
   display: flex;
   flex-direction: row;
@@ -427,24 +397,21 @@ body {
   justify-content: flex-start;
   gap: 3px;
 }
-
-.shape {
+body .shape {
   width: 23px;
   position: relative;
   border-radius: 100px;
   background-color: #e50000;
   height: 4px;
 }
-
-.shape1 {
+body .shape1 {
   flex: 1;
   position: relative;
   border-radius: 100px;
   background-color: #333;
   height: 4px;
 }
-
-.card {
+body .card {
   flex: 1;
   border-radius: 12px;
   background-color: #1a1a1a;
@@ -455,8 +422,7 @@ body {
   justify-content: flex-start;
   padding: 30px;
 }
-
-.container1 {
+body .container1 {
   align-self: stretch;
   height: 252px;
   overflow: hidden;
@@ -468,26 +434,24 @@ body {
   position: relative;
   gap: 5px;
 }
-
-.container2 {
+body .container2 {
   align-self: stretch;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-
-.heading1 {
+body .heading1 {
   flex: 1;
   position: relative;
   line-height: 150%;
   font-weight: 600;
 }
-
-.devices-section {
-  margin: 0 10.13rem 9.38rem 10.13rem;
+body .devices-section {
+  margin: 0;
+  width: 1600px;
 }
-.devices-section .section-container {
+body .devices-section .section-container {
   width: 100%;
   position: relative;
   display: flex;
@@ -498,9 +462,8 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
 }
-.devices-section .section-container .text-content {
+body .devices-section .section-container .text-content {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -509,21 +472,21 @@ body {
   padding: 0 300px 0 0;
   gap: 14px;
 }
-.devices-section .section-container .text-content .section-header-title {
+body .devices-section .section-container .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   font-size: 38px;
   margin: 0;
 }
-.devices-section .section-container .text-content .section-text {
+body .devices-section .section-container .text-content .section-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
   line-height: 150%;
   color: #999;
 }
-.devices-section .section-container .img-content {
+body .devices-section .section-container .img-content {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -532,7 +495,7 @@ body {
   gap: 30px;
   font-size: 24px;
 }
-.devices-section .section-container .img-content .cards-grid {
+body .devices-section .section-container .img-content .cards-grid {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -540,7 +503,7 @@ body {
   justify-content: flex-start;
   gap: 30px;
 }
-.devices-section .section-container .img-content .cards-grid .device-card {
+body .devices-section .section-container .img-content .cards-grid .device-card {
   flex: 1;
   border-radius: 12px;
   background: linear-gradient(221.52deg, rgba(229, 0, 0, 0.5), rgba(229, 0, 0, 0) 22%), #0f0f0f;
@@ -552,7 +515,7 @@ body {
   padding: 50px;
   gap: 30px;
 }
-.devices-section .section-container .img-content .cards-grid .device-card .card-header {
+body .devices-section .section-container .img-content .cards-grid .device-card .card-header {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -560,30 +523,30 @@ body {
   justify-content: flex-start;
   gap: 16px;
 }
-.devices-section .section-container .img-content .cards-grid .device-card .card-header .device-icon {
+body .devices-section .section-container .img-content .cards-grid .device-card .card-header .device-icon {
   width: 72px;
   border-radius: 12px;
   height: 72px;
   background-color: #1a1a1a;
 }
-.devices-section .section-container .img-content .cards-grid .device-card .card-header .card-title {
+body .devices-section .section-container .img-content .cards-grid .device-card .card-header .card-title {
   flex: 1;
   position: relative;
   line-height: 150%;
   font-weight: 600;
 }
-.devices-section .section-container .img-content .cards-grid .card-text {
+body .devices-section .section-container .img-content .cards-grid .card-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
   line-height: 150%;
   color: #999;
 }
-
-.faq-section {
-  margin: 0 10.13rem 9.38rem 10.13rem;
+body .faq-section {
+  margin-top: 150px;
+  width: 1600px;
 }
-.faq-section .faq-wrapper {
+body .faq-section .faq-wrapper {
   width: 100%;
   position: relative;
   display: flex;
@@ -594,9 +557,8 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
 }
-.faq-section .faq-wrapper .section-header-reviews {
+body .faq-section .faq-wrapper .section-header-reviews {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -604,7 +566,7 @@ body {
   justify-content: flex-start;
   gap: 100px;
 }
-.faq-section .faq-wrapper .section-header-reviews .text-content {
+body .faq-section .faq-wrapper .section-header-reviews .text-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -612,14 +574,14 @@ body {
   justify-content: flex-start;
   gap: 0;
 }
-.faq-section .faq-wrapper .section-header-reviews .text-content .section-header-title {
+body .faq-section .faq-wrapper .section-header-reviews .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   margin: 0;
   font-size: 38px;
 }
-.faq-section .faq-wrapper .section-header-reviews .text-content .section-text {
+body .faq-section .faq-wrapper .section-header-reviews .text-content .section-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
@@ -627,7 +589,7 @@ body {
   color: #999;
   margin: 0;
 }
-.faq-section .faq-wrapper .section-header-reviews .primary-button {
+body .faq-section .faq-wrapper .section-header-reviews .primary-button {
   border-radius: 8px;
   background-color: #e50000;
   display: flex;
@@ -637,32 +599,32 @@ body {
   padding: 0.5rem 2.4rem;
   font-size: 14px;
 }
-.faq-section .faq-wrapper .section-header-reviews .primary-button .text {
+body .faq-section .faq-wrapper .section-header-reviews .primary-button .text {
   position: relative;
   line-height: 150%;
   font-weight: 600;
   color: white;
 }
-.faq-section .faq-wrapper .faq-container {
+body .faq-section .faq-wrapper .faq-container {
   display: flex;
   align-items: flex-start;
   gap: 5rem;
   align-self: stretch;
 }
-.faq-section .faq-wrapper .faq-container .faq-column {
+body .faq-section .faq-wrapper .faq-container .faq-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex: 1 0 0;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item {
   display: flex;
   padding: 2.125rem;
   align-items: flex-start;
   gap: 1.25rem;
   align-self: stretch;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-number {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-number {
   display: flex;
   padding: 0.1rem 1.5rem;
   flex-direction: column;
@@ -672,14 +634,14 @@ body {
   border: 1px solid #262626;
   background: #1f1f1f;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-number p {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-number p {
   color: #fff;
   font-size: 1.45rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -687,7 +649,7 @@ body {
   flex: 1 0 0;
   align-self: stretch;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text h4 {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text h4 {
   align-self: stretch;
   color: #fff;
   font-size: 1.375rem;
@@ -695,7 +657,7 @@ body {
   font-weight: 500;
   line-height: 150%;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text p {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text p {
   align-self: stretch;
   color: #999;
   font-size: 1.125rem;
@@ -703,18 +665,18 @@ body {
   font-weight: 400;
   line-height: 150%;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text .faq-icon {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text .faq-icon {
   width: 1.875rem;
   height: 1.875rem;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple {
   display: flex;
   padding: 1.875rem 2.125rem;
   align-items: center;
   gap: 1.5rem;
   align-self: stretch;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-number {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-number {
   display: flex;
   padding: 0.1rem 1.5rem;
   flex-direction: column;
@@ -724,14 +686,14 @@ body {
   border: 1px solid #262626;
   background: #1f1f1f;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-number p {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-number p {
   color: #fff;
   font-size: 1.45rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple h4 {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple h4 {
   flex: 1 0 0;
   color: #fff;
   font-size: 1.375rem;
@@ -739,25 +701,25 @@ body {
   font-weight: 500;
   line-height: 150%;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-icon {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-icon {
   width: 1.875rem;
   height: 1.875rem;
 }
-.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .line {
+body .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .line {
   width: 36.375rem;
   height: 0.0625rem;
   background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #E50000 16.67%, rgba(229, 0, 0, 0) 100%);
 }
-.faq-section .faq-wrapper .faq-container .faq-column .line {
+body .faq-section .faq-wrapper .faq-container .faq-column .line {
   width: 36.375rem;
   height: 0.0625rem;
   background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #E50000 16.67%, rgba(229, 0, 0, 0) 100%);
 }
-
-.pricing-section {
-  margin: 0 10.13rem 8.44rem 10.13rem;
+body .pricing-section {
+  margin-top: 150px;
+  width: 1600px;
 }
-.pricing-section .pricing-wrapper {
+body .pricing-section .pricing-wrapper {
   width: 100%;
   position: relative;
   display: flex;
@@ -768,9 +730,8 @@ body {
   text-align: left;
   font-size: 38px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
 }
-.pricing-section .pricing-wrapper .section-container {
+body .pricing-section .pricing-wrapper .section-container {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -778,7 +739,7 @@ body {
   justify-content: flex-start;
   gap: 100px;
 }
-.pricing-section .pricing-wrapper .section-container .text-content {
+body .pricing-section .pricing-wrapper .section-container .text-content {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -787,21 +748,21 @@ body {
   justify-content: flex-start;
   gap: 10px;
 }
-.pricing-section .pricing-wrapper .section-container .text-content .section-header-title {
+body .pricing-section .pricing-wrapper .section-container .text-content .section-header-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   margin: 0;
   font-size: 35px;
 }
-.pricing-section .pricing-wrapper .section-container .text-content .section-text {
+body .pricing-section .pricing-wrapper .section-container .text-content .section-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
   line-height: 150%;
   color: #999;
 }
-.pricing-section .pricing-wrapper .section-container .plan-tabs {
+body .pricing-section .pricing-wrapper .section-container .plan-tabs {
   border-radius: 10px;
   background-color: #0f0f0f;
   border: 1px solid #262626;
@@ -812,7 +773,7 @@ body {
   padding: 10px;
   font-size: 18px;
 }
-.pricing-section .pricing-wrapper .section-container .plan-tabs .button-active {
+body .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active {
   border-radius: 10px;
   background-color: #1f1f1f;
   display: flex;
@@ -821,13 +782,13 @@ body {
   justify-content: center;
   padding: 14px 24px;
 }
-.pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
+body .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
   position: relative;
   line-height: 150%;
   font-weight: 500;
   color: white;
 }
-.pricing-section .pricing-wrapper .section-container .plan-tabs .button {
+body .pricing-section .pricing-wrapper .section-container .plan-tabs .button {
   border-radius: 100px;
   background-color: #1a1a1a;
   display: flex;
@@ -837,12 +798,12 @@ body {
   padding: 14px 24px;
   color: #999;
 }
-.pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
+body .pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
   position: relative;
   line-height: 150%;
   font-weight: 500;
 }
-.pricing-section .pricing-wrapper .pricing-cards {
+body .pricing-section .pricing-wrapper .pricing-cards {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -851,7 +812,7 @@ body {
   gap: 30px;
   font-size: 24px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card {
   flex: 1;
   border-radius: 12px;
   background-color: #1a1a1a;
@@ -863,7 +824,7 @@ body {
   padding: 50px;
   gap: 50px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -871,19 +832,19 @@ body {
   justify-content: flex-start;
   gap: 16px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-title {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-text {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
   line-height: 150%;
   color: #999;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -891,19 +852,19 @@ body {
   gap: 4px;
   font-size: 40px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .price {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .price {
   position: relative;
   line-height: 73%;
   font-weight: 600;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .period {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .period {
   position: relative;
   font-size: 18px;
   line-height: 73%;
   font-weight: 500;
   color: #999;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -912,7 +873,7 @@ body {
   gap: 20px;
   font-size: 18px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 {
   flex: 1;
   border-radius: 8px;
   background-color: #141414;
@@ -923,12 +884,12 @@ body {
   justify-content: center;
   padding: 18px 24px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
   flex: 1;
   border-radius: 8px;
   background-color: #e50000;
@@ -938,17 +899,17 @@ body {
   justify-content: center;
   padding: 18px 24px;
 }
-.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
+body .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
   color: white;
 }
-
-.container-free-trial {
-  margin: 0 10.13rem 8.38rem 10.13rem;
+body .container-free-trial {
+  margin-top: 135px;
+  width: 1600px;
 }
-.container-free-trial .free-trial-wrapper {
+body .container-free-trial .free-trial-wrapper {
   width: 100%;
   position: relative;
   border-radius: 12px;
@@ -965,9 +926,8 @@ body {
   text-align: left;
   font-size: 40px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial {
+body .container-free-trial .free-trial-wrapper .background-image-trial {
   width: 1800px;
   margin: 0 !important;
   position: absolute;
@@ -981,7 +941,7 @@ body {
   gap: 10px;
   z-index: 0;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -991,7 +951,7 @@ body {
   gap: 20px;
   z-index: 0;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial .image-icon1 {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -1000,7 +960,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -1010,7 +970,7 @@ body {
   gap: 20px;
   z-index: 1;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial .image-icon1 {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -1019,7 +979,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -1029,7 +989,7 @@ body {
   gap: 20px;
   z-index: 2;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial .image-icon1 {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -1038,7 +998,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial {
   align-self: stretch;
   flex: 1;
   display: flex;
@@ -1048,7 +1008,7 @@ body {
   gap: 20px;
   z-index: 3;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial .image-icon1 {
+body .container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial .image-icon1 {
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -1057,7 +1017,7 @@ body {
   max-height: 100px;
   object-fit: cover;
 }
-.container-free-trial .free-trial-wrapper .background-image-trial .fade-out-left1 {
+body .container-free-trial .free-trial-wrapper .background-image-trial .fade-out-left1 {
   width: 100%;
   position: absolute;
   margin: 0 !important;
@@ -1068,7 +1028,7 @@ body {
   mix-blend-mode: normal;
   z-index: 4;
 }
-.container-free-trial .free-trial-wrapper .text-container-trial {
+body .container-free-trial .free-trial-wrapper .text-container-trial {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1077,14 +1037,14 @@ body {
   gap: 14px;
   z-index: 1;
 }
-.container-free-trial .free-trial-wrapper .text-container-trial .title {
+body .container-free-trial .free-trial-wrapper .text-container-trial .title {
   align-self: stretch;
   position: relative;
   line-height: 150%;
   margin: 0;
   font-size: 35px;
 }
-.container-free-trial .free-trial-wrapper .text-container-trial .text {
+body .container-free-trial .free-trial-wrapper .text-container-trial .text {
   align-self: stretch;
   position: relative;
   font-size: 18px;
@@ -1092,7 +1052,7 @@ body {
   color: #999;
   margin: 0;
 }
-.container-free-trial .free-trial-wrapper .primary-button-trial {
+body .container-free-trial .free-trial-wrapper .primary-button-trial {
   border-radius: 8px;
   background-color: #e50000;
   display: flex;
@@ -1103,37 +1063,40 @@ body {
   z-index: 2;
   font-size: 18px;
 }
-.container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
+body .container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
   position: relative;
   line-height: 150%;
   font-weight: 600;
   color: white;
 }
-
-.footer {
+body footer {
+  width: 100%;
+  margin-top: 135px;
+}
+body footer .footer {
   display: flex;
-  width: 106%;
+  width: 100%;
   padding: 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 6.25rem;
   background: #0F0F0F;
 }
-.footer .footer-top {
+body footer .footer .footer-top {
   margin: 80px 70px;
   display: flex;
   align-items: flex-start;
   gap: 1.875rem;
   align-self: stretch;
 }
-.footer .footer-top .item-footer-top {
+body footer .footer .footer-top .item-footer-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
   flex: 1 0 0;
 }
-.footer .footer-top .item-footer-top .header-footer-item {
+body footer .footer .footer-top .item-footer-top .header-footer-item {
   align-self: stretch;
   color: #fff;
   font-size: 1.25rem;
@@ -1141,14 +1104,14 @@ body {
   font-weight: 600;
   line-height: 150%;
 }
-.footer .footer-top .item-footer-top .ref-items {
+body footer .footer .footer-top .item-footer-top .ref-items {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.875rem;
   align-self: stretch;
 }
-.footer .footer-top .item-footer-top .ref-items .ref-thing {
+body footer .footer .footer-top .item-footer-top .ref-items .ref-thing {
   align-self: stretch;
   color: #999;
   font-size: 1.125rem;
@@ -1156,14 +1119,14 @@ body {
   font-weight: 500;
   line-height: 150%;
 }
-.footer .footer-top .links-footer-top {
+body footer .footer .footer-top .links-footer-top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
   flex: 1 0 0;
 }
-.footer .footer-top .links-footer-top .header-footer-item {
+body footer .footer .footer-top .links-footer-top .header-footer-item {
   align-self: stretch;
   color: #fff;
   font-size: 1.25rem;
@@ -1171,12 +1134,12 @@ body {
   font-weight: 600;
   line-height: 150%;
 }
-.footer .footer-top .links-footer-top .ref-buttons-items {
+body footer .footer .footer-top .links-footer-top .ref-buttons-items {
   display: flex;
   align-items: flex-start;
   gap: 0.875rem;
 }
-.footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
+body footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
   display: flex;
   padding: 1rem;
   align-items: flex-start;
@@ -1185,11 +1148,12 @@ body {
   border: 1px solid #262626;
   background: #1a1a1a;
 }
-.footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
+body footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
-.footer .footer-bottom {
+body footer .footer .footer-bottom {
+  width: 90%;
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
@@ -1197,37 +1161,37 @@ body {
   gap: 1.5rem;
   align-self: stretch;
 }
-.footer .footer-bottom .footer-line {
+body footer .footer .footer-bottom .footer-line {
   width: 100%;
   height: 0.0625rem;
   background: #262626;
 }
-.footer .footer-bottom .copyright {
+body footer .footer .footer-bottom .copyright {
   display: flex;
-  gap: 63rem;
   align-items: center;
   align-self: stretch;
+  justify-content: space-between;
 }
-.footer .footer-bottom .copyright p {
+body footer .footer .footer-bottom .copyright p {
   color: #999;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
-.footer .footer-bottom .copyright .copyright-buttons {
+body footer .footer .footer-bottom .copyright .copyright-buttons {
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
 }
-.footer .footer-bottom .copyright .copyright-buttons p {
+body footer .footer .footer-bottom .copyright .copyright-buttons p {
   color: #999;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
-.footer .footer-bottom .copyright .copyright-buttons .copyright-line {
+body footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   width: 0.0625rem;
   height: 1.6875rem;
   background: #262626;

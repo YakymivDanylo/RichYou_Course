@@ -2438,6 +2438,7 @@ a {
     font-family: $font-Manrope;
     box-sizing: border-box;
     overflow-x: hidden;
+  }
 
 
     .navbar {
@@ -2914,7 +2915,7 @@ a {
                           grid-row: 2;
                           color: $white;
                           font-family: $font-Manrope;
-                          font-size: 20px;
+                          font-size: 18px;
                           font-weight: 600;
                           line-height: 150%;
                           margin: 0;
@@ -3551,7 +3552,7 @@ a {
           }
 
           .fade-out-left1 {
-            width: 80.188rem;
+            width: 59.188rem;
             position: absolute;
             margin: 0 !important;
             bottom: 2.813rem;
@@ -3759,5 +3760,5 @@ a {
         }
       }
     }
-  }
+
 }
