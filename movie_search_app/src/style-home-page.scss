@@ -37,6 +37,1386 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.site-header {
+  width: 100%;
+  display: flex;
+  z-index: 1;
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo-icon {
+      display: flex;
+      width: 199px;
+      justify-content: center;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .buttons-container {
+      display: flex;
+      width: 10.36456rem;
+      justify-content: center;
+      align-items: center;
+      gap: 2.15625rem;
+
+      span {
+        background: none;
+
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .buttons-container-slider {
+      display: flex;
+      padding: 10px 40px;
+      align-items: center;
+      gap: 20px;
+      //position: relative;
+      border-radius: 12px;
+      border: 4px solid var(--Black-12, #1F1F1F);
+      background: var(--Black-06, #0F0F0F);
+
+      .button-active {
+        display: flex;
+        padding: 14px 24px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        border: 1px solid var(--Black-10, #1A1A1A);
+        background: var(--Black-10, #1A1A1A);
+
+        .text {
+          color: #FFF;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%; /* 27px */
+        }
+      }
+
+      .text {
+        color: var(--Grey-75, #BFBFBF);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 27px */
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+    }
+
+    .buttons-container1 {
+      margin: 0 !important;
+      position: absolute;
+      top: calc(50% - 42px);
+      left: calc(50% - 281.5px);
+      border-radius: 12px;
+      background-color: #0f0f0f;
+      border: 4px solid #1f1f1f;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 40px 10px 10px;
+      gap: 30px;
+      z-index: 2;
+
+      .button1 {
+        border-radius: 8px;
+        background-color: #1a1a1a;
+        border: 1px solid #1a1a1a;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 14px 24px;
+        color: #fff;
+
+        .text {
+          position: relative;
+          line-height: 150%;
+          font-weight: 500;
+        }
+      }
+
+      .text-button {
+        position: relative;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .hidden-form {
+    display: $to-hide;
+  }
+}
+
+.sub-container2 {
+  .buttons-container {
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 1px solid #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+.sub-container2 {
+  .buttons-container {
+    .button-icon {
+      width: 56px;
+      border-radius: 8px;
+      height: 56px;
+    }
+  }
+}
+
+.text {
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 24px;
+  color: #fff;
+}
+
+.button1 {
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 24px;
+  color: #fff;
+}
+
+.text-button {
+  position: relative;
+  line-height: 150%;
+  margin: 15px;
+}
+
+.buttons-container-slider {
+  margin: 0 !important;
+  border-radius: 12px;
+  background-color: #0f0f0f;
+  border: 4px solid #1f1f1f;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 40px 10px 10px;
+  gap: 30px;
+  z-index: 2;
+}
+
+.image-icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: 12px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.image-container {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3125rem;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.image-icon36 {
+  width: 1920px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 430px);
+  left: 0;
+  border-radius: 12px;
+  height: 860px;
+  object-fit: cover;
+  mix-blend-mode: overlay;
+  z-index: 4;
+}
+
+.fade-out-top {
+  width: 114%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: calc(47% - 1019px);
+  background: linear-gradient(180deg, #141414, rgba(20, 20, 20, 0));
+  height: 581px;
+  z-index: 5;
+}
+
+.fade-out-bottom {
+  width: 114%;
+  position: absolute;
+  margin: 0 !important;
+  bottom: 0;
+  left: calc(47% - 1019px);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
+  height: 581px;
+  z-index: 6;
+}
+
+.abstract-design-icon {
+  width: 470px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 235px);
+  left: calc(50% - 235px);
+  height: 470px;
+  z-index: 7;
+}
+
+.sub-container-top {
+  width: 100%;
+  align-self: stretch;
+  height: 861px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: 20px;
+}
+
+.text-container1 {
+  .heading {
+    margin: 0;
+  }
+}
+
+.heading {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  width: 100%;
+}
+
+.paragraph {
+  align-self: stretch;
+  position: relative;
+  font-size: $font-size-capital;
+  width: 100%;
+  line-height: 150%;
+  color: #999;
+}
+
+.text-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 14px;
+  width: 100%;
+
+}
+
+.text-container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  margin: 0;
+}
+
+.icon {
+  width: 50px;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.text {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #e50000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 24px;
+  gap: 4px;
+  text-align: left;
+  font-size: $font-size-capital;
+}
+
+.sub-container-bottom {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 412px;
+  gap: 50px;
+  position: relative;
+}
+
+.sub-container-grid {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  font-size: $font-size-capital;
+}
+
+.sub-container2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  font-size: 28px;
+}
+
+
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 100px;
+  z-index: 0;
+}
+
+.categories-section {
+  margin: 0;
+  width: 1600px;
+
+  .container3 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+
+  }
+}
+
+.button-icon {
+  width: 56px;
+  border-radius: 8px;
+  height: 56px;
+  background-color: #1a1a1a;
+}
+
+.indicators-container {
+  width: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+}
+
+.shape {
+  width: 23px;
+  position: relative;
+  border-radius: 100px;
+  background-color: #e50000;
+  height: 4px;
+}
+
+.shape1 {
+  flex: 1;
+  position: relative;
+  border-radius: 100px;
+  background-color: #333;
+  height: 4px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px;
+}
+
+.container1 {
+  align-self: stretch;
+  height: 252px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: 5px;
+}
+
+.container2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heading1 {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+
+.devices-section {
+  margin: 0;
+  width: 1600px;
+
+  .section-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+
+    .text-content {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0 300px 0 0;
+      gap: 14px;
+
+      .section-header-title {
+        align-self: stretch;
+        position: relative;
+        line-height: 150%;
+        font-size: 38px;
+        margin: 0;
+      }
+
+      .section-text {
+        align-self: stretch;
+        position: relative;
+        font-size: $font-size-capital;
+        line-height: 150%;
+        color: #999;
+      }
+    }
+
+    .img-content {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 30px;
+      font-size: 24px;
+
+      .cards-grid {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+
+        .device-card {
+          flex: 1;
+          border-radius: 12px;
+          background: linear-gradient(221.52deg, rgba(229, 0, 0, 0.5), rgba(229, 0, 0, 0) 22%), #0f0f0f;
+          border: 1px solid #262626;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 50px;
+          gap: 30px;
+
+          .card-header {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+
+            .device-icon {
+              width: 72px;
+              border-radius: 12px;
+              height: 72px;
+              background-color: #1a1a1a;
+            }
+
+            .card-title {
+              flex: 1;
+              position: relative;
+              line-height: 150%;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .card-text {
+          align-self: stretch;
+          position: relative;
+          font-size: $font-size-capital;
+          line-height: 150%;
+          color: #999;
+        }
+      }
+    }
+
+  }
+}
+
+.faq-section {
+  margin-top: 150px;
+  width: 1600px;
+
+  .faq-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+
+    .section-header-reviews {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 100px;
+      //margin-right: 20px;
+      //margin-left: 20px;
+
+
+      .text-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+
+        .section-header-title {
+          align-self: stretch;
+          position: relative;
+          line-height: 150%;
+          margin: 0;
+          font-size: 38px;
+        }
+
+        .section-text {
+          align-self: stretch;
+          position: relative;
+          font-size: $font-size-capital;
+          line-height: 150%;
+          color: #999;
+          margin: 0;
+        }
+      }
+
+      .primary-button {
+        border-radius: 8px;
+        background-color: #e50000;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0.5rem 2.4rem;
+        font-size: $font-size-small;
+        border: none;
+
+        .text {
+          position: relative;
+          line-height: 150%;
+          font-weight: 600;
+          color: white;
+        }
+      }
+    }
+
+    .faq-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 5rem;
+      align-self: stretch;
+
+      .faq-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+
+        .faq-item {
+          display: flex;
+          padding: 2.125rem;
+          align-items: flex-start;
+          gap: 1.25rem;
+          align-self: stretch;
+
+          .faq-number {
+            display: flex;
+            padding: 0.1rem 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.625rem;
+            border-radius: 0.625rem;
+            border: 1px solid $black-15;
+            background: $black-12;
+
+            p {
+              color: $white;
+              font-size: 1.45rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+
+          .faq-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+            flex: 1 0 0;
+            align-self: stretch;
+
+            h4 {
+              align-self: stretch;
+              color: $white;
+              font-size: 1.375rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+
+            p {
+              align-self: stretch;
+              color: $gray-60;
+              font-size: 1.125rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+
+            .faq-icon {
+              width: 1.875rem;
+              height: 1.875rem;
+            }
+          }
+        }
+
+        .faq-item-simple {
+          display: flex;
+          padding: 1.875rem 2.125rem;
+          align-items: center;
+          gap: 1.5rem;
+          align-self: stretch;
+
+          .faq-number {
+            display: flex;
+            padding: 0.1rem 1.5rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.625rem;
+            border-radius: 0.625rem;
+            border: 1px solid $black-15;
+            background: $black-12;
+
+            p {
+              color: $white;
+              font-size: 1.45rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+
+          h4 {
+            flex: 1 0 0;
+            color: $white;
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+          }
+
+          .faq-icon {
+            width: 1.875rem;
+            height: 1.875rem;
+          }
+
+          .line {
+            width: 36.375rem;
+            height: 0.0625rem;
+            background: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%);
+          }
+        }
+
+        .line {
+          width: 36.375rem;
+          height: 0.0625rem;
+          background: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%);
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+.pricing-section {
+  margin-top: 150px;
+  width: 1600px;
+
+  .pricing-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 80px;
+    text-align: left;
+    font-size: 38px;
+    color: #fff;
+
+    .section-container {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: 100px;
+
+      .text-content {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+
+        .section-header-title {
+          align-self: stretch;
+          position: relative;
+          line-height: 150%;
+          margin: 0;
+          font-size: 35px;
+        }
+
+        .section-text {
+          align-self: stretch;
+          position: relative;
+          font-size: $font-size-capital;
+          line-height: 150%;
+          color: #999;
+        }
+      }
+
+      .plan-tabs {
+        border-radius: 10px;
+        background-color: #0f0f0f;
+        border: 1px solid #262626;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        font-size: $font-size-capital;
+
+        .button-active {
+          border-radius: 10px;
+          background-color: #1f1f1f;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 24px;
+
+          .text {
+            position: relative;
+            line-height: 150%;
+            font-weight: 500;
+            color: white;
+          }
+        }
+
+        .button {
+          border: none;
+          background-color: $black-06;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 24px;
+          color: #999;
+
+          .text-tabs {
+            position: relative;
+            line-height: 150%;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .pricing-cards {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 30px;
+      font-size: 24px;
+
+      .plan-card {
+        flex: 1;
+        border-radius: 12px;
+        background-color: #1a1a1a;
+        border: 1px solid #262626;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px;
+        gap: 50px;
+
+        .card-content {
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 16px;
+
+          .plan-title {
+            align-self: stretch;
+            position: relative;
+            line-height: 150%;
+          }
+
+          .plan-text {
+            align-self: stretch;
+            position: relative;
+            font-size: $font-size-capital;
+            line-height: 150%;
+            color: #999;
+          }
+        }
+
+        .plan-price {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 4px;
+          font-size: 40px;
+
+          .price {
+            position: relative;
+            line-height: 73%;
+            font-weight: 600;
+          }
+
+          .period {
+            position: relative;
+            font-size: $font-size-capital;
+            line-height: 73%;
+            font-weight: 500;
+            color: #999;
+          }
+        }
+
+        .plan-actions {
+          align-self: stretch;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 20px;
+          font-size: $font-size-capital;
+
+          .button1 {
+            flex: 1;
+            border-radius: 8px;
+            background-color: #141414;
+            border: 1px solid #262626;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 24px;
+
+            .text3 {
+              position: relative;
+              line-height: 150%;
+              font-weight: 600;
+
+            }
+          }
+
+          .button2 {
+            flex: 1;
+            border-radius: 8px;
+            background-color: #e50000;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 24px;
+
+            .text3 {
+              position: relative;
+              line-height: 150%;
+              font-weight: 600;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+.container-free-trial {
+  margin-top: 135px;
+  width: 1600px;
+
+  .free-trial-wrapper {
+    width: 100%;
+    position: relative;
+    border-radius: 12px;
+    background-color: #0f0f0f;
+    border: 1px solid #262626;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 80px;
+
+    gap: 100px;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+
+    .background-image-trial {
+      width: 1800px;
+      margin: 0 !important;
+      position: absolute;
+      top: calc(50% - 197.5px);
+      left: calc(50% - 798px);
+      height: 395px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 10px;
+      z-index: 0;
+
+      .image-container-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 0;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container1-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 1;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container2-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 2;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .image-container3-trial {
+        align-self: stretch;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        z-index: 3;
+
+        .image-icon1 {
+          align-self: stretch;
+          flex: 1;
+          position: relative;
+          max-width: 100%;
+          overflow: hidden;
+          max-height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .fade-out-left1 {
+        width: 100%;
+        position: absolute;
+        margin: 0 !important;
+        top: calc(50% - 171.5px);
+        right: 0;
+        background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
+        height: 395px;
+        mix-blend-mode: normal;
+        z-index: 4;
+      }
+
+    }
+
+    .text-container-trial {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 14px;
+      z-index: 1;
+
+      .title {
+        align-self: stretch;
+        position: relative;
+        line-height: 150%;
+        margin: 0;
+        font-size: 35px;
+      }
+
+      .text {
+        align-self: stretch;
+        position: relative;
+        font-size: $font-size-capital;
+        line-height: 150%;
+        color: #999;
+        margin: 0;
+      }
+    }
+
+    .primary-button-trial {
+      border-radius: 8px;
+      background-color: #e50000;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 24px;
+      z-index: 2;
+      font-size: $font-size-capital;
+
+      .text-trial {
+        position: relative;
+        line-height: 150%;
+        font-weight: 600;
+        color: white;
+      }
+    }
+  }
+
+
+}
+
+footer {
+  width: 100%;
+  margin-top: 135px;
+
+  .footer {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.25rem;
+    background: $black-06;
+
+    .footer-top {
+      margin: 80px 70px;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.875rem;
+      align-self: stretch;
+
+      .item-footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex: 1 0 0;
+
+        .header-footer-item {
+          align-self: stretch;
+          color: $white;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+
+        .ref-items {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.875rem;
+          align-self: stretch;
+
+          .ref-thing {
+            align-self: stretch;
+            color: $gray-60;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+          }
+        }
+      }
+
+      .links-footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        flex: 1 0 0;
+
+        .header-footer-item {
+          align-self: stretch;
+          color: $white;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+
+        .ref-buttons-items {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.875rem;
+
+          .ref-button {
+            display: flex;
+            padding: 1rem;
+            align-items: flex-start;
+            gap: 0.625rem;
+            border-radius: 0.5rem;
+            border: 1px solid $black-15;
+            background: $black-10;
+
+            .ref-icon {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      width: 90%;
+      margin: 0 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+      align-self: stretch;
+
+      .footer-line {
+        width: 100%;
+        height: 0.0625rem;
+        background: #262626;
+      }
+
+      .copyright {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+
+        p {
+          color: $gray-60;
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+
+        .copyright-buttons {
+          display: flex;
+          align-items: flex-start;
+          gap: 1.25rem;
+
+          p {
+            color: $gray-60;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+          }
+
+          .copyright-line {
+            width: 0.0625rem;
+            height: 1.6875rem;
+            background: #262626;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .burger-menu {
+    display: none;
+  }
+
+  body {
+    width: 100%;
+    background-color: #141414;
+    font-family: $font-Manrope;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+  }
 
   main {
     width: 100%;
@@ -60,7 +1440,7 @@ body {
 
       .logo-icon {
         display: flex;
-        width: 199px;
+        width: 165px;
         justify-content: center;
         align-items: center;
         gap: 3px;
@@ -72,11 +1452,16 @@ body {
         justify-content: center;
         align-items: center;
         gap: 2.15625rem;
+        background: none;
 
-        .icon {
-          width: 44px;
-          height: 44px;
+        span {
           background: none;
+
+          .icon {
+            width: 24px;
+            height: 24px;
+            background: none;
+          }
         }
       }
 
@@ -101,7 +1486,7 @@ body {
 
           .text {
             color: #FFF;
-            font-size: 18px;
+            font-size: 14px;
             font-style: normal;
             font-weight: 500;
             line-height: 150%; /* 27px */
@@ -110,10 +1495,10 @@ body {
 
         .text {
           color: var(--Grey-75, #BFBFBF);
-          font-size: 18px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 400;
-          line-height: 150%; /* 27px */
+          line-height: 150%;
         }
 
         .icon {
@@ -184,7 +1569,7 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: flex-start;
-      padding: 16px;
+      padding: 12px;
       gap: 16px;
     }
   }
@@ -192,9 +1577,9 @@ body {
   .sub-container2 {
     .buttons-container {
       .button-icon {
-        width: 56px;
+        width: 35px;
         border-radius: 8px;
-        height: 56px;
+        height: 35px;
       }
     }
   }
@@ -288,7 +1673,7 @@ body {
     position: absolute;
     margin: 0 !important;
     top: 0;
-    left: calc(47% - 1019px);
+    left: calc(47% - 878px);
     background: linear-gradient(180deg, #141414, rgba(20, 20, 20, 0));
     height: 581px;
     z-index: 5;
@@ -299,7 +1684,7 @@ body {
     position: absolute;
     margin: 0 !important;
     bottom: 0;
-    left: calc(47% - 1019px);
+    left: calc(47% - 878px);
     background: linear-gradient(180deg, rgba(20, 20, 20, 0), #141414);
     height: 581px;
     z-index: 6;
@@ -332,10 +1717,12 @@ body {
   .text-container1 {
     .heading {
       margin: 0;
+      font-size: 28px;
     }
   }
 
   .heading {
+    font-size: 48px;
     margin: 0;
     align-self: stretch;
     position: relative;
@@ -344,9 +1731,9 @@ body {
   }
 
   .paragraph {
+    font-size: 14px;
     align-self: stretch;
     position: relative;
-    font-size: $font-size-capital;
     width: 100%;
     line-height: 150%;
     color: #999;
@@ -359,7 +1746,7 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 14px;
-    width: 100%;
+    width: 1140px;
 
   }
 
@@ -374,14 +1761,15 @@ body {
   }
 
   .icon {
-    width: 50px;
+    width: 24px;
     position: relative;
-    height: 50px;
+    height: 24px;
     overflow: hidden;
     flex-shrink: 0;
   }
 
   .text {
+    font-size: 14px;
     position: relative;
     line-height: 150%;
     font-weight: 600;
@@ -394,19 +1782,19 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 18px 24px;
+    padding: 14px 24px;
     gap: 4px;
     text-align: left;
-    font-size: $font-size-capital;
   }
 
   .sub-container-bottom {
+    width: 1140px;
     align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 412px;
+    padding: 0 150px;
     gap: 50px;
     position: relative;
   }
@@ -448,7 +1836,7 @@ body {
 
   .categories-section {
     margin: 0;
-    width: 1600px;
+    width: 1279px;
 
     .container3 {
       width: 100%;
@@ -466,14 +1854,14 @@ body {
   }
 
   .button-icon {
-    width: 56px;
+    width: 35px;
     border-radius: 8px;
-    height: 56px;
+    height: 35px;
     background-color: #1a1a1a;
   }
 
   .indicators-container {
-    width: 81px;
+    width: 69px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -482,7 +1870,7 @@ body {
   }
 
   .shape {
-    width: 23px;
+    width: 18px;
     position: relative;
     border-radius: 100px;
     background-color: #e50000;
@@ -535,12 +1923,13 @@ body {
     position: relative;
     line-height: 150%;
     font-weight: 600;
+    font-size: 16px;
   }
 
 
   .devices-section {
     margin: 0;
-    width: 1600px;
+    width: 1279px;
 
     .section-container {
       width: 100%;
@@ -567,7 +1956,7 @@ body {
           align-self: stretch;
           position: relative;
           line-height: 150%;
-          font-size: 38px;
+          font-size: 28px;
           margin: 0;
         }
 
@@ -618,9 +2007,9 @@ body {
               gap: 16px;
 
               .device-icon {
-                width: 72px;
+                width: 50px;
                 border-radius: 12px;
-                height: 72px;
+                height: 50px;
                 background-color: #1a1a1a;
               }
 
@@ -629,6 +2018,7 @@ body {
                 position: relative;
                 line-height: 150%;
                 font-weight: 600;
+                font-size: 20px;
               }
             }
           }
@@ -636,7 +2026,7 @@ body {
           .card-text {
             align-self: stretch;
             position: relative;
-            font-size: $font-size-capital;
+            font-size: 16px;
             line-height: 150%;
             color: #999;
           }
@@ -647,8 +2037,8 @@ body {
   }
 
   .faq-section {
-    margin-top: 150px ;
-    width: 1600px;
+    margin-top: 150px;
+    width: 1280px;
 
     .faq-wrapper {
       width: 100%;
@@ -686,13 +2076,13 @@ body {
             position: relative;
             line-height: 150%;
             margin: 0;
-            font-size: 38px;
+            font-size: 28px;
           }
 
           .section-text {
             align-self: stretch;
             position: relative;
-            font-size: $font-size-capital;
+            font-size: 16px;
             line-height: 150%;
             color: #999;
             margin: 0;
@@ -706,14 +2096,15 @@ body {
           flex-direction: row;
           align-items: flex-start;
           justify-content: flex-start;
-          padding: 0.5rem 2.4rem;
-          font-size: $font-size-small;
+          padding: 14px 20px;
+          border: none;
 
           .text {
             position: relative;
             line-height: 150%;
             font-weight: 600;
             color: white;
+            font-size: 14px;
           }
         }
       }
@@ -739,7 +2130,7 @@ body {
 
             .faq-number {
               display: flex;
-              padding: 0.1rem 1.5rem;
+              padding: 5px 20px;
               flex-direction: column;
               align-items: flex-start;
               gap: 0.625rem;
@@ -749,7 +2140,7 @@ body {
 
               p {
                 color: $white;
-                font-size: 1.45rem;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -767,19 +2158,21 @@ body {
               h4 {
                 align-self: stretch;
                 color: $white;
-                font-size: 1.375rem;
+                font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 150%;
+                margin: 0;
               }
 
               p {
                 align-self: stretch;
                 color: $gray-60;
-                font-size: 1.125rem;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 150%;
+                margin: 0;
               }
 
               .faq-icon {
@@ -798,7 +2191,7 @@ body {
 
             .faq-number {
               display: flex;
-              padding: 0.1rem 1.5rem;
+              padding: 5px 20px;
               flex-direction: column;
               align-items: flex-start;
               gap: 0.625rem;
@@ -808,7 +2201,7 @@ body {
 
               p {
                 color: $white;
-                font-size: 1.45rem;
+                font-size: 16px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -818,10 +2211,10 @@ body {
             h4 {
               flex: 1 0 0;
               color: $white;
-              font-size: 1.375rem;
               font-style: normal;
               font-weight: 500;
               line-height: 150%;
+              font-size: 20px;
             }
 
             .faq-icon {
@@ -852,7 +2245,7 @@ body {
 
   .pricing-section {
     margin-top: 150px;
-    width: 1600px;
+    width: 1280px;
 
     .pricing-wrapper {
       width: 100%;
@@ -888,13 +2281,13 @@ body {
             position: relative;
             line-height: 150%;
             margin: 0;
-            font-size: 35px;
+            font-size: 28px;
           }
 
           .section-text {
             align-self: stretch;
             position: relative;
-            font-size: $font-size-capital;
+            font-size: 16px;
             line-height: 150%;
             color: #999;
           }
@@ -909,7 +2302,7 @@ body {
           align-items: center;
           justify-content: flex-start;
           padding: 10px;
-          font-size: $font-size-capital;
+
 
           .button-active {
             border-radius: 10px;
@@ -925,12 +2318,13 @@ body {
               line-height: 150%;
               font-weight: 500;
               color: white;
+              font-size: 14px;
             }
           }
 
           .button {
-            border-radius: 100px;
-            background-color: #1a1a1a;
+            border: none;
+            background-color: $black-06;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -954,7 +2348,6 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         gap: 30px;
-        font-size: 24px;
 
         .plan-card {
           flex: 1;
@@ -980,12 +2373,14 @@ body {
               align-self: stretch;
               position: relative;
               line-height: 150%;
+              font-size: 20px;
+              margin: 0;
             }
 
             .plan-text {
               align-self: stretch;
               position: relative;
-              font-size: $font-size-capital;
+              font-size: 16px;
               line-height: 150%;
               color: #999;
             }
@@ -1003,11 +2398,12 @@ body {
               position: relative;
               line-height: 73%;
               font-weight: 600;
+              font-size: 30px;
             }
 
             .period {
               position: relative;
-              font-size: $font-size-capital;
+              font-size: 16px;
               line-height: 73%;
               font-weight: 500;
               color: #999;
@@ -1038,6 +2434,7 @@ body {
                 position: relative;
                 line-height: 150%;
                 font-weight: 600;
+                font-size: 13px;
 
               }
             }
@@ -1051,12 +2448,15 @@ body {
               align-items: center;
               justify-content: center;
               padding: 18px 24px;
+              border: none;
 
               .text3 {
                 position: relative;
                 line-height: 150%;
                 font-weight: 600;
                 color: white;
+                font-size: 13px;
+
               }
             }
           }
@@ -1069,7 +2469,7 @@ body {
 
   .container-free-trial {
     margin-top: 135px;
-    width: 1600px;
+    width: 1280px;
 
     .free-trial-wrapper {
       width: 100%;
@@ -1216,13 +2616,13 @@ body {
           position: relative;
           line-height: 150%;
           margin: 0;
-          font-size: 35px;
+          font-size: 28px;
         }
 
         .text {
           align-self: stretch;
           position: relative;
-          font-size: $font-size-capital;
+          font-size: 16px;
           line-height: 150%;
           color: #999;
           margin: 0;
@@ -1238,13 +2638,14 @@ body {
         justify-content: center;
         padding: 18px 24px;
         z-index: 2;
-        font-size: $font-size-capital;
+        border: none;
 
         .text-trial {
           position: relative;
           line-height: 150%;
           font-weight: 600;
           color: white;
+          font-size: 13px;
         }
       }
     }
@@ -1282,7 +2683,7 @@ body {
           .header-footer-item {
             align-self: stretch;
             color: $white;
-            font-size: 1.25rem;
+            font-size: 18px;
             font-style: normal;
             font-weight: 600;
             line-height: 150%;
@@ -1298,7 +2699,7 @@ body {
             .ref-thing {
               align-self: stretch;
               color: $gray-60;
-              font-size: 1.125rem;
+              font-size: 16px;
               font-style: normal;
               font-weight: 500;
               line-height: 150%;
@@ -1316,7 +2717,7 @@ body {
           .header-footer-item {
             align-self: stretch;
             color: $white;
-            font-size: 1.25rem;
+            font-size: 18px;
             font-style: normal;
             font-weight: 600;
             line-height: 150%;
@@ -1366,9 +2767,9 @@ body {
           align-self: stretch;
           justify-content: space-between;
 
-          p{
+          p {
             color: $gray-60;
-            font-size: 1.125rem;
+            font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
@@ -1381,15 +2782,15 @@ body {
 
             p {
               color: $gray-60;
-              font-size: 1.125rem;
+              font-size: 14px;
               font-style: normal;
               font-weight: 400;
               line-height: 150%;
             }
 
             .copyright-line {
-              width: 0.0625rem;
-              height: 1.6875rem;
+              width: 1px;
+              height: 2.6875rem;
               background: #262626;
             }
           }
@@ -1397,1175 +2798,6 @@ body {
       }
     }
   }
-}
-
-
-@media (max-width: 1440px) {
-
-  .burger-menu {
-    display: none;
-  }
-
-  body {
-    width: 1440px;
-    margin: 0;
-    background-color: #141414;
-    font-family: $font-Manrope;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
-  .navbar {
-    display: flex;
-    width: 91%;
-    padding: 1.5rem 5rem;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo-icon {
-      display: flex;
-      width: 10.36456rem;
-      justify-content: center;
-      align-items: center;
-      gap: 0.15625rem;
-      flex-shrink: 0;
-    }
-
-    .buttons-container {
-      width: 8rem;
-      display: flex;
-      align-items: center;
-      gap: 0.875rem;
-
-      .icon {
-        width: 44px;
-        height: 40px;
-      }
-    }
-
-    .buttons-container-slider {
-      display: flex;
-      padding: 0.5rem 1.875rem 0.5rem 1.875rem;
-      align-items: center;
-      gap: 2.1rem;
-      position: absolute;
-      right: 32.0625rem;
-      top: 1.125rem;
-      border-radius: 0.625rem;
-      border: 3px solid $black-12;
-      background: $black-06;
-
-      .button-active {
-        display: flex;
-        padding: 0.75rem 1.25rem;
-        align-items: center;
-        gap: 0.625rem;
-        border-radius: 0.5rem;
-        border: 1px solid $black-10;
-        background: $black-10;
-
-        .text {
-          color: $white;
-          font-size: 0.875rem;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 150%;
-        }
-      }
-
-      .text {
-        color: $gray-75;
-        font-size: 0.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-      }
-
-      .icon {
-        width: 50px;
-        height: 50px;
-        overflow: hidden;
-        flex-shrink: 0;
-      }
-    }
-
-    .buttons-container1 {
-      margin: 0 !important;
-      position: absolute;
-      top: calc(50% - 42px);
-      left: calc(50% - 281.5px);
-      border-radius: 12px;
-      background-color: #0f0f0f;
-      border: 4px solid #1f1f1f;
-      overflow: hidden;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 10px 40px 10px 10px;
-      gap: 30px;
-      z-index: 2;
-
-      .button1 {
-        border-radius: 8px;
-        background-color: #1a1a1a;
-        border: 1px solid #1a1a1a;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 14px 24px;
-        color: #fff;
-
-        .text {
-          position: relative;
-          line-height: 150%;
-          font-weight: 500;
-        }
-      }
-
-      .text-button {
-        position: relative;
-        line-height: 150%;
-      }
-    }
-  }
-
-  .container {
-    display: flex;
-    width: 92rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.25rem;
-
-    .sub-container-top {
-      display: flex;
-      height: 43.6875rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.625rem;
-      align-self: stretch;
-
-      .image-container {
-        display: flex;
-        height: 12.5rem;
-        align-items: flex-start;
-        gap: 0.625rem;
-        flex-shrink: 0;
-        align-self: stretch;
-
-        .image-icon {
-          flex: 1 0 0;
-          align-self: stretch;
-          border-radius: 0.75rem;
-        }
-      }
-
-      .fade-out-top {
-        width: 110rem;
-        height: 36.3125rem;
-        position: absolute;
-        background: linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%);
-      }
-
-      .fade-out-bottom {
-        width: 110rem;
-        height: 36.3125rem;
-        position: absolute;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
-      }
-
-      .abstract-design-icon {
-        width: 18.75rem;
-        height: 18.75rem;
-        position: absolute;
-        left: 35.625rem;
-        top: 12.4375rem;
-      }
-    }
-
-    .sub-container-bottom {
-      display: flex;
-      padding: 0 9.375rem;
-      flex-direction: column;
-      align-items: center;
-      gap: 2.5rem;
-      align-self: stretch;
-
-      .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.625rem;
-        align-self: stretch;
-
-        .heading {
-          margin: 0;
-          align-self: stretch;
-          color: $white;
-          text-align: center;
-          font-size: 3rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 150%;
-        }
-
-        .paragraph {
-          margin: 0;
-          align-self: stretch;
-          color: $gray-60;
-          text-align: center;
-          font-size: 0.875rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
-      }
-
-      .button {
-        display: flex;
-        padding: 0.875rem 1.5rem;
-        align-items: center;
-        gap: 0.25rem;
-        border-radius: 0.5rem;
-        background: $red-45;
-
-        .icon {
-          width: 1.5rem;
-          height: 1.5rem;
-        }
-
-        .text {
-          color: $white;
-          font-size: 0.875rem;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-        }
-      }
-    }
-  }
-
-  .categories-section {
-    margin: 6rem;
-    display: flex;
-    width: 79.9375rem;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3.75rem;
-
-    .container3 {
-      .sub-container2 {
-        display: flex;
-        align-items: flex-end;
-        gap: 5rem;
-        align-self: stretch;
-
-        .text-container1 {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.625rem;
-          flex: 1 0 0;
-
-          .heading {
-            align-self: stretch;
-            color: $white;
-            font-size: 1.75rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 150%;
-          }
-
-          .paragraph {
-            align-self: stretch;
-            color: $gray-60;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-        }
-
-        .buttons-container {
-          display: flex;
-          padding: 0.75rem;
-          align-items: center;
-          gap: 0.75rem;
-          border-radius: 0.625rem;
-          border: 1px solid $black-12;
-          background: $black-06;
-
-          .button-icon {
-            display: flex;
-            padding: 0.625rem;
-            align-items: flex-start;
-            gap: 0.625rem;
-            border-radius: 0.375rem;
-            border: 1px solid $black-12;
-            background: $black-10;
-            width: 1.5rem;
-            height: 1.5rem;
-          }
-
-          .indicators-container {
-            display: flex;
-            width: 4.3125rem;
-            align-items: flex-start;
-            gap: 0.1875rem;
-          }
-        }
-      }
-
-      .sub-container-grid {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
-        align-self: stretch;
-
-        .card {
-          display: flex;
-          padding: 1.5rem;
-          flex-direction: column;
-          align-items: flex-start;
-          flex: 1 0 0;
-          border-radius: 0.625rem;
-          border: 1px solid $black-15;
-          background: $black-10;
-
-          .container1 {
-            display: flex;
-            height: 13.125rem;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.3125rem;
-            align-self: stretch;
-
-            .image-container {
-              flex: 1 0 0;
-              align-self: stretch;
-              border-radius: 0.375rem;
-            }
-
-            .fade-out-bottom {
-              width: 12.0625rem;
-              height: 13.125rem;
-              position: absolute;
-              left: -0.0625rem;
-              background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, #1A1A1A 101.79%);
-            }
-          }
-
-          .container2 {
-            display: flex;
-            align-items: center;
-            align-self: stretch;
-
-            .heading1 {
-              flex: 1 0 0;
-              color: $white;
-              font-size: 1rem;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 150%;
-            }
-
-            .icon {
-              width: 1.5rem;
-              height: 1.5rem;
-            }
-          }
-        }
-      }
-
-    }
-  }
-
-  .devices-section {
-    margin: 7.5rem 5rem;
-
-    .section-container {
-      display: flex;
-      width: 79.9375rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 3.75rem;
-
-      .text-content {
-        display: flex;
-        padding-right: 9.375rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.625rem;
-        align-self: stretch;
-
-        .section-header-title {
-          align-self: stretch;
-          color: $white;
-          font-size: 1.75rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 150%;
-        }
-
-        .section-text {
-          align-self: stretch;
-          color: $gray-60;
-          font-size: 1rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
-      }
-
-      .img-content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
-        align-self: stretch;
-
-        .cards-grid {
-          display: flex;
-          align-items: flex-start;
-          gap: 1.25rem;
-          align-self: stretch;
-
-          .device-card {
-            display: flex;
-            padding: 2.5rem;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1.5rem;
-            flex: 1 0 0;
-            border-radius: 0.625rem;
-            border: 1px solid $black-15;
-            background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
-
-            .card-header {
-              display: flex;
-              align-items: center;
-              gap: 0.75rem;
-              align-self: stretch;
-
-              .device-icon {
-                width: 1.875rem;
-                height: 1.875rem;
-                display: flex;
-                padding: 0.75rem;
-                align-items: flex-start;
-                gap: 0.625rem;
-                border-radius: 0.625rem;
-                border: 1px solid $black-12;
-                background: $black-08;
-              }
-
-              .card-title {
-                flex: 1 0 0;
-                color: $white;
-                font-size: 1.25rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 150%;
-              }
-            }
-
-            .card-text {
-              align-self: stretch;
-              color: $gray-60;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .faq-section {
-    margin: 0 5rem 7.5rem 5rem;
-
-    .faq-wrapper {
-      display: flex;
-      width: 80rem;
-      flex-direction: column;
-      align-items: center;
-      gap: 3.75rem;
-
-      .section-header-reviews {
-        display: flex;
-        align-items: flex-end;
-        gap: 5rem;
-        align-self: stretch;
-
-
-        .text-content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.625rem;
-          flex: 1 0 0;
-
-          .section-header-title {
-            align-self: stretch;
-            color: $white;
-            font-size: 1.75rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 150%;
-          }
-
-          .section-text {
-            align-self: stretch;
-            color: $gray-60;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-        }
-
-        .primary-button {
-          display: flex;
-          padding: 0.875rem 1.25rem;
-          align-items: flex-start;
-          gap: 0.625rem;
-          border-radius: 0.375rem;
-          background: $red-45;
-
-          .text {
-            color: $white;
-            font-size: 0.875rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 150%;
-          }
-        }
-      }
-
-      .faq-container {
-        display: flex;
-        align-items: flex-start;
-        gap: 2.5rem;
-        align-self: stretch;
-
-        .faq-column {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          flex: 1 0 0;
-
-          .faq-item {
-            display: flex;
-            padding: 1.5rem;
-            align-items: flex-start;
-            gap: 1rem;
-            align-self: stretch;
-
-            .faq-number {
-              display: flex;
-              padding: 0.5rem 1.5rem;
-              flex-direction: column;
-              align-items: flex-start;
-              gap: 0.625rem;
-              border-radius: 0.5rem;
-              border: 1px solid $black-15;
-              background: $black-12;
-
-              p {
-                color: $white;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-              }
-            }
-
-            .faq-text {
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              gap: 0.875rem;
-              flex: 1 0 0;
-              align-self: stretch;
-
-              h4 {
-                align-self: stretch;
-                color: $white;
-                font-size: 1.25rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-              }
-
-              p {
-                align-self: stretch;
-                color: $gray-60;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
-              }
-
-              .faq-icon {
-                width: 1.5rem;
-                height: 1.5rem;
-              }
-            }
-          }
-
-          .faq-item-simple {
-            display: flex;
-            padding: 1.5rem;
-            align-items: center;
-            gap: 1rem;
-            align-self: stretch;
-
-            .faq-number {
-              display: flex;
-              padding: 0.5rem 1.5rem;
-              flex-direction: column;
-              align-items: flex-start;
-              gap: 0.625rem;
-              border-radius: 0.5rem;
-              border: 1px solid $black-15;
-              background: $black-12;
-
-              p {
-                color: $white;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-              }
-            }
-
-            h4 {
-              flex: 1 0 0;
-              color: $white;
-              font-size: 1.25rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 150%;
-            }
-
-            .faq-icon {
-              width: 1.5rem;
-              height: 1.5rem;
-            }
-
-            .line {
-              width: 38.75rem;
-              height: 0.0625rem;
-              background: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%);
-            }
-          }
-
-          .line {
-            width: 38.75rem;
-            height: 0.0625rem;
-            background: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%);
-          }
-        }
-
-      }
-    }
-
-
-  }
-
-  .pricing-section {
-    margin: 0 5rem 7.5rem 5rem;
-
-    .pricing-wrapper {
-      display: flex;
-      width: 80rem;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 3.75rem;
-
-      .section-container {
-        display: flex;
-        align-items: flex-end;
-        gap: 5rem;
-        align-self: stretch;
-
-        .text-content {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.625rem;
-          flex: 1 0 0;
-          align-self: stretch;
-
-          .section-header-title {
-            align-self: stretch;
-            color: $white;
-            font-size: 1.75rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 150%;
-          }
-
-          .section-text {
-            align-self: stretch;
-            color: $gray-60;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-        }
-
-        .plan-tabs {
-          display: flex;
-          padding: 0.5rem;
-          align-items: center;
-          border-radius: 0.5rem;
-          border: 1px solid $black-15;
-          background: $black-06;
-
-          .button-active {
-            display: flex;
-            padding: 0.75rem 1.25rem;
-            justify-content: center;
-            align-items: center;
-            gap: 0.625rem;
-            border-radius: 0.375rem;
-            background: $black-12;
-
-            .text {
-              color: $white;
-              font-size: 0.875rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 150%;
-            }
-          }
-
-          .button {
-            display: flex;
-            padding: 0.75rem 1.25rem;
-            justify-content: center;
-            align-items: center;
-            gap: 0.625rem;
-            border-radius: 6.25rem;
-
-            .text-tabs {
-              color: $gray-60;
-              font-size: 0.875rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 150%;
-            }
-          }
-        }
-      }
-
-      .pricing-cards {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
-        align-self: stretch;
-
-        .plan-card {
-          display: flex;
-          padding: 2.5rem;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 2.5rem;
-          flex: 1 0 0;
-          border-radius: 0.625rem;
-          border: 1px solid $black-15;
-          background: $black-10;
-
-          .card-content {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.75rem;
-            align-self: stretch;
-
-            .plan-title {
-              align-self: stretch;
-              color: $white;
-              font-size: 1.25rem;
-              font-style: normal;
-              font-weight: 700;
-              line-height: 150%;
-            }
-
-            .plan-text {
-              align-self: stretch;
-              color: $gray-60;
-              font-size: 1rem;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-          }
-
-          .plan-price {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 0.125rem;
-
-            .price {
-              color: $white;
-              font-size: 1.875rem;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 73%;
-            }
-
-            .period {
-              color: $gray-60;
-              font-size: 1rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 73%;
-            }
-          }
-
-          .plan-actions {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            align-self: stretch;
-
-            .button1 {
-              display: flex;
-              padding: 0.875rem 1.25rem;
-              justify-content: center;
-              align-items: center;
-              gap: 0.625rem;
-              flex: 1 0 0;
-              border-radius: 0.375rem;
-              border: 1px solid $black-15;
-              background: $black-08;
-
-              .text3 {
-                color: $white;
-                font-size: 0.875rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 150%;
-
-              }
-            }
-
-            .button2 {
-              display: flex;
-              padding: 0.875rem 1.25rem;
-              justify-content: center;
-              align-items: center;
-              gap: 0.625rem;
-              flex: 1 0 0;
-              border-radius: 0.375rem;
-              background: $red-45;
-
-              .text3 {
-                color: $white;
-                font-size: 0.875rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 150%;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .container-free-trial {
-    margin: 0 5rem 7.5rem 5rem;
-
-    .free-trial-wrapper {
-      display: flex;
-      width: 80rem;
-      padding: 5rem 3.75rem;
-      align-items: center;
-      gap: 6.25rem;
-      border-radius: 0.75rem;
-      border: 1px solid #262626;
-      background: $black-06;
-
-      .background-image-trial {
-        display: flex;
-        width: 90.0625rem;
-        height: 22.1875rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
-        position: absolute;
-        right: -0.0625rem;
-        top: -3.75rem;
-
-        .image-container-trial {
-          display: flex;
-          align-items: flex-start;
-          gap: 1.25rem;
-          flex: 1 0 0;
-          align-self: stretch;
-
-          .image-icon1 {
-            flex: 1 0 0;
-            align-self: stretch;
-          }
-        }
-
-        .image-container1-trial {
-          align-self: stretch;
-          flex: 1;
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 20px;
-          z-index: 1;
-
-          .image-icon1 {
-            flex: 1 0 0;
-            align-self: stretch;
-          }
-        }
-
-        .image-container2-trial {
-          align-self: stretch;
-          flex: 1;
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 20px;
-          z-index: 1;
-
-          .image-icon1 {
-            flex: 1 0 0;
-            align-self: stretch;
-          }
-        }
-
-        .image-container3-trial {
-          align-self: stretch;
-          flex: 1;
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 20px;
-          z-index: 1;
-
-          .image-icon1 {
-            flex: 1 0 0;
-            align-self: stretch;
-          }
-        }
-
-        .fade-out-left1 {
-          width: 80.1875rem;
-          height: 18.625rem;
-          position: absolute;
-          left: 9.875rem;
-          bottom: 3.25rem;
-          background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
-        }
-
-      }
-
-      .text-container-trial {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.625rem;
-        flex: 1 0 0;
-
-        .title {
-          align-self: stretch;
-          color: $white;
-          font-size: 1.75rem;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 150%;
-        }
-
-        .text {
-          align-self: stretch;
-          color: $gray-60;
-          font-size: 1rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
-      }
-
-      .primary-button-trial {
-        display: flex;
-        padding: 0.875rem 1.25rem;
-        justify-content: center;
-        align-items: center;
-        gap: 0.625rem;
-        border-radius: 0.5rem;
-        background: $red-45;
-
-        .text-trial {
-          color: $white;
-          font-size: 0.875rem;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-        }
-      }
-    }
-
-
-  }
-
-  .footer {
-    display: flex;
-    width: 92rem;
-    padding: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5rem;
-    background: $black-06;
-
-    .footer-top {
-      margin: 3rem 3rem 0 3rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 1.25rem;
-      align-self: stretch;
-
-      .item-footer-top {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
-        flex: 1 0 0;
-
-        .header-footer-item {
-          align-self: stretch;
-          color: $white;
-          font-size: 1.125rem;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-        }
-
-        .ref-items {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.625rem;
-          align-self: stretch;
-
-          .ref-thing {
-            align-self: stretch;
-            color: $gray-60;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 150%;
-          }
-        }
-      }
-
-      .links-footer-top {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.25rem;
-        flex: 1 0 0;
-
-        .header-footer-item {
-          align-self: stretch;
-          color: $white;
-          font-size: 1.125rem;
-          font-style: normal;
-          font-weight: 600;
-          line-height: 150%;
-        }
-
-        .ref-buttons-items {
-          display: flex;
-          align-items: flex-start;
-          gap: 0.625rem;
-
-          .ref-button {
-            display: flex;
-            padding: 0.75rem;
-            align-items: flex-start;
-            gap: 0.625rem;
-            border-radius: 0.375rem;
-            border: 1px solid $black-15;
-            background: $black-10;
-
-            .ref-icon {
-              width: 1.25rem;
-              height: 1.25rem;
-            }
-          }
-        }
-      }
-    }
-
-    .footer-bottom {
-      margin: 0 3rem 0 3rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.25rem;
-      align-self: stretch;
-
-      .footer-line {
-        width: 89rem;
-        height: 0.0625rem;
-        background: #262626;
-      }
-
-      .copyright {
-        display: flex;
-        gap: 48rem;
-        align-items: center;
-        align-self: stretch;
-
-        p {
-          color: $gray-60;
-          font-size: 0.875rem;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
-
-        .copyright-buttons {
-          display: flex;
-          align-items: flex-start;
-          gap: 1rem;
-
-          p {
-            color: $gray-60;
-            font-size: 0.875rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-          }
-
-          .copyright-line {
-            width: 0.0625rem;
-            height: 1.3125rem;
-            background: #262626;
-          }
-        }
-      }
-    }
-  }
-
 }
 
 @media (max-width: 390px) {
@@ -3168,6 +3400,7 @@ body {
           gap: 10px;
           border-radius: 6px;
           background: $red-45;
+          border: none;
 
           .text {
             color: $white;
