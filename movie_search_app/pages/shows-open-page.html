@@ -10,22 +10,28 @@
 <header class="site-header">
     <div class="navbar">
         <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
-        <div class="buttons-container">
-            <button class="icon" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg">
-            </button>
-            <button class="icon" aria-label="Notification"><img alt="Icon Notification"
-                                                                src="../icons/icon-notification.svg"></button>
-        </div>
-        <button class="burger-menu" aria-label="Notification"><img alt="Icon Notification"
-                                                                   src="../icons/icon-burger-menu.svg"></button>
-        <nav class="buttons-container-slider">
-            <div class="text-button"><a href="home-page.html"> Home</a></div>
-            <div class="button1">
-                <div class="text"><a href="movies-&-shows-page.html"> Movies&Shows</a></div>
+        <nav class="buttons-container-slider ">
+            <div class="text"><a href="home-page.html"> Home</a></div>
+            <div class="button-active">
+                <div class="text"><a href="movies-&-shows-page.html"> Movies&Shows</a>
+                </div>
             </div>
-            <div class="text-button"><a href="support-page.html"> Support</a></div>
-            <div class="text-button"><a href="subscription-page.html"> Subscription</a></div>
+            <div class="text"><a href="support-page.html"> Support</a></div>
+            <div class="text"><a href="subscription-page.html"> Subscription</a></div>
         </nav>
+        <div class="buttons-container ">
+            <span aria-label="Search"><img class="icon" alt="Icon Search" src="../icons/icon-search.svg">
+            </span>
+            <span aria-label="Notification"><img class="icon" alt="Icon Notification"
+                                                 src="../icons/icon-notification.svg"></span>
+        </div>
+        <div class="burger-menu">
+        <span class="burger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        </div>
     </div>
 
 
@@ -242,6 +248,98 @@
                     <p class="section-text">When a young boy vanishes, a small town uncovers a mystery involving secret
                         experiments, terrifying supernatural forces and one strange little girl.</p>
                 </article>
+
+                <section class="movie-meta-for-mobile">
+                    <section class="meta-section">
+                        <h3 class="meta-title">
+                            <img class="meta-icon" alt="Release year" src="../icons/calendar-icon.svg">
+                            <p class="meta-text">Released Year</p>
+                        </h3>
+                        <p class="meta-value">2022</p>
+                    </section>
+
+                    <section class="meta-section">
+                        <h3 class="meta-title">
+                            <img class="meta-icon" alt="Languages" src="../icons/lang-icon.svg">
+                            <p class="meta-text">Available Languages</p>
+                        </h3>
+                        <div class="language-list">
+                            <div class="language-item"><p>English</p></div>
+                            <div class="language-item"><p>Hindi</p></div>
+                            <div class="language-item"><p>Tamil</p></div>
+                            <div class="language-item"><p>Telegu</p></div>
+                            <div class="language-item"><p>Kannada</p></div>
+                        </div>
+                    </section>
+
+                    <section class="meta-section">
+                        <h3 class="meta-title">
+                            <img class="meta-icon" alt="Ratings" src="../icons/star-icon.png">
+                            <p class="meta-text">Ratings</p>
+                        </h3>
+                        <div class="rating-sources">
+                            <div class="rating-item">
+                                <span class="rating-source">IMDb</span>
+                                <div class="rating-stars">
+                                    <div class="stars">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon half" alt="Half star" src="../icons/half-star-icon.svg">
+                                    </div>
+                                    <span class="rating-value">4.5</span>
+                                </div>
+                            </div>
+                            <div class="rating-item">
+                                <span class="rating-source">Streamvibe</span>
+                                <div class="rating-stars">
+                                    <div class="stars">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/full-star-icon.svg">
+                                        <img class="star-icon" alt="Star" src="../icons/empty-star-icon.svg">
+                                    </div>
+                                    <span class="rating-value">4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="meta-section">
+                        <h3 class="meta-title">
+                            <img class="meta-icon" alt="Gernes" src="../icons/grid-icon.svg">
+                            <p class="meta-text">Gernes</p>
+                        </h3>
+                        <div class="genre-list">
+                            <div class="genre-item"><p>Action</p></div>
+                            <div class="genre-item"><p>Adventure</p></div>
+                        </div>
+                    </section>
+
+                    <section class="meta-section">
+                        <h3 class="meta-title">Director</h3>
+                        <article class="person-card">
+                            <img class="person-image" alt="Rishab Shetty" src="../icons/member-icon1.svg">
+                            <div class="person-info">
+                                <h4 class="person-name">Rishab Shetty</h4>
+                                <p class="person-location">From India</p>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="meta-section">
+                        <h3 class="meta-title">Music</h3>
+                        <article class="person-card">
+                            <img class="person-image" alt="B. Ajaneesh Loknath" src="../icons/member-icon2.svg">
+                            <div class="person-info">
+                                <h4 class="person-name">B. Ajaneesh Loknath</h4>
+                                <p class="person-location">From India</p>
+                            </div>
+                        </article>
+                    </section>
+                </section>
 
                 <section class="movie-cast">
                     <div class="section-header-reviews">
@@ -495,77 +593,79 @@
                     free trial of StreamVibe.</p>
             </article>
             <button class="primary-button-trial">
-                <div class="text-trial">Start a Free Trail</div>
+                <span class="text-trial">Start a Free Trail</span>
             </button>
         </div>
     </section>
 </main>
 
-<footer class="footer">
-    <div class="footer-top">
-        <article class="item-footer-top">
-            <p class="header-footer-item">Home</p>
-            <div class="ref-items">
-                <p class="ref-thing">Categories</p>
-                <p class="ref-thing">Devices</p>
-                <p class="ref-thing">Pricing</p>
-                <p class="ref-thing">FAQ</p>
-            </div>
-        </article>
-        <article class="item-footer-top">
-            <p class="header-footer-item">Movie</p>
-            <div class="ref-items">
-                <p class="ref-thing">Genres</p>
-                <p class="ref-thing">Trending</p>
-                <p class="ref-thing">New Release</p>
-                <p class="ref-thing">Popular</p>
-            </div>
-        </article>
-        <article class="item-footer-top">
-            <p class="header-footer-item">Shows</p>
-            <div class="ref-items">
-                <p class="ref-thing">Genres</p>
-                <p class="ref-thing">Trending</p>
-                <p class="ref-thing">New Release</p>
-                <p class="ref-thing">Popular</p>
-            </div>
-        </article>
-        <article class="item-footer-top">
-            <p class="header-footer-item">Support</p>
-            <div class="ref-items">
-                <p class="ref-thing">Contact Us</p>
-            </div>
-        </article>
-        <article class="item-footer-top">
-            <p class="header-footer-item">Subscription</p>
-            <div class="ref-items">
-                <p class="ref-thing">Plans</p>
-                <p class="ref-thing">Feature</p>
-            </div>
-        </article>
-        <article class="links-footer-top">
-            <p class="header-footer-item">Connect With Us</p>
-            <div class="ref-buttons-items">
-                <p class="ref-button"><img class="ref-icon" alt="" src="../icons/icon-facebook-stroke.svg"></p>
-                <p class="ref-button"><img class="ref-icon" alt="" src="../icons/icon-twitter-stroke.svg"></p>
-                <p class="ref-button"><img class="ref-icon" alt src="../icons/icon-linkedin-stroke.svg"></p>
+<footer>
+    <div class="footer">
+        <div class="footer-top">
+            <article class="item-footer-top">
+                <p class="header-footer-item">Home</p>
+                <div class="ref-items">
+                    <p class="ref-thing">Categories</p>
+                    <p class="ref-thing">Devices</p>
+                    <p class="ref-thing">Pricing</p>
+                    <p class="ref-thing">FAQ</p>
+                </div>
+            </article>
+            <article class="item-footer-top">
+                <p class="header-footer-item">Movie</p>
+                <div class="ref-items">
+                    <p class="ref-thing">Genres</p>
+                    <p class="ref-thing">Trending</p>
+                    <p class="ref-thing">New Release</p>
+                    <p class="ref-thing">Popular</p>
+                </div>
+            </article>
+            <article class="item-footer-top">
+                <p class="header-footer-item">Shows</p>
+                <div class="ref-items">
+                    <p class="ref-thing">Genres</p>
+                    <p class="ref-thing">Trending</p>
+                    <p class="ref-thing">New Release</p>
+                    <p class="ref-thing">Popular</p>
+                </div>
+            </article>
+            <article class="item-footer-top">
+                <p class="header-footer-item">Support</p>
+                <div class="ref-items">
+                    <p class="ref-thing">Contact Us</p>
+                </div>
+            </article>
+            <article class="item-footer-top">
+                <p class="header-footer-item">Subscription</p>
+                <div class="ref-items">
+                    <p class="ref-thing">Plans</p>
+                    <p class="ref-thing">Feature</p>
+                </div>
+            </article>
+            <article class="links-footer-top">
+                <p class="header-footer-item">Connect With Us</p>
+                <div class="ref-buttons-items">
+                    <p class="ref-button"><img class="ref-icon" alt="" src="../icons/icon-facebook-stroke.svg"></p>
+                    <p class="ref-button"><img class="ref-icon" alt="" src="../icons/icon-twitter-stroke.svg"></p>
+                    <p class="ref-button"><img class="ref-icon" alt src="../icons/icon-linkedin-stroke.svg"></p>
 
-            </div>
-        </article>
-    </div>
-    <div class="footer-bottom">
-        <div class="footer-line"></div>
-        <article class="copyright">
-            <p>@2023 streamvib, All Rights Reserved</p>
-            <div class="copyright-buttons">
-                <p> Terms of Use</p>
-                <div class="copyright-line"></div>
-                <p> Privacy Policy</p>
-                <div class="copyright-line"></div>
-                <p> Cookie Policy</p>
-                <div class="copyright-line"></div>
-            </div>
-        </article>
+                </div>
+            </article>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line"></div>
+            <article class="copyright">
+                <p>@2023 streamvib, All Rights Reserved</p>
+                <div class="copyright-buttons">
+                    <p> Terms of Use</p>
+                    <div class="copyright-line"></div>
+                    <p> Privacy Policy</p>
+                    <div class="copyright-line"></div>
+                    <p> Cookie Policy</p>
+                    <div class="copyright-line"></div>
+                </div>
+            </article>
+        </div>
     </div>
 </footer>
 </body>
