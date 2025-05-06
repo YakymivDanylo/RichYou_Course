@@ -396,7 +396,7 @@ a {
         gap: 40px;
         align-self: stretch;
         border-radius: 12px;
-        background: var(--Black-10, #1A1A1A);
+        background: $black-10;
 
         p {
           padding: 10px;
@@ -575,7 +575,7 @@ a {
                       flex: 1 0 0;
                       color: $white;
                       font-family: $font-Manrope;
-                      font-size: 20px;
+                      font-size: 18px;
                       font-style: normal;
                       font-weight: 600;
                       line-height: 150%;
@@ -734,6 +734,7 @@ a {
               background: $black-08;
 
               p {
+                margin: 0;
                 color: $white;
                 font-family: $font-Manrope;
                 font-size: $font-size-capital;
@@ -808,6 +809,7 @@ a {
               background: $black-08;
 
               p {
+                margin: 0;
                 color: $white;
                 font-family: $font-Manrope;
                 font-size: $font-size-capital;
@@ -1192,6 +1194,7 @@ a {
             background: $black-08;
 
             p {
+              margin: 0;
               color: $white;
               font-family: $font-Manrope;
               font-size: $font-size-capital;
@@ -1266,6 +1269,7 @@ a {
             background: $black-08;
 
             p {
+              margin: 0;
               color: $white;
               font-family: $font-Manrope;
               font-size: $font-size-capital;
@@ -1827,7 +1831,8 @@ footer {
   }
 
   .movie-banner {
-    margin: 59px 80px 80px 80px;
+    margin-top: 59px;
+    width: 1280px;
 
     .movie-wrapper {
       display: flex;
@@ -1996,11 +2001,8 @@ footer {
   }
 
   .movie-details {
-    margin: 0 77px 113px 60px;
-    display: flex;
+    margin-top: 80px;
     width: 1286px;
-    align-items: flex-start;
-    gap: 20px;
 
     .movie-detail-wrapper {
       display: flex;
@@ -2015,6 +2017,246 @@ footer {
         align-items: flex-end;
         gap: 20px;
         flex: 1 0 0;
+        width: 790px;
+
+        .seasons-and-episodes {
+          display: flex;
+          padding: 40px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+          align-self: stretch;
+          border-radius: 12px;
+          background: $black-10;
+          width: 770px;
+
+          p {
+            padding: 10px;
+            align-self: stretch;
+            color: #FFF;
+            font-family: $font-Manrope;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+          }
+
+          .list-seasons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            align-self: stretch;
+
+            .closed-list {
+              display: flex;
+              padding: 24px 50px;
+              justify-content: space-between;
+              align-items: center;
+              align-self: stretch;
+              border-radius: $border-radius-12;
+              border: 1px solid $black-15;
+              background: $black-06;
+
+              .title-season {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                h3 {
+                  color: $white;
+                  font-family: $font-Manrope;
+                  font-size: 24px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 150%;
+                }
+
+                p {
+                  color: $gray-60;
+                  font-family: $font-Manrope;
+                  font-size: $font-size-capital;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 150%;
+                }
+              }
+
+              .icon-season {
+                display: flex;
+                padding: 14px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 100px;
+                border: 1px solid $black-15;
+                background: $black-08;
+
+                .icon {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+            }
+
+            .opened-list {
+              display: flex;
+              padding: 50px;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 30px;
+              align-self: stretch;
+              border-radius: 12px;
+              border: 1px solid $black-15;
+              background: $black-06;
+
+              .opened-list-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-self: stretch;
+
+                .title-season {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+
+                  h3 {
+                    color: $white;
+                    font-family: $font-Manrope;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                  }
+
+                  p {
+                    color: $gray-60;
+                    font-family: $font-Manrope;
+                    font-size: $font-size-capital;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                  }
+                }
+
+                .icon-season {
+                  display: flex;
+                  padding: 14px;
+                  align-items: center;
+                  gap: 10px;
+                  border-radius: 100px;
+                  border: 1px solid $black-15;
+                  background: $black-08;
+
+                  .icon {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+              }
+
+              .opened-list-main {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                align-self: stretch;
+
+                .episode {
+                  display: flex;
+                  padding: 40px 0;
+                  align-items: center;
+                  gap: 20px;
+                  align-self: stretch;
+                  border-top: 1px solid $black-15;
+                  border-bottom: 1px solid $black-15;
+
+                  .number-episode {
+                    padding-top: 0.6rem;
+                    width: 60px;
+                    color: $gray-60;
+                    font-family: $font-Manrope;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%;
+                  }
+
+                  .episode-icon {
+                    display: flex;
+                    width: 172px;
+                    padding: 0;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: $border-radius-12;
+                  }
+
+                  .description-episode {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0;
+                    flex: 1 0 0;
+
+                    .episode-header {
+                      display: flex;
+                      align-items: center;
+                      align-self: stretch;
+
+                      p {
+                        flex: 1 0 0;
+                        color: $white;
+                        font-family: $font-Manrope;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 150%;
+                        margin: 0;
+                      }
+
+                      .duration {
+                        display: flex;
+                        padding: 0 12px;
+                        align-items: center;
+                        gap: 4px;
+                        border-radius: $border-radius-8;
+                        border: 1px solid $black-15;
+                        background: $black-08;
+
+                        .clock {
+                          width: 24px;
+                          height: 24px;
+                        }
+
+                        .time {
+                          color: $gray-60;
+                          font-family: $font-Manrope;
+                          font-size: $font-size-capital;
+                          font-style: normal;
+                          font-weight: 500;
+                          line-height: 150%;
+                          margin: 0;
+                        }
+                      }
+                    }
+
+                    .description-episode-description {
+                      align-self: stretch;
+                      color: $gray-60;
+                      font-family: $font-Manrope;
+                      font-size: $font-size-small;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 150%;
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+
+            }
+          }
+        }
 
         .movie-description {
           display: flex;
@@ -2122,6 +2364,7 @@ footer {
                 background: $black-08;
 
                 p {
+                  margin: 0;
                   color: $white;
                   font-family: $font-Manrope;
                   font-size: $font-size-capital;
@@ -2196,6 +2439,7 @@ footer {
                 background: $black-08;
 
                 p {
+                  margin: 0;
                   color: $white;
                   font-family: $font-Manrope;
                   font-size: $font-size-capital;
@@ -2304,6 +2548,7 @@ footer {
             align-items: flex-start;
             gap: 20px;
             align-self: stretch;
+            justify-content: center;
 
             .cast-image {
               height: 89px;
@@ -2497,7 +2742,7 @@ footer {
 
       .movie-meta {
         display: flex;
-        width: 416px;
+        width: 336px;
         padding: 40px;
         flex-direction: column;
         align-items: flex-start;
@@ -2513,6 +2758,7 @@ footer {
           align-items: flex-start;
           gap: 10px;
           align-self: stretch;
+          width: 336px;
 
           .meta-title {
             display: flex;
@@ -2564,6 +2810,7 @@ footer {
               background: var(--Black-08, #141414);
 
               p {
+                margin: 0;
                 color: $white;
                 font-size: 14px;
                 font-style: normal;
@@ -2638,6 +2885,7 @@ footer {
               background: var(--Black-08, #141414);
 
               p {
+                margin: 0;
                 color: var(--Absolute-White, #FFF);
                 font-size: 14px;
                 font-style: normal;
@@ -2654,8 +2902,9 @@ footer {
             gap: 8px;
             align-self: stretch;
             border-radius: 8px;
-            border: 1px solid var(--Black-15, #262626);
-            background: var(--Black-08, #141414);
+            border: 1px solid $black-15;
+            background: $black-08;
+            width: 312px;
 
             .person-image {
               width: 47.133px;
@@ -3037,12 +3286,20 @@ footer {
   }
 
   body {
-    width: 390px;
+    width:100%;
     margin: 0;
     background-color: #141414;
     font-family: $font-Manrope;
     box-sizing: border-box;
     overflow-x: hidden;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .site-header {
@@ -3234,11 +3491,12 @@ footer {
   }
 
   .movie-banner {
-    margin: 40px 16px 60px 16px;
+    margin-top:40px;
+    width: 358px;
 
     .movie-wrapper {
       display: flex;
-      width: 358px;
+      width: 100%;
       height: 468px;
       padding: 24px 24px 16px 24px;
       flex-direction: column;
@@ -3387,18 +3645,18 @@ footer {
 
   .movie-details {
     width: 358px;
-    margin: 0 16px 80px 16px;
+    margin-top:60px;
 
     .movie-detail-wrapper {
       display: flex;
-      width: 358px;
+      width: 310px;
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
 
       .details-content-left {
         margin: 0;
-        width: 358px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -3406,7 +3664,7 @@ footer {
         flex: 1 0 0;
 
         .seasons-and-episodes {
-          width: 358px;
+          width: 100%;
           display: flex;
           padding: 24px;
           flex-direction: column;
@@ -3415,6 +3673,7 @@ footer {
           align-self: stretch;
           border-radius: 10px;
           background: $black-10;
+          border: 1px solid var(--Black-15, #262626);
 
           p {
             color: #FFF;
@@ -3547,15 +3806,14 @@ footer {
                   grid-template-columns: auto 1fr;
                   grid-template-rows: auto auto;
                   padding: 20px;
-                  gap: 12px 18px;
+                  gap: 12px 0;
                   border-radius: 8px;
                   background: var(--Black-08, #141414);
 
                   .episode-icon {
                     grid-row: 1;
                     grid-column: 1;
-                    width: 12rem;
-                    height: 10rem;
+                    width: 182px;
                     border-radius: 12px;
                     border: 1px solid var(--Black-15, #262626);
                     object-fit: cover;
@@ -3579,6 +3837,7 @@ footer {
                     display: grid;
                     grid-template-rows: auto auto;
                     gap: 8px;
+                    width: 230px;
 
                     .episode-header {
                       display: contents;
@@ -3595,7 +3854,7 @@ footer {
                       }
 
                       .duration {
-                        width: 7rem;
+                        width: 88px;
                         grid-row: 1;
                         display: flex;
                         align-items: center;
@@ -3608,6 +3867,14 @@ footer {
                         .clock {
                           width: 20px;
                           height: 20px;
+                        }
+
+                        .time {
+                          color: var(--Grey-60, #999);
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: 500;
+                          line-height: 150%;
                         }
                       }
                     }
@@ -3624,7 +3891,7 @@ footer {
         }
 
         .movie-description {
-          width: 358px;
+          width: 100%;
           display: flex;
           padding: 24px;
           flex-direction: column;
@@ -3657,7 +3924,7 @@ footer {
         }
 
         .movie-meta-for-mobile {
-          width: 310px;
+          width: 100%;
           display: flex;
           padding: 24px;
           flex-direction: column;
@@ -3731,6 +3998,7 @@ footer {
                 background: $black-08;
 
                 p {
+                  margin: 0;
                   color: $white;
                   font-family: $font-Manrope;
                   font-size: 14px;
@@ -3805,6 +4073,7 @@ footer {
                 background: $black-08;
 
                 p {
+                  margin: 0;
                   color: $white;
                   font-family: $font-Manrope;
                   font-size: 14px;
@@ -3866,7 +4135,7 @@ footer {
         }
 
         .movie-cast {
-          width: 358px;
+          width: 100%;
           display: flex;
           padding: 24px;
           flex-direction: column;
@@ -3930,7 +4199,7 @@ footer {
         }
 
         .movie-reviews {
-          width: 358px;
+          width: 100%;
           display: flex;
           padding: 24px;
           flex-direction: column;
@@ -4120,7 +4389,7 @@ footer {
       }
 
       .movie-meta {
-        width: 358px;
+        width: 100%;
         display: none;
         padding: 24px;
         flex-direction: column;
@@ -4185,11 +4454,12 @@ footer {
               align-items: flex-start;
               gap: 10px;
               border-radius: 6px;
-              border: 1px solid var(--Black-15, #262626);
-              background: var(--Black-08, #141414);
+              border: 1px solid $black-15;
+              background: $black-08;
 
               p {
-                color: var(--Absolute-White, #FFF);
+                margin: 0;
+                color: $white;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
@@ -4213,11 +4483,11 @@ footer {
               gap: 2px;
               flex: 1 0 0;
               border-radius: 8px;
-              border: 1px solid var(--Black-15, #262626);
-              background: var(--Black-08, #141414);
+              border: 1px solid $black-15;
+              background: $black-08;
 
               .rating-source {
-                color: var(--Absolute-White, #FFF);
+                color: $white;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 600;
@@ -4266,6 +4536,7 @@ footer {
               background: var(--Black-08, #141414);
 
               p {
+                margin: 0;
                 color: var(--Absolute-White, #FFF);
                 font-size: 14px;
                 font-style: normal;

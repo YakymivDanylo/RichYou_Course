@@ -429,6 +429,7 @@ main {
   background: #141414;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
+  margin: 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -830,6 +831,7 @@ main {
   background: #141414;
 }
 .movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item p {
+  margin: 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -1645,6 +1647,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: #141414;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
+    margin: 0;
     color: #fff;
     font-family: "Manrope", sans-serif;
     font-size: 18px;
@@ -2035,6 +2038,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: var(--Black-08, #141414);
   }
   .movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item p {
+    margin: 0;
     color: #fff;
     font-size: 14px;
     font-style: normal;
@@ -2860,6 +2864,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: #141414;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
+    margin: 0;
     color: #fff;
     font-family: "Manrope", sans-serif;
     font-size: 14px;
@@ -3250,6 +3255,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: var(--Black-08, #141414);
   }
   .movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item p {
+    margin: 0;
     color: #fff;
     font-size: 14px;
     font-style: normal;
