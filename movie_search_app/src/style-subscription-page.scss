@@ -1046,150 +1046,8 @@ footer {
     }
   }
 
-  .pricing-section-table {
-    margin: 0 80px 113px 81px;
-
-    .table-wrapper {
-
-      display: flex;
-      width: 1279px;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 60px;
-
-      .pricing-header {
-        display: flex;
-        padding-right: 150px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-
-        h2 {
-          align-self: stretch;
-          color: var(--Absolute-White, #FFF);
-          font-size: 38px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 150%;
-        }
-
-        p {
-          align-self: stretch;
-          color: var(--Grey-60, #999);
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
-        }
-      }
-
-      .pricing-table-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-self: stretch;
-        border-radius: 10px;
-        border: 1px solid var(--Black-15, #262626);
-
-        .header-row {
-          display: flex;
-          align-items: flex-start;
-          align-self: stretch;
-          border-bottom: 1px solid var(--Black-15, #262626);
-          background: var(--Black-06, #0F0F0F);
-
-          .header-row-column {
-            display: flex;
-            padding: 1.875rem;
-            justify-content: center;
-            align-items: center;
-            gap: 0.625rem;
-            flex: 1 0 0;
-
-            p {
-              flex: 1 0 0;
-              color: $white;
-              font-family: $font-Manrope;
-              font-size: 1.25rem;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 150%;
-            }
-          }
-
-          .header-row-column-popular {
-            display: flex;
-            padding: 1.875rem;
-            align-items: center;
-            gap: 0.5rem;
-            flex: 1 0 0;
-
-            p {
-              color: $white;
-              font-family: $font-Manrope;
-              font-size: 1.25rem;
-              font-style: normal;
-              font-weight: 600;
-              line-height: 150%;
-            }
-
-            .popular {
-              display: flex;
-              padding: 0 16px;
-              align-items: flex-start;
-              gap: 0.625rem;
-              border-radius: 0.125rem;
-              background: $red-45;
-
-              p {
-                color: $white;
-                font-family: $font-Manrope;
-                font-size: 0.875rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 150%;
-              }
-            }
-          }
-        }
-
-        .common-row {
-          display: flex;
-          align-items: flex-start;
-          align-self: stretch;
-          border-bottom: 1px solid $black-15;
-
-          .common-row-field {
-            //height:60px;
-            display: flex;
-            padding: 1.875rem;
-            justify-content: center;
-            align-items: center;
-            gap: 0.625rem;
-            flex: 1 0 0;
-            border: 1px solid $black-15;
-
-            p {
-              flex: 1 0 0;
-              color: $gray-60;
-              font-family: $font-Manrope;
-              font-size: 1.125rem;
-              font-style: normal;
-              font-weight: 500;
-              line-height: 150%;
-            }
-          }
-        }
-      }
-
-    }
-
-
-  }
-
   .pricing-section {
-    margin-top: 150px;
+    margin-top: 100px;
     width: 1280px;
 
     .pricing-wrapper {
@@ -1407,6 +1265,149 @@ footer {
           }
         }
       }
+    }
+
+
+  }
+
+  .pricing-section-table {
+    margin-top: 120px;
+    width: 1279px;
+
+    .table-wrapper {
+
+      display: flex;
+      width: 1279px;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 60px;
+
+      .pricing-header {
+        display: flex;
+        padding-right: 150px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+
+        h2 {
+          align-self: stretch;
+          color: var(--Absolute-White, #FFF);
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 150%;
+        }
+
+        p {
+          align-self: stretch;
+          color: var(--Grey-60, #999);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+
+      .pricing-table-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 10px;
+        border: 1px solid var(--Black-15, #262626);
+
+        .header-row {
+          display: flex;
+          align-items: flex-start;
+          align-self: stretch;
+          border-bottom: 1px solid var(--Black-15, #262626);
+          background: var(--Black-06, #0F0F0F);
+
+          .header-row-column {
+            display: flex;
+            padding: 1.875rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex: 1 0 0;
+
+            p {
+              flex: 1 0 0;
+              color: $white;
+              font-family: $font-Manrope;
+              font-size: 1.25rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 150%;
+            }
+          }
+
+          .header-row-column-popular {
+            display: flex;
+            padding: 1.875rem;
+            align-items: center;
+            gap: 0.5rem;
+            flex: 1 0 0;
+
+            p {
+              color: $white;
+              font-family: $font-Manrope;
+              font-size: 1.25rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 150%;
+            }
+
+            .popular {
+              display: flex;
+              padding: 0 16px;
+              align-items: flex-start;
+              gap: 0.625rem;
+              border-radius: 0.125rem;
+              background: $red-45;
+
+              p {
+                color: $white;
+                font-family: $font-Manrope;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+              }
+            }
+          }
+        }
+
+        .common-row {
+          display: flex;
+          align-items: flex-start;
+          align-self: stretch;
+          border-bottom: 1px solid $black-15;
+
+          .common-row-field {
+            //height:60px;
+            display: flex;
+            padding: 1.875rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex: 1 0 0;
+            border: 1px solid $black-15;
+
+            p {
+              flex: 1 0 0;
+              color: $gray-60;
+              font-family: $font-Manrope;
+              font-size: 1.125rem;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+
     }
 
 
@@ -1950,8 +1951,231 @@ footer {
     }
   }
 
+  .pricing-section {
+    margin-top: 40px;
+    width: 358px;
+
+    .pricing-wrapper {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 40px;
+      text-align: left;
+      color: #fff;
+
+      .section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        .text-content {
+          align-self: stretch;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 10px;
+
+          .section-header-title {
+            align-self: stretch;
+            position: relative;
+            line-height: 150%;
+            margin: 0;
+            font-size: 24px;
+          }
+
+          .section-text {
+            align-self: stretch;
+            position: relative;
+            font-size: 14px;
+            line-height: 150%;
+            color: #999;
+          }
+        }
+
+        .plan-tabs {
+          width: 185px;
+          display: flex;
+          padding: 8px;
+          align-items: center;
+          border-radius: 8px;
+          border: 1px solid var(--Black-15, #262626);
+          background: var(--Black-06, #0F0F0F);
+
+
+          .button-active {
+            border-radius: 10px;
+            background-color: #1f1f1f;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+
+            .text {
+              position: relative;
+              line-height: 150%;
+              font-weight: 500;
+              color: white;
+              font-size: 14px;
+            }
+          }
+
+          .button {
+            border: none;
+            background-color: $black-06;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            color: #999;
+
+            .text-tabs {
+              position: relative;
+              line-height: 150%;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .pricing-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        .plan-card {
+          width: 310px;
+          flex: 1;
+          border-radius: 12px;
+          background-color: #1a1a1a;
+          border: 1px solid #262626;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 24px;
+          gap: 50px;
+
+          .card-content {
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+
+            .plan-title {
+              align-self: stretch;
+              position: relative;
+              line-height: 150%;
+              font-size: 20px;
+              margin: 0;
+            }
+
+            .plan-text {
+              align-self: stretch;
+              position: relative;
+              font-size: 16px;
+              line-height: 150%;
+              color: #999;
+            }
+          }
+
+          .plan-price {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 4px;
+            font-size: 40px;
+
+            .price {
+              position: relative;
+              line-height: 73%;
+              font-weight: 600;
+              font-size: 30px;
+            }
+
+            .period {
+              position: relative;
+              font-size: 16px;
+              line-height: 73%;
+              font-weight: 500;
+              color: #999;
+            }
+          }
+
+          .plan-actions {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+            font-size: $font-size-capital;
+
+            .button1 {
+              flex: 1;
+              border-radius: 8px;
+              background-color: #141414;
+              border: 1px solid #262626;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 18px 24px;
+
+              .text3 {
+                position: relative;
+                line-height: 150%;
+                font-weight: 600;
+                font-size: 13px;
+
+              }
+            }
+
+            .button2 {
+              flex: 1;
+              border-radius: 8px;
+              background-color: #e50000;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              padding: 18px 24px;
+              border: none;
+
+              .text3 {
+                position: relative;
+                line-height: 150%;
+                font-weight: 600;
+                color: white;
+                font-size: 13px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
   .pricing-section-table {
-    margin: 0 15px 0 15px;
+    margin-top: 80px;
+    width: 358px;
 
     .table-wrapper {
       margin: 0;
@@ -2247,228 +2471,6 @@ footer {
         }
       }
 
-    }
-
-
-  }
-
-  .pricing-section {
-    margin-top: 150px;
-    width: 358px;
-
-    .pricing-wrapper {
-      width: 100%;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 40px;
-      text-align: left;
-      color: #fff;
-
-      .section-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
-
-        .text-content {
-          align-self: stretch;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          gap: 10px;
-
-          .section-header-title {
-            align-self: stretch;
-            position: relative;
-            line-height: 150%;
-            margin: 0;
-            font-size: 24px;
-          }
-
-          .section-text {
-            align-self: stretch;
-            position: relative;
-            font-size: 14px;
-            line-height: 150%;
-            color: #999;
-          }
-        }
-
-        .plan-tabs {
-          width: 185px;
-          display: flex;
-          padding: 8px;
-          align-items: center;
-          border-radius: 8px;
-          border: 1px solid var(--Black-15, #262626);
-          background: var(--Black-06, #0F0F0F);
-
-
-          .button-active {
-            border-radius: 10px;
-            background-color: #1f1f1f;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            padding: 12px 20px;
-
-            .text {
-              position: relative;
-              line-height: 150%;
-              font-weight: 500;
-              color: white;
-              font-size: 14px;
-            }
-          }
-
-          .button {
-            border: none;
-            background-color: $black-06;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            padding: 12px 20px;
-            color: #999;
-
-            .text-tabs {
-              position: relative;
-              line-height: 150%;
-              font-weight: 500;
-            }
-          }
-        }
-      }
-
-      .pricing-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
-
-        .plan-card {
-          width: 310px;
-          flex: 1;
-          border-radius: 12px;
-          background-color: #1a1a1a;
-          border: 1px solid #262626;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: flex-start;
-          padding: 24px;
-          gap: 50px;
-
-          .card-content {
-            align-self: stretch;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-            gap: 16px;
-
-            .plan-title {
-              align-self: stretch;
-              position: relative;
-              line-height: 150%;
-              font-size: 20px;
-              margin: 0;
-            }
-
-            .plan-text {
-              align-self: stretch;
-              position: relative;
-              font-size: 16px;
-              line-height: 150%;
-              color: #999;
-            }
-          }
-
-          .plan-price {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            justify-content: center;
-            gap: 4px;
-            font-size: 40px;
-
-            .price {
-              position: relative;
-              line-height: 73%;
-              font-weight: 600;
-              font-size: 30px;
-            }
-
-            .period {
-              position: relative;
-              font-size: 16px;
-              line-height: 73%;
-              font-weight: 500;
-              color: #999;
-            }
-          }
-
-          .plan-actions {
-            align-self: stretch;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: flex-start;
-            gap: 20px;
-            font-size: $font-size-capital;
-
-            .button1 {
-              flex: 1;
-              border-radius: 8px;
-              background-color: #141414;
-              border: 1px solid #262626;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: center;
-              padding: 18px 24px;
-
-              .text3 {
-                position: relative;
-                line-height: 150%;
-                font-weight: 600;
-                font-size: 13px;
-
-              }
-            }
-
-            .button2 {
-              flex: 1;
-              border-radius: 8px;
-              background-color: #e50000;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: center;
-              padding: 18px 24px;
-              border: none;
-
-              .text3 {
-                position: relative;
-                line-height: 150%;
-                font-weight: 600;
-                color: white;
-                font-size: 13px;
-
-              }
-            }
-          }
-        }
-      }
     }
 
 

@@ -903,129 +903,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   .site-header .hidden-form {
     display: none;
   }
-  .pricing-section-table {
-    margin: 0 80px 113px 81px;
-  }
-  .pricing-section-table .table-wrapper {
-    display: flex;
-    width: 1279px;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 60px;
-  }
-  .pricing-section-table .table-wrapper .pricing-header {
-    display: flex;
-    padding-right: 150px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-  }
-  .pricing-section-table .table-wrapper .pricing-header h2 {
-    align-self: stretch;
-    color: var(--Absolute-White, #FFF);
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-  }
-  .pricing-section-table .table-wrapper .pricing-header p {
-    align-self: stretch;
-    color: var(--Grey-60, #999);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    border-radius: 10px;
-    border: 1px solid var(--Black-15, #262626);
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row {
-    display: flex;
-    align-items: flex-start;
-    align-self: stretch;
-    border-bottom: 1px solid var(--Black-15, #262626);
-    background: var(--Black-06, #0F0F0F);
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column {
-    display: flex;
-    padding: 1.875rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    flex: 1 0 0;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column p {
-    flex: 1 0 0;
-    color: #fff;
-    font-family: "Manrope", sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular {
-    display: flex;
-    padding: 1.875rem;
-    align-items: center;
-    gap: 0.5rem;
-    flex: 1 0 0;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular p {
-    color: #fff;
-    font-family: "Manrope", sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular .popular {
-    display: flex;
-    padding: 0 16px;
-    align-items: flex-start;
-    gap: 0.625rem;
-    border-radius: 0.125rem;
-    background: #E50000;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular .popular p {
-    color: #fff;
-    font-family: "Manrope", sans-serif;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .common-row {
-    display: flex;
-    align-items: flex-start;
-    align-self: stretch;
-    border-bottom: 1px solid #262626;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .common-row .common-row-field {
-    display: flex;
-    padding: 1.875rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    flex: 1 0 0;
-    border: 1px solid #262626;
-  }
-  .pricing-section-table .table-wrapper .pricing-table-container .common-row .common-row-field p {
-    flex: 1 0 0;
-    color: #999;
-    font-family: "Manrope", sans-serif;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
   .pricing-section {
-    margin-top: 150px;
+    margin-top: 100px;
     width: 1280px;
   }
   .pricing-section .pricing-wrapper {
@@ -1218,6 +1097,128 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-weight: 600;
     color: white;
     font-size: 13px;
+  }
+  .pricing-section-table {
+    margin-top: 120px;
+    width: 1279px;
+  }
+  .pricing-section-table .table-wrapper {
+    display: flex;
+    width: 1279px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+  }
+  .pricing-section-table .table-wrapper .pricing-header {
+    display: flex;
+    padding-right: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .pricing-section-table .table-wrapper .pricing-header h2 {
+    align-self: stretch;
+    color: var(--Absolute-White, #FFF);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .pricing-section-table .table-wrapper .pricing-header p {
+    align-self: stretch;
+    color: var(--Grey-60, #999);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid var(--Black-15, #262626);
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    border-bottom: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0F0F0F);
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column {
+    display: flex;
+    padding: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column p {
+    flex: 1 0 0;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular {
+    display: flex;
+    padding: 1.875rem;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular .popular {
+    display: flex;
+    padding: 0 16px;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.125rem;
+    background: #E50000;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .header-row .header-row-column-popular .popular p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .common-row {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    border-bottom: 1px solid #262626;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .common-row .common-row-field {
+    display: flex;
+    padding: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1 0 0;
+    border: 1px solid #262626;
+  }
+  .pricing-section-table .table-wrapper .pricing-table-container .common-row .common-row-field p {
+    flex: 1 0 0;
+    color: #999;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
   }
   .container-free-trial {
     margin-top: 135px;
@@ -1689,8 +1690,202 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   .site-header .hidden-form {
     display: none;
   }
+  .pricing-section {
+    margin-top: 40px;
+    width: 358px;
+  }
+  .pricing-section .pricing-wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    text-align: left;
+    color: #fff;
+  }
+  .pricing-section .pricing-wrapper .section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+  .pricing-section .pricing-wrapper .section-container .text-content {
+    align-self: stretch;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .pricing-section .pricing-wrapper .section-container .text-content .section-header-title {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    margin: 0;
+    font-size: 24px;
+  }
+  .pricing-section .pricing-wrapper .section-container .text-content .section-text {
+    align-self: stretch;
+    position: relative;
+    font-size: 14px;
+    line-height: 150%;
+    color: #999;
+  }
+  .pricing-section .pricing-wrapper .section-container .plan-tabs {
+    width: 185px;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--Black-15, #262626);
+    background: var(--Black-06, #0F0F0F);
+  }
+  .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active {
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+  }
+  .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+  }
+  .pricing-section .pricing-wrapper .section-container .plan-tabs .button {
+    border: none;
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    color: #999;
+  }
+  .pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
+    position: relative;
+    line-height: 150%;
+    font-weight: 500;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card {
+    width: 310px;
+    flex: 1;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px;
+    gap: 50px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-title {
+    align-self: stretch;
+    position: relative;
+    line-height: 150%;
+    font-size: 20px;
+    margin: 0;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-text {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    font-size: 40px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .price {
+    position: relative;
+    line-height: 73%;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .period {
+    position: relative;
+    font-size: 16px;
+    line-height: 73%;
+    font-weight: 500;
+    color: #999;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    font-size: 18px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 {
+    flex: 1;
+    border-radius: 8px;
+    background-color: #141414;
+    border: 1px solid #262626;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 24px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
+    flex: 1;
+    border-radius: 8px;
+    background-color: #e50000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 24px;
+    border: none;
+  }
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
+    position: relative;
+    line-height: 150%;
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+  }
   .pricing-section-table {
-    margin: 0 15px 0 15px;
+    margin-top: 80px;
+    width: 358px;
   }
   .pricing-section-table .table-wrapper {
     margin: 0;
@@ -1948,199 +2143,6 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-  }
-  .pricing-section {
-    margin-top: 150px;
-    width: 358px;
-  }
-  .pricing-section .pricing-wrapper {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 40px;
-    text-align: left;
-    color: #fff;
-  }
-  .pricing-section .pricing-wrapper .section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-  }
-  .pricing-section .pricing-wrapper .section-container .text-content {
-    align-self: stretch;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-  }
-  .pricing-section .pricing-wrapper .section-container .text-content .section-header-title {
-    align-self: stretch;
-    position: relative;
-    line-height: 150%;
-    margin: 0;
-    font-size: 24px;
-  }
-  .pricing-section .pricing-wrapper .section-container .text-content .section-text {
-    align-self: stretch;
-    position: relative;
-    font-size: 14px;
-    line-height: 150%;
-    color: #999;
-  }
-  .pricing-section .pricing-wrapper .section-container .plan-tabs {
-    width: 185px;
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid var(--Black-15, #262626);
-    background: var(--Black-06, #0F0F0F);
-  }
-  .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active {
-    border-radius: 10px;
-    background-color: #1f1f1f;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-  }
-  .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-    color: white;
-    font-size: 14px;
-  }
-  .pricing-section .pricing-wrapper .section-container .plan-tabs .button {
-    border: none;
-    background-color: #0F0F0F;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    color: #999;
-  }
-  .pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
-    position: relative;
-    line-height: 150%;
-    font-weight: 500;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card {
-    width: 310px;
-    flex: 1;
-    border-radius: 12px;
-    background-color: #1a1a1a;
-    border: 1px solid #262626;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 24px;
-    gap: 50px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 16px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-title {
-    align-self: stretch;
-    position: relative;
-    line-height: 150%;
-    font-size: 20px;
-    margin: 0;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content .plan-text {
-    align-self: stretch;
-    position: relative;
-    font-size: 16px;
-    line-height: 150%;
-    color: #999;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 4px;
-    font-size: 40px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .price {
-    position: relative;
-    line-height: 73%;
-    font-weight: 600;
-    font-size: 30px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-price .period {
-    position: relative;
-    font-size: 16px;
-    line-height: 73%;
-    font-weight: 500;
-    color: #999;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
-    font-size: 18px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 {
-    flex: 1;
-    border-radius: 8px;
-    background-color: #141414;
-    border: 1px solid #262626;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 24px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
-    position: relative;
-    line-height: 150%;
-    font-weight: 600;
-    font-size: 13px;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
-    flex: 1;
-    border-radius: 8px;
-    background-color: #e50000;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 24px;
-    border: none;
-  }
-  .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
-    position: relative;
-    line-height: 150%;
-    font-weight: 600;
-    color: white;
-    font-size: 13px;
   }
   .container-free-trial {
     margin-top: 80px;
