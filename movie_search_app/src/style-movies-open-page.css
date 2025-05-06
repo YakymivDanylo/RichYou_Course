@@ -194,7 +194,7 @@ main {
   align-self: stretch;
   position: relative;
   line-height: 150%;
-  font-size: 16px;
+  font-size: 38px;
   margin: 0;
 }
 .movie-banner .movie-wrapper .container .text-container .hero-description {
@@ -1200,7 +1200,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     display: none;
   }
   .movie-banner {
-    margin: 60px 80px 80px 80px;
+    margin-top: 59px;
+    width: 1280px;
   }
   .movie-banner .movie-wrapper {
     display: flex;
@@ -1238,8 +1239,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-self: stretch;
     position: relative;
     line-height: 150%;
-    font-size: 16px;
     margin: 0;
+    font-size: 30px;
   }
   .movie-banner .movie-wrapper .container .text-container .hero-description {
     align-self: stretch;
@@ -1347,7 +1348,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     z-index: 3;
   }
   .movie-details {
-    margin: 0 77px 121px 52px;
+    margin-top: 80px;
+    width: 1286px;
   }
   .movie-details .movie-detail-wrapper {
     display: flex;
@@ -1364,6 +1366,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     flex: 1 0 0;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-description {
+    width: 700px;
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -1391,8 +1394,9 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-self: stretch;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-cast {
+    width: 700px;
     display: flex;
-    padding: 21px 21px;
+    padding: 40px;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -1434,13 +1438,15 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: flex-start;
     gap: 20px;
     align-self: stretch;
+    justify-content: center;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-cast .cast-grid .cast-image {
-    height: 89px;
+    height: 74px;
     flex: 1 0 0;
     border-radius: 12px;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-reviews {
+    width: 700px;
     display: flex;
     padding: 40px;
     flex-direction: column;
@@ -1601,7 +1607,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   }
   .movie-details .movie-detail-wrapper .movie-meta {
     display: flex;
-    width: 416px;
+    width: 400px;
     padding: 40px;
     flex-direction: column;
     align-items: flex-start;
@@ -1612,6 +1618,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: #1a1a1a;
   }
   .movie-details .movie-detail-wrapper .movie-meta .meta-section {
+    width: 336px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
