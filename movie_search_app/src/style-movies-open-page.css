@@ -360,6 +360,189 @@ main {
   font-weight: 500;
   line-height: 150%;
 }
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile {
+  display: none;
+  width: 369px;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background: #1a1a1a;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  margin: 0;
+  color: #fff;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title .meta-icon {
+  width: 24px;
+  height: 24px;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title .meta-text {
+  flex: 1 0 0;
+  color: #999;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-value {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item {
+  display: flex;
+  padding: 8px 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-source {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars .stars {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars .rating-value {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item {
+  display: flex;
+  padding: 8px 14px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item p {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card {
+  display: flex;
+  padding: 14px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  background: #141414;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-image {
+  width: 56.56px;
+  height: 60px;
+  border-radius: 8px;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info .person-name {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info .person-location {
+  align-self: stretch;
+  color: #999;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
 .movie-details .movie-detail-wrapper .details-content-left .movie-cast {
   display: flex;
   padding: 50px;
@@ -1393,6 +1576,189 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     line-height: 150%;
     align-self: stretch;
   }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile {
+    display: none;
+    width: 369px;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #1a1a1a;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    margin: 0;
+    color: #fff;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title .meta-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title .meta-text {
+    flex: 1 0 0;
+    color: #999;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-value {
+    align-self: stretch;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item {
+    display: flex;
+    padding: 8px 14px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-source {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars .stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars .rating-value {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item {
+    display: flex;
+    padding: 8px 14px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card {
+    display: flex;
+    padding: 14px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-image {
+    width: 56.56px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info .person-name {
+    align-self: stretch;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info .person-location {
+    align-self: stretch;
+    color: #999;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+  }
   .movie-details .movie-detail-wrapper .details-content-left .movie-cast {
     width: 700px;
     display: flex;
@@ -2252,7 +2618,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     display: none;
   }
   .movie-banner {
-    margin: 40px 16px 60px 16px;
+    margin-top: 60px;
+    width: 358px;
   }
   .movie-banner .movie-wrapper {
     display: flex;
@@ -2377,17 +2744,18 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     display: none;
   }
   .movie-details {
-    margin: 0 16px 80px 16px;
+    margin-top: 60px;
+    width: 358px;
   }
   .movie-details .movie-detail-wrapper {
     display: flex;
-    width: 358px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
   }
   .movie-details .movie-detail-wrapper .details-content-left {
-    margin: 60px 16px 20px 16px;
+    margin: 0;
     width: 358px;
     display: flex;
     flex-direction: column;
@@ -2422,6 +2790,189 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-weight: 500;
     line-height: 150%;
     align-self: stretch;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile {
+    width: 310px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid #262626;
+    background: #1a1a1a;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    align-self: stretch;
+    margin: 0;
+    color: #fff;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title .meta-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-title .meta-text {
+    flex: 1 0 0;
+    color: #999;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .meta-value {
+    align-self: stretch;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item {
+    display: flex;
+    padding: 0 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item {
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-source {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars .stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-stars .rating-value {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item {
+    display: flex;
+    padding: 0 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item p {
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card {
+    display: flex;
+    padding: 14px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    background: #141414;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-image {
+    width: 56.56px;
+    height: 60px;
+    border-radius: 8px;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info .person-name {
+    align-self: stretch;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+  }
+  .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-info .person-location {
+    align-self: stretch;
+    color: #999;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-cast {
     width: 310px;
@@ -2469,9 +3020,10 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: flex-start;
     gap: 20px;
     align-self: stretch;
+    justify-content: center;
   }
   .movie-details .movie-detail-wrapper .details-content-left .movie-cast .cast-grid .cast-image {
-    height: 89px;
+    height: 70px;
     flex: 1 0 0;
     border-radius: 12px;
   }
@@ -2637,7 +3189,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   }
   .movie-details .movie-detail-wrapper .movie-meta {
     width: 21rem;
-    display: flex;
+    display: none;
     padding: 24px;
     flex-direction: column;
     align-items: flex-start;
