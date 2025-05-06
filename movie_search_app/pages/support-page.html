@@ -10,22 +10,29 @@
 <header class="site-header">
     <div class="navbar">
         <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
-        <div class="buttons-container">
-            <button class="icon" aria-label="Search"><img alt="Icon Search" src="../icons/icon-search.svg">
-            </button>
-            <button class="icon" aria-label="Notification"><img alt="Icon Notification"
-                                                                src="../icons/icon-notification.svg"></button>
-        </div>
-        <button class="burger-menu" aria-label="Notification"><img alt="Icon Notification"
-                                                                   src="../icons/icon-burger-menu.svg"></button>
-        <nav class="buttons-container-slider">
-            <div class="text-button"><a href="home-page.html"> Home</a></div>
-            <div class="text-button"><a href="movies-&-shows-page.html"> Movies&Shows</a></div>
-            <div class="button1">
+        <nav class="buttons-container-slider ">
+            <div class="text"><a href="home-page.html"> Home</a></div>
+
+            <div class="text"><a href="movies-&-shows-page.html"> Movies&Shows</a>
+            </div>
+            <div class="button-active">
                 <div class="text"><a href="support-page.html"> Support</a></div>
             </div>
-            <div class="text-button"><a href="subscription-page.html"> Subscription</a></div>
+            <div class="text"><a href="subscription-page.html"> Subscription</a></div>
         </nav>
+        <div class="buttons-container ">
+            <span aria-label="Search"><img class="icon" alt="Icon Search" src="../icons/icon-search.svg">
+            </span>
+            <span aria-label="Notification"><img class="icon" alt="Icon Notification"
+                                                 src="../icons/icon-notification.svg"></span>
+        </div>
+        <div class="burger-menu">
+        <span class="burger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        </div>
     </div>
 
 
@@ -50,77 +57,79 @@
 
     <section class="form-container">
         <div class="form-wrapper">
-        <aside class="aside-img">
-            <div class="title-text">
-                <h1 id="contact-heading" class="heading">Welcome to our support page!</h1>
-                <p class="paragraph">We're here to help you with any problems you may be having with our product.</p>
-            </div>
-            <div class="images">
-                <div class="image-container">
-                    <img class="con-img" src="../icons/Image%20Container.svg" alt="">
-                    <img class="con-img" src="../icons/Image%20Container-1.svg" alt="">
-                    <img class="con-img" src="../icons/Image%20Container-2.svg" alt="">
-                    <img class="con-img" src="../icons/Image%20Container-3.svg" alt="">
+            <aside class="aside-img">
+                <div class="title-text">
+                    <h1 id="contact-heading" class="heading">Welcome to our support page!</h1>
+                    <p class="paragraph">We're here to help you with any problems you may be having with our
+                        product.</p>
                 </div>
-            </div>
-        </aside>
-        <aside class="contact-form">
-            <form id="support-form" method="POST">
-                <div class="form-group1">
-                    <div class="form-name">
-                        <label class="name-header" for="firstName">First Name</label>
-                        <input class="name-input" type="text" id="firstName" name="firstName"
-                               placeholder="Enter First Name">
-                    </div>
-                    <div class="form-surname">
-                        <label class="surname-header" for="lastName">Last Name</label>
-                        <input class="surname-input" type="text" id="lastName" name="lastName"
-                               placeholder="Enter Last Name">
+                <div class="images">
+                    <div class="image-container">
+                        <img class="con-img" src="../icons/Image%20Container.svg" alt="">
+                        <img class="con-img" src="../icons/Image%20Container-1.svg" alt="">
+                        <img class="con-img" src="../icons/Image%20Container-2.svg" alt="">
+                        <img class="con-img" src="../icons/Image%20Container-3.svg" alt="">
                     </div>
                 </div>
-
-                <div class="form-group2">
-                    <div class="form-email">
-                        <label class="email-heading" for="email">Email</label>
-                        <input class="email-input" type="email" id="email" name="email" placeholder="Enter Your Email">
-                    </div>
-
-                    <div class="form-phone-number">
-                        <label for="phone" class="phone-label">Phone Number</label>
-                        <div class="phone-input-group">
-                            <div class="country-select-wrapper">
-                                <select class="country-code-select" id="countryCode" name="countryCode">
-                                    <option value="+1" data-icon="../icons/indian-flag-icon.svg">In +1</option>
-                                    <option value="+380" data-icon="ua-flag.png">Ua +380</option>
-                                </select>
-                            </div>
-                            <input
-                                    type="tel"
-                                    id="phone"
-                                    name="phone"
-                                    class="phone-number-input"
-                                    placeholder="Enter Phone Number"
-                                    pattern="[0-9]{10}"
-                            >
+            </aside>
+            <aside class="contact-form">
+                <form id="support-form" method="POST">
+                    <div class="form-group1">
+                        <div class="form-name">
+                            <label class="name-header" for="firstName">First Name</label>
+                            <input class="name-input" type="text" id="firstName" name="firstName"
+                                   placeholder="Enter First Name">
+                        </div>
+                        <div class="form-surname">
+                            <label class="surname-header" for="lastName">Last Name</label>
+                            <input class="surname-input" type="text" id="lastName" name="lastName"
+                                   placeholder="Enter Last Name">
                         </div>
                     </div>
-                </div>
 
-                <div class="form-group3">
-                    <label class="form-heading" for="message">Message</label>
-                    <textarea class="form-message" id="message" name="message"
-                              placeholder="Enter Your Message"></textarea>
-                </div>
+                    <div class="form-group2">
+                        <div class="form-email">
+                            <label class="email-heading" for="email">Email</label>
+                            <input class="email-input" type="email" id="email" name="email"
+                                   placeholder="Enter Your Email">
+                        </div>
 
-                <div class="form-actions">
-                    <label class="check-box">
-                        <input class="field-check-box" type="checkbox" required>
-                        <p>I agree with Terms of Use and Privacy Policy</p>
-                    </label>
-                    <button class="submit-button" type="submit"><p>Send Message</p></button>
-                </div>
-            </form>
-        </aside>
+                        <div class="form-phone-number">
+                            <label for="phone" class="phone-label">Phone Number</label>
+                            <div class="phone-input-group">
+                                <div class="country-select-wrapper">
+                                    <select class="country-code-select" id="countryCode" name="countryCode">
+                                        <option value="+1" data-icon="../icons/indian-flag-icon.svg">In +1</option>
+                                        <option value="+380" data-icon="ua-flag.png">Ua +380</option>
+                                    </select>
+                                </div>
+                                <input
+                                        type="tel"
+                                        id="phone"
+                                        name="phone"
+                                        class="phone-number-input"
+                                        placeholder="Enter Phone Number"
+                                        pattern="[0-9]{10}"
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group3">
+                        <label class="form-heading" for="message">Message</label>
+                        <textarea class="form-message" id="message" name="message"
+                                  placeholder="Enter Your Message"></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <label class="check-box">
+                            <input class="field-check-box" type="checkbox" required>
+                            <p>I agree with Terms of Use and Privacy Policy</p>
+                        </label>
+                        <span class="submit-button" type="submit"><p>Send Message</p></span>
+                    </div>
+                </form>
+            </aside>
         </div>
     </section>
 
@@ -134,7 +143,7 @@
                         the
                         most common questions about StreamVibe.</p>
                 </article>
-                <button class="primary-button"><p class="text">Ask a Question</p></button>
+                <button class="primary-button"><span class="text">Ask a Question</span></button>
             </header>
 
             <div class="faq-container">
@@ -261,13 +270,13 @@
                     free trial of StreamVibe.</p>
             </article>
             <button class="primary-button-trial">
-                <div class="text-trial">Start a Free Trail</div>
+                <span class="text-trial">Start a Free Trail</span>
             </button>
         </div>
     </section>
 </main>
 
-<footer >
+<footer>
     <div class="footer">
         <div class="footer-top">
             <article class="item-footer-top">
@@ -314,8 +323,8 @@
                 <p class="header-footer-item">Connect With Us</p>
                 <div class="ref-buttons-items">
                     <p class="ref-button"><img class="ref-icon" alt="" src="../icons/icon-facebook-stroke.svg"></p>
-                    <p class="ref-button"><img  class="ref-icon" alt="" src="../icons/icon-twitter-stroke.svg"></p>
-                    <p class="ref-button"><img  class="ref-icon" alt src="../icons/icon-linkedin-stroke.svg"></p>
+                    <p class="ref-button"><img class="ref-icon" alt="" src="../icons/icon-twitter-stroke.svg"></p>
+                    <p class="ref-button"><img class="ref-icon" alt src="../icons/icon-linkedin-stroke.svg"></p>
 
                 </div>
             </article>
