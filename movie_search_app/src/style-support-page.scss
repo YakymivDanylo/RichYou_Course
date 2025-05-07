@@ -295,6 +295,10 @@ a {
             font-weight: 600;
             line-height: 150%;
           }
+          .name-input::placeholder{
+            font-family: $font-Manrope;
+            font-size: 18px;
+          }
 
           .name-input {
             width: 373px;
@@ -338,6 +342,10 @@ a {
             background: $black-08;
             color: var(--Grey-60, #999);
           }
+          .surname-input::placeholder{
+            font-family: $font-Manrope;
+            font-size: 18px;
+          }
         }
       }
 
@@ -376,6 +384,10 @@ a {
             border: 1px solid $black-15;
             background: $black-08;
             color: var(--Grey-60, #999);
+          }
+          .email-input::placeholder{
+            font-family: $font-Manrope;
+            font-size: 18px;
           }
 
         }
@@ -426,6 +438,10 @@ a {
               background: $black-08;
               color: var(--Grey-60, #999);
             }
+            .phone-number-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 18px;
+            }
           }
         }
       }
@@ -461,6 +477,10 @@ a {
           border: 1px solid $black-15;
           background: $black-08;
           color: var(--Grey-60, #999);
+        }
+        .form-message::placeholder{
+          font-family: $font-Manrope;
+          font-size: 18px;
         }
       }
 
@@ -1341,6 +1361,10 @@ footer {
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
             }
+            .name-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 14px;
+            }
           }
 
           .form-surname {
@@ -1369,6 +1393,10 @@ footer {
               border-radius: 6px;
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
+            }
+            .surnmae-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 14px;
             }
           }
         }
@@ -1406,6 +1434,10 @@ footer {
               border-radius: 6px;
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
+            }
+            .email-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 14px;
             }
 
           }
@@ -1457,6 +1489,10 @@ footer {
                 border: 1px solid var(--Black-15, #262626);
                 background: var(--Black-08, #141414);
               }
+              .phone-number-input::placeholder{
+                font-family: $font-Manrope;
+                font-size: 14px;
+              }
             }
           }
         }
@@ -1489,6 +1525,10 @@ footer {
             border: 1px solid var(--Black-15, #262626);
             background: var(--Black-08, #141414);
             color: var(--Grey-60, #999);
+          }
+          .form-message::placeholder{
+            font-family: $font-Manrope;
+            font-size: 14px;
           }
         }
 
@@ -2228,6 +2268,10 @@ footer {
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
             }
+            .name-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 14px;
+            }
           }
 
           .form-surname {
@@ -2256,6 +2300,10 @@ footer {
               border-radius: 6px;
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
+            }
+            .surname-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 14px;
             }
           }
         }
@@ -2296,6 +2344,10 @@ footer {
               border-radius: 6px;
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
+            }
+            .email-input::placeholder{
+              font-family: $font-Manrope;
+              font-size: 14px;
             }
 
           }
@@ -2345,6 +2397,10 @@ footer {
                 border: 1px solid var(--Black-15, #262626);
                 background: var(--Black-08, #141414);
               }
+              .phone-number-input::placeholder{
+                font-family: $font-Manrope;
+                font-size: 14px;
+              }
             }
           }
         }
@@ -2380,6 +2436,10 @@ footer {
             border: 1px solid var(--Black-15, #262626);
             background: var(--Black-08, #141414);
             color: var(--Grey-60, #999);
+          }
+          .form-message::placeholder{
+            font-family: $font-Manrope;
+            font-size: 14px;
           }
         }
 
