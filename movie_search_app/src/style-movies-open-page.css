@@ -3161,6 +3161,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
   }
   .movie-details .movie-detail-wrapper .details-content-left .reviews-controls .control-button {
     width: 58px;

@@ -1552,7 +1552,7 @@ $font-size-small: 14px;
   }
 }
 
-@mixin movie-reviews-desktop {
+@mixin reviews-controls-desktop {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1586,6 +1586,157 @@ $font-size-small: 14px;
       flex: 1 0 0;
       border-radius: 100px;
       background: $black-20;
+    }
+  }
+}
+
+@mixin movie-reviews-desktop{
+  display: flex;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: $border-radius-12;
+  border: 1px solid $black-15;
+  background: $black-10;
+
+  .section-header-reviews {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    align-self: stretch;
+
+    .section-header-title {
+      flex: 1 0 0;
+      color: $gray-60;
+      font-family: $font-Manrope;
+      font-size: $font-size-capital;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+    }
+
+    .add-review-button {
+      display: flex;
+      padding: 14px 16px;
+      align-items: center;
+      gap: 4px;
+      border-radius: $border-radius-8;
+      border: 1px solid $black-15;
+      background: $black-08;
+
+      .review-icon {
+        width: 30px;
+        height: 30px;
+      }
+
+      .section-text {
+        margin: $zero-margin;
+        color: $white;
+        font-family: $font-Manrope;
+        font-size: $font-size-capital;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .list-of-reviews {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+
+    .review-card {
+      display: flex;
+      padding: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      border-radius: $border-radius-12;
+      border: 1px solid $black-15;
+      background: $black-08;
+
+      .review-header {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        align-self: stretch;
+
+        .review-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          flex: 1 0 0;
+
+          .review-author {
+            align-self: stretch;
+            color: $white;
+            font-family: $font-Manrope;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            margin: $zero-margin;
+          }
+
+          .review-location {
+            align-self: stretch;
+            color: $gray-60;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+            margin: $zero-margin;
+          }
+        }
+
+        .review-rating {
+          display: flex;
+          padding: 6px 10px;
+          align-items: center;
+          gap: 4px;
+          border-radius: 51px;
+          border: 1px solid $black-15;
+          background: $black-08;
+
+          .stars {
+            display: flex;
+            align-items: flex-start;
+            gap: 2px;
+
+            .star-icon {
+              width: 18px;
+              height: 18px;
+            }
+          }
+
+          .rating-value {
+            color: $gray-60;
+            font-family: $font-Manrope;
+            font-size: $font-size-capital;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+          }
+        }
+      }
+
+      .review-text {
+        align-self: stretch;
+        color: $gray-60;
+        font-family: $font-Manrope;
+        font-size: $font-size-capital;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
     }
   }
 }
