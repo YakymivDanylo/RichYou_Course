@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 body {
   width: 100%;
   background-color: #141414;
@@ -10,6 +10,7 @@ body {
 }
 
 main {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -774,7 +775,7 @@ a {
 
 .container-free-trial {
   margin-top: 135px;
-  width: 1646px;
+  width: 1600px;
 }
 .container-free-trial .free-trial-wrapper {
   width: 100%;
@@ -793,7 +794,6 @@ a {
   text-align: left;
   font-size: 40px;
   color: #fff;
-  font-family: "Manrope", sans-serif;
 }
 .container-free-trial .free-trial-wrapper .background-image-trial {
   width: 1800px;
@@ -921,7 +921,6 @@ a {
   margin: 0;
 }
 .container-free-trial .free-trial-wrapper .primary-button-trial {
-  border: none;
   border-radius: 8px;
   background-color: #e50000;
   display: flex;
@@ -931,6 +930,7 @@ a {
   padding: 18px 24px;
   z-index: 2;
   font-size: 18px;
+  border: none;
 }
 .container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
   position: relative;
@@ -1083,9 +1083,9 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   main {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   a {
     text-decoration: none;
@@ -2108,19 +2108,19 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   }
   body {
     width: 100%;
-    margin: 0;
     background-color: #141414;
     font-family: "Manrope", sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
+    margin: 0;
   }
   main {
-    overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
   .site-header {
     position: relative;
@@ -2130,7 +2130,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     backdrop-filter: blur(2px);
   }
   .site-header .navbar {
-    width: 100%;
+    width: 96%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -2893,18 +2893,21 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     gap: 50px;
     border-radius: 12px;
     border: 1px solid #262626;
-    background: #0F0F0F;
+    background: var(--Black-06, #0F0F0F);
   }
   .container-free-trial .free-trial-wrapper .background-image-trial {
+    width: 92rem;
+    margin: 0 !important;
+    position: absolute;
+    top: calc(50% - 197.5px);
+    left: calc(50% - 798px);
+    height: 395px;
     display: flex;
-    width: 1395px;
-    height: 693px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
-    position: absolute;
-    right: -519px;
-    top: -175px;
+    justify-content: flex-start;
+    gap: 10px;
+    z-index: 0;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial {
     align-self: stretch;
@@ -2913,7 +2916,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.25rem;
+    gap: 20px;
     z-index: 0;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container-trial .image-icon1 {
@@ -2922,7 +2925,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
+    max-height: 100px;
     object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial {
@@ -2932,7 +2935,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.25rem;
+    gap: 20px;
     z-index: 1;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container1-trial .image-icon1 {
@@ -2941,7 +2944,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
+    max-height: 100px;
     object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial {
@@ -2951,8 +2954,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.25rem;
-    z-index: 1;
+    gap: 20px;
+    z-index: 2;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container2-trial .image-icon1 {
     align-self: stretch;
@@ -2960,7 +2963,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
+    max-height: 100px;
     object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial {
@@ -2970,8 +2973,8 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1.25rem;
-    z-index: 1;
+    gap: 20px;
+    z-index: 3;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .image-container3-trial .image-icon1 {
     align-self: stretch;
@@ -2979,14 +2982,14 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    max-height: 100%;
+    max-height: 100px;
     object-fit: cover;
   }
   .container-free-trial .free-trial-wrapper .background-image-trial .fade-out-left1 {
-    width: 80.188rem;
+    width: 100%;
     position: absolute;
     margin: 0 !important;
-    bottom: 2.813rem;
+    top: 0;
     left: calc(50% - 641.5px);
     background: linear-gradient(179.79deg, #0f0f0f, rgba(20, 15, 15, 0.97) 33.33%, rgba(34, 14, 14, 0.91) 66.67%, rgba(229, 0, 0, 0));
     height: 40.375rem;
@@ -2994,52 +2997,58 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     z-index: 4;
   }
   .container-free-trial .free-trial-wrapper .text-container-trial {
-    width: 100%;
-    position: relative;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    gap: 0.625rem;
+    gap: 14px;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    align-items: center;
     text-align: center;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #fff;
   }
   .container-free-trial .free-trial-wrapper .text-container-trial .title {
     align-self: stretch;
     position: relative;
     line-height: 150%;
+    margin: 0;
+    font-size: 24px;
   }
   .container-free-trial .free-trial-wrapper .text-container-trial .text {
     align-self: stretch;
     position: relative;
-    font-size: 0.875rem;
+    font-size: 14px;
     line-height: 150%;
     color: #999;
+    margin: 0;
   }
   .container-free-trial .free-trial-wrapper .primary-button-trial {
-    position: relative;
     border-radius: 8px;
-    background-color: #E50000;
-    width: 100%;
+    background-color: #e50000;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0.875rem 1.25rem;
+    padding: 18px 24px;
+    z-index: 2;
+    border: none;
   }
   .container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
-    color: #fff;
     position: relative;
     line-height: 150%;
     font-weight: 600;
+    color: white;
+    font-size: 13px;
   }
   .disable {
     display: none;
   }
   footer {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 135px;
   }
   footer .footer {
     display: flex;
