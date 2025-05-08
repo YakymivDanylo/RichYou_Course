@@ -352,7 +352,6 @@ footer {
           border-bottom: 1px solid $black-15;
 
           .common-row-field {
-            //height:60px;
             display: flex;
             padding: 1.875rem;
             justify-content: center;
@@ -365,7 +364,7 @@ footer {
               flex: 1 0 0;
               color: $gray-60;
               font-family: $font-Manrope;
-              font-size: 1.125rem;
+              font-size: 16px;
               font-style: normal;
               font-weight: 500;
               line-height: 150%;
