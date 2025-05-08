@@ -48,6 +48,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 3px;
+  cursor: pointer;
 }
 .site-header .navbar .buttons-container {
   display: flex;
@@ -57,11 +58,22 @@ a {
   gap: 2.15625rem;
 }
 .site-header .navbar .buttons-container span {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
   background: none;
+  transition: 0.5s ease;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
 }
 .site-header .navbar .buttons-container span .icon {
   width: 24px;
   height: 24px;
+}
+.site-header .navbar .buttons-container span:hover {
+  border: 1px solid #ff0000;
+  border-radius: 50px;
 }
 .site-header .navbar .buttons-container-slider {
   display: flex;
@@ -81,19 +93,27 @@ a {
   border: 1px solid var(--Black-10, #1A1A1A);
   background: var(--Black-10, #1A1A1A);
 }
-.site-header .navbar .buttons-container-slider .button-active .text {
+.site-header .navbar .buttons-container-slider .text {
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
 }
 .site-header .navbar .buttons-container-slider .text {
   color: var(--Grey-75, #BFBFBF);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  transition: 0.5s ease;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 1px solid #0F0F0F;
+}
+.site-header .navbar .buttons-container-slider .text:hover {
+  border-radius: 8px;
+  border: 1px solid #ff0000;
 }
 .site-header .navbar .buttons-container-slider .icon {
   width: 50px;
@@ -215,6 +235,9 @@ a {
   align-items: center;
   justify-content: center;
   padding: 14px 24px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
 }
 .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
   position: relative;
@@ -222,8 +245,11 @@ a {
   font-weight: 500;
   color: white;
 }
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button-active:hover {
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+}
 .pricing-section .pricing-wrapper .section-container .plan-tabs .button {
-  border: none;
   background-color: #0F0F0F;
   display: flex;
   flex-direction: row;
@@ -231,11 +257,18 @@ a {
   justify-content: center;
   padding: 14px 24px;
   color: #999;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
 }
 .pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
   position: relative;
   line-height: 150%;
   font-weight: 500;
+}
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button:hover {
+  border: 1px solid #ff0000;
+  border-radius: 10px;
 }
 .pricing-section .pricing-wrapper .pricing-cards {
   align-self: stretch;
@@ -257,6 +290,16 @@ a {
   justify-content: flex-start;
   padding: 50px;
   gap: 50px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.pricing-section .pricing-wrapper .pricing-cards .plan-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #fff;
+}
+@media (max-width: 390px) {
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card:hover {
+    transform: translateY(0);
+  }
 }
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
   align-self: stretch;
@@ -317,13 +360,20 @@ a {
   align-items: center;
   justify-content: center;
   padding: 18px 24px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
 }
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
 }
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
+  border: 1px solid transparent;
   flex: 1;
   border-radius: 8px;
   background-color: #e50000;
@@ -332,6 +382,12 @@ a {
   align-items: center;
   justify-content: center;
   padding: 18px 24px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
   position: relative;
@@ -628,6 +684,12 @@ a {
   z-index: 2;
   font-size: 18px;
   border: none;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.container-free-trial .free-trial-wrapper .primary-button-trial:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
   position: relative;
@@ -715,6 +777,19 @@ footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
   border-radius: 0.5rem;
   border: 1px solid #262626;
   background: #1a1a1a;
+  transition: 0.5s ease;
+}
+footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button:nth-child(1):hover {
+  transform: scale(1.1);
+  background: #3b5998;
+}
+footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button:nth-child(2):hover {
+  transform: scale(1.1);
+  background: #00acee;
+}
+footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button:nth-child(3):hover {
+  transform: scale(1.1);
+  background: #0e76a8;
 }
 footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
   width: 1.5rem;
@@ -815,12 +890,23 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: none;
   }
   .site-header .navbar .buttons-container span {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     background: none;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
   }
   .site-header .navbar .buttons-container span .icon {
     width: 24px;
     height: 24px;
     background: none;
+  }
+  .site-header .navbar .buttons-container span span:hover {
+    border: 1px solid #ff0000;
+    border-radius: 50px;
   }
   .site-header .navbar .buttons-container-slider {
     display: flex;
@@ -1073,6 +1159,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: center;
     justify-content: center;
     padding: 18px 24px;
+    font-size: 13px;
   }
   .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
     position: relative;
@@ -1090,6 +1177,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     justify-content: center;
     padding: 18px 24px;
     border: none;
+    font-size: 13px;
   }
   .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
     position: relative;
@@ -1655,6 +1743,10 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     border-radius: 6px;
     border: 3px solid var(--Black-15, #262626);
     background: var(--Black-10, #1A1A1A);
+    transition: 0.3s ease;
+  }
+  .site-header .burger-menu:hover {
+    border: 3px solid #ff0000;
   }
   .site-header .burger-menu .burger-button {
     width: 25px;

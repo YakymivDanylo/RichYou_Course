@@ -41,6 +41,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 3px;
+  cursor: pointer;
 }
 .site-header .navbar .buttons-container {
   display: flex;
@@ -50,11 +51,22 @@ main {
   gap: 2.15625rem;
 }
 .site-header .navbar .buttons-container span {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
   background: none;
+  transition: 0.5s ease;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
 }
 .site-header .navbar .buttons-container span .icon {
   width: 24px;
   height: 24px;
+}
+.site-header .navbar .buttons-container span:hover {
+  border: 1px solid #ff0000;
+  border-radius: 50px;
 }
 .site-header .navbar .buttons-container-slider {
   display: flex;
@@ -74,19 +86,27 @@ main {
   border: 1px solid var(--Black-10, #1A1A1A);
   background: var(--Black-10, #1A1A1A);
 }
-.site-header .navbar .buttons-container-slider .button-active .text {
+.site-header .navbar .buttons-container-slider .text {
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
 }
 .site-header .navbar .buttons-container-slider .text {
   color: var(--Grey-75, #BFBFBF);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  transition: 0.5s ease;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 1px solid #0F0F0F;
+}
+.site-header .navbar .buttons-container-slider .text:hover {
+  border-radius: 8px;
+  border: 1px solid #ff0000;
 }
 .site-header .navbar .buttons-container-slider .icon {
   width: 50px;
@@ -372,6 +392,14 @@ main {
   gap: 4px;
   text-align: left;
   font-size: 18px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.button:hover {
+  background-color: #141414;
+  border-color: #ff1919;
 }
 
 .sub-container-bottom {
@@ -441,6 +469,10 @@ main {
   border-radius: 8px;
   height: 56px;
   background-color: #1a1a1a;
+  transition: 0.5s ease;
+}
+.button-icon:hover {
+  background-color: #ff1919;
 }
 
 .indicators-container {
@@ -478,6 +510,16 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 30px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #fff;
+}
+@media (max-width: 390px) {
+  .card:hover {
+    transform: translateY(0);
+  }
 }
 
 .container1 {
@@ -575,6 +617,12 @@ main {
   justify-content: flex-start;
   padding: 50px;
   gap: 30px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.devices-section .section-container .img-content .cards-grid .device-card:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .devices-section .section-container .img-content .cards-grid .device-card .card-header {
   align-self: stretch;
@@ -666,15 +714,20 @@ main {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.5rem 2.4rem;
+  padding: 18px 24px;
   font-size: 14px;
-  border: none;
+  border: 2px solid transparent;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 .faq-section .faq-wrapper .section-header-reviews .primary-button .text {
   position: relative;
   line-height: 150%;
   font-weight: 600;
   color: white;
+}
+.faq-section .faq-wrapper .section-header-reviews .primary-button:hover {
+  background-color: #141414;
+  border-color: #ff1919;
 }
 .faq-section .faq-wrapper .faq-container {
   display: flex;
@@ -694,6 +747,8 @@ main {
   align-items: flex-start;
   gap: 1.25rem;
   align-self: stretch;
+  border: 1px solid transparent;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
 }
 .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-number {
   display: flex;
@@ -721,6 +776,7 @@ main {
   align-self: stretch;
 }
 .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text h4 {
+  margin: 0;
   align-self: stretch;
   color: #fff;
   font-size: 1.375rem;
@@ -729,6 +785,7 @@ main {
   line-height: 150%;
 }
 .faq-section .faq-wrapper .faq-container .faq-column .faq-item .faq-text p {
+  margin: 0;
   align-self: stretch;
   color: #999;
   font-size: 1.125rem;
@@ -740,12 +797,24 @@ main {
   width: 1.875rem;
   height: 1.875rem;
 }
+.faq-section .faq-wrapper .faq-container .faq-column .faq-item:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #1f1f1f;
+}
 .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple {
   display: flex;
   padding: 1.875rem 2.125rem;
   align-items: center;
   gap: 1.5rem;
   align-self: stretch;
+  border: 1px solid transparent;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #1f1f1f;
 }
 .faq-section .faq-wrapper .faq-container .faq-column .faq-item-simple .faq-number {
   display: flex;
@@ -782,7 +851,7 @@ main {
   background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #E50000 16.67%, rgba(229, 0, 0, 0) 100%);
 }
 .faq-section .faq-wrapper .faq-container .faq-column .line {
-  width: 36.375rem;
+  width: 100%;
   height: 0.0625rem;
   background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #E50000 16.67%, rgba(229, 0, 0, 0) 100%);
 }
@@ -853,6 +922,9 @@ main {
   align-items: center;
   justify-content: center;
   padding: 14px 24px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
 }
 .pricing-section .pricing-wrapper .section-container .plan-tabs .button-active .text {
   position: relative;
@@ -860,8 +932,11 @@ main {
   font-weight: 500;
   color: white;
 }
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button-active:hover {
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+}
 .pricing-section .pricing-wrapper .section-container .plan-tabs .button {
-  border: none;
   background-color: #0F0F0F;
   display: flex;
   flex-direction: row;
@@ -869,11 +944,18 @@ main {
   justify-content: center;
   padding: 14px 24px;
   color: #999;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s ease;
 }
 .pricing-section .pricing-wrapper .section-container .plan-tabs .button .text-tabs {
   position: relative;
   line-height: 150%;
   font-weight: 500;
+}
+.pricing-section .pricing-wrapper .section-container .plan-tabs .button:hover {
+  border: 1px solid #ff0000;
+  border-radius: 10px;
 }
 .pricing-section .pricing-wrapper .pricing-cards {
   align-self: stretch;
@@ -895,6 +977,16 @@ main {
   justify-content: flex-start;
   padding: 50px;
   gap: 50px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.pricing-section .pricing-wrapper .pricing-cards .plan-card:hover {
+  transform: translateY(-10px);
+  border: 1px solid #fff;
+}
+@media (max-width: 390px) {
+  .pricing-section .pricing-wrapper .pricing-cards .plan-card:hover {
+    transform: translateY(0);
+  }
 }
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .card-content {
   align-self: stretch;
@@ -955,13 +1047,20 @@ main {
   align-items: center;
   justify-content: center;
   padding: 18px 24px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
 }
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
   position: relative;
   line-height: 150%;
   font-weight: 600;
 }
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 {
+  border: 1px solid transparent;
   flex: 1;
   border-radius: 8px;
   background-color: #e50000;
@@ -970,6 +1069,12 @@ main {
   align-items: center;
   justify-content: center;
   padding: 18px 24px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
   position: relative;
@@ -1136,6 +1241,12 @@ main {
   z-index: 2;
   font-size: 18px;
   border: none;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+}
+.container-free-trial .free-trial-wrapper .primary-button-trial:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .container-free-trial .free-trial-wrapper .primary-button-trial .text-trial {
   position: relative;
@@ -1223,6 +1334,19 @@ footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button {
   border-radius: 0.5rem;
   border: 1px solid #262626;
   background: #1a1a1a;
+  transition: 0.5s ease;
+}
+footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button:nth-child(1):hover {
+  transform: scale(1.1);
+  background: #3b5998;
+}
+footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button:nth-child(2):hover {
+  transform: scale(1.1);
+  background: #00acee;
+}
+footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button:nth-child(3):hover {
+  transform: scale(1.1);
+  background: #0e76a8;
 }
 footer .footer .footer-top .links-footer-top .ref-buttons-items .ref-button .ref-icon {
   width: 1.5rem;
@@ -1320,12 +1444,23 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: none;
   }
   .site-header .navbar .buttons-container span {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     background: none;
+    transition: 0.5s ease;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
   }
   .site-header .navbar .buttons-container span .icon {
     width: 24px;
     height: 24px;
     background: none;
+  }
+  .site-header .navbar .buttons-container span span:hover {
+    border: 1px solid #ff0000;
+    border-radius: 50px;
   }
   .site-header .navbar .buttons-container-slider {
     display: flex;
@@ -1904,7 +2039,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 14px 20px;
-    border: none;
+    border: 2px solid transparent;
   }
   .faq-section .faq-wrapper .section-header-reviews .primary-button .text {
     position: relative;
@@ -2195,6 +2330,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: center;
     justify-content: center;
     padding: 18px 24px;
+    font-size: 13px;
   }
   .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button1 .text3 {
     position: relative;
@@ -2212,6 +2348,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     justify-content: center;
     padding: 18px 24px;
     border: none;
+    font-size: 13px;
   }
   .pricing-section .pricing-wrapper .pricing-cards .plan-card .plan-actions .button2 .text3 {
     position: relative;
@@ -2682,6 +2819,10 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     border-radius: 6px;
     border: 3px solid var(--Black-15, #262626);
     background: var(--Black-10, #1A1A1A);
+    transition: 0.3s ease;
+  }
+  .site-header .burger-menu:hover {
+    border: 3px solid #ff0000;
   }
   .site-header .burger-menu .burger-button {
     width: 25px;
@@ -2929,6 +3070,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-weight: 600;
   }
   .button {
+    width: 211px;
     border-radius: 8px;
     background-color: #e50000;
     display: flex;
@@ -3218,12 +3360,14 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     line-height: 150%;
   }
   .faq-section .faq-wrapper .section-header-reviews .primary-button {
+    border: 2px solid transparent;
     display: flex;
     padding: 14px 20px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 6px;
     background: var(--Red-45, #E50000);
+    transition: background-color 0.5s ease, border-color 0.5s ease;
   }
   .faq-section .faq-wrapper .section-header-reviews .primary-button .text {
     position: relative;
@@ -3231,6 +3375,10 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-weight: 600;
     color: white;
     font-size: 14px;
+  }
+  .faq-section .faq-wrapper .section-header-reviews .primary-button:hover {
+    background-color: #141414;
+    border-color: #ff1919;
   }
   .faq-section .faq-wrapper .faq-container {
     width: 358px;
