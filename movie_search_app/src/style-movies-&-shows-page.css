@@ -276,7 +276,8 @@ a {
   justify-content: flex-start;
   padding: 14px 24px;
   gap: 4px;
-  border: none;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
 }
 .main-content .movie-banner .movie-banner-wrapper .hero-actions .primary-button .button-icon {
   width: 28px;
@@ -290,6 +291,10 @@ a {
   line-height: 153%;
   font-weight: 600;
   color: white;
+}
+.main-content .movie-banner .movie-banner-wrapper .hero-actions .primary-button:hover {
+  border: 1px solid #ff0000;
+  background: #141414;
 }
 .main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions {
   display: flex;
@@ -306,6 +311,10 @@ a {
   border-radius: 8px;
   border: 1px solid var(--Black-15, #262626);
   background: var(--Black-06, #0F0F0F);
+  transition: 0.3s ease;
+}
+.main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions .action-button:hover {
+  border: 1px solid #ff0000;
 }
 .main-content .movie-banner .movie-banner-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
   width: 100%;
@@ -327,6 +336,10 @@ a {
   border-radius: 8px;
   height: 56px;
   background-color: #0F0F0F;
+  transition: 0.3s ease;
+}
+.main-content .movie-banner .movie-banner-wrapper .buttons-container1 .button-icon:hover {
+  background: #ff1919;
 }
 .main-content .movie-banner .movie-banner-wrapper .buttons-container1 .indicators-container {
   width: 81px;
@@ -386,8 +399,15 @@ a {
   gap: 0.625rem;
   border-radius: 0.5rem;
   background: #E50000;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+.content-section .movies-wrapper .sub-container .container:hover {
+  background-color: #141414;
+  border-color: #ff1919;
 }
 .content-section .movies-wrapper .sub-container .container .section-title {
+  margin: 0;
   position: relative;
   line-height: 150%;
   font-weight: 600;
@@ -433,7 +453,7 @@ a {
   border-radius: 12px;
   background-color: #0f0f0f;
   border: 1px solid #1f1f1f;
-  display: none;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -445,6 +465,10 @@ a {
   border-radius: 8px;
   height: 56px;
   background-color: #1a1a1a;
+  transition: 0.3s ease;
+}
+.content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container .button-icon:hover {
+  background: #ff0000;
 }
 .content-section .movies-wrapper .genre-section .section-header .sub-container2 .buttons-container .indicators-container {
   width: 81px;
@@ -490,6 +514,12 @@ a {
   justify-content: flex-start;
   padding: 7px 7px;
   margin: 0;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 {
   flex: 1;
@@ -514,7 +544,7 @@ a {
   object-fit: cover;
 }
 .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 {
-  align-self: stretch;
+  align-self: center;
   border-radius: 51px;
   background-color: #141414;
   border: 1px solid #262626;
@@ -525,7 +555,7 @@ a {
   padding: 6px 10px 6px 6px;
 }
 .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 .container32 .text14 {
-  font-size: 17px;
+  font-size: 16px;
   flex: 1;
   position: relative;
   line-height: 150%;
@@ -712,6 +742,12 @@ a {
   justify-content: flex-start;
   padding: 20px;
   gap: 20px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.sub-container11 .card19:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .sub-container11 .card19 .image-icon36 {
   align-self: stretch;

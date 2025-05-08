@@ -161,7 +161,8 @@ a {
           justify-content: flex-start;
           padding: 14px 24px;
           gap: 4px;
-          border: none;
+          border: 1px solid transparent;
+          transition: 0.3s ease;
 
           .button-icon {
             width: 28px;
@@ -176,6 +177,11 @@ a {
             line-height: 153%;
             font-weight: 600;
             color: white;
+          }
+
+          &:hover {
+            border: 1px solid #ff0000;
+            background: #141414;
           }
         }
 
@@ -194,6 +200,12 @@ a {
             border-radius: 8px;
             border: 1px solid var(--Black-15, #262626);
             background: var(--Black-06, #0F0F0F);
+            transition: 0.3s ease;
+
+            &:hover {
+              border: 1px solid #ff0000;
+
+            }
 
             .button-icon2 {
               width: 100%;
@@ -219,6 +231,12 @@ a {
           border-radius: 8px;
           height: 56px;
           background-color: $black-06;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: #ff1919;
+          }
+
         }
 
         .indicators-container {
@@ -285,8 +303,15 @@ a {
         gap: 0.625rem;
         border-radius: 0.5rem;
         background: $red-45;
+        transition: 0.3s ease;
+        border: 1px solid transparent;
+
+        &:hover{
+          @include red-button
+        }
 
         .section-title {
+          margin: 0;
           position: relative;
           line-height: 150%;
           font-weight: 600;
@@ -336,7 +361,7 @@ a {
             border-radius: 12px;
             background-color: #0f0f0f;
             border: 1px solid #1f1f1f;
-            display: none;
+            display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
@@ -348,6 +373,11 @@ a {
               border-radius: 8px;
               height: 56px;
               background-color: #1a1a1a;
+              transition: 0.3s ease;
+
+              &:hover{
+                background: #ff0000;
+              }
             }
 
             .indicators-container {
@@ -399,6 +429,11 @@ a {
             justify-content: flex-start;
             padding: 7px 7px;
             margin: 0;
+            transition: transform 0.3s ease, border 0.3s ease;
+
+            &:hover{
+              @include card-transform-to-user;
+            }
 
             .card9 {
               flex: 1;
@@ -424,7 +459,7 @@ a {
               }
 
               .container32 {
-                align-self: stretch;
+                align-self: center;
                 border-radius: 51px;
                 background-color: #141414;
                 border: 1px solid #262626;
@@ -435,7 +470,7 @@ a {
                 padding: 6px 10px 6px 6px;
 
                 .text14 {
-                  font-size: 17px;
+                  font-size: 16px;
                   flex: 1;
                   position: relative;
                   line-height: 150%;
@@ -653,6 +688,11 @@ a {
     justify-content: flex-start;
     padding: 20px;
     gap: 20px;
+    transition: transform 0.3s ease, border 0.3s ease;
+
+    &:hover{
+      @include card-transform-to-user;
+    }
 
     .image-icon36 {
       align-self: stretch;
@@ -1461,11 +1501,11 @@ footer {
   }
 
   body {
-   @include body
+    @include body
   }
 
   main {
-   @include main;
+    @include main;
     overflow: hidden;
   }
 
