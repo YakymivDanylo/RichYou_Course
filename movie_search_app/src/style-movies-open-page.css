@@ -243,7 +243,12 @@ main {
   justify-content: flex-start;
   padding: 14px 24px;
   gap: 4px;
-  border: none;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.movie-banner .movie-wrapper .hero-actions .primary-button:hover {
+  border: 1px solid #ff0000;
+  background: #141414;
 }
 .movie-banner .movie-wrapper .hero-actions .primary-button .button-icon {
   width: 28px;
@@ -251,6 +256,7 @@ main {
   height: 28px;
   overflow: hidden;
   flex-shrink: 0;
+  border: 1px solid transparent;
 }
 .movie-banner .movie-wrapper .hero-actions .primary-button .text {
   position: relative;
@@ -273,6 +279,10 @@ main {
   border-radius: 8px;
   border: 1px solid var(--Black-15, #262626);
   background: var(--Black-06, #0F0F0F);
+  transition: 0.3s ease;
+}
+.movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button:hover {
+  border: 1px solid #ff0000;
 }
 .movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
   width: 24px;
@@ -447,6 +457,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .language-list .language-item p {
   margin: 0;
@@ -473,6 +487,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .rating-sources .rating-item .rating-source {
   color: #fff;
@@ -513,8 +531,13 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .genre-list .genre-item p {
+  margin: 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -531,6 +554,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-meta-for-mobile .meta-section .person-card .person-image {
   width: 56.56px;
@@ -603,6 +630,10 @@ main {
   border-radius: 100px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .section-header-reviews .section-controls .control-button:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-cast .cast-grid {
   display: flex;
@@ -614,6 +645,11 @@ main {
   height: 109px;
   flex: 1 0 0;
   border-radius: 12px;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-cast .cast-grid .cast-image:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-reviews {
   display: flex;
@@ -650,6 +686,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews .add-review-button:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-reviews .section-header-reviews .add-review-button .review-icon {
   width: 30px;
@@ -680,6 +720,12 @@ main {
   border-radius: 12px;
   border: 1px solid #262626;
   background: #141414;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card:hover {
+  border: 1px solid #ff1919;
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .movie-details .movie-detail-wrapper .details-content-left .movie-reviews .list-of-reviews .review-card .review-header {
   display: flex;
@@ -762,6 +808,10 @@ main {
   border-radius: 100px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .reviews-controls .control-button:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .reviews-controls .review-indicators {
   display: flex;
@@ -849,6 +899,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .movie-meta .meta-section .language-list .language-item p {
   margin: 0;
@@ -875,6 +929,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .movie-meta .meta-section .rating-sources .rating-item .rating-source {
   color: #fff;
@@ -915,8 +973,13 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .genre-list .genre-item:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .movie-meta .meta-section .genre-list .genre-item p {
+  margin: 0;
   color: #fff;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -933,6 +996,10 @@ main {
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .movie-meta .meta-section .person-card .person-image {
   width: 56.56px;

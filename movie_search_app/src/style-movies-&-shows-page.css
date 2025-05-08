@@ -517,9 +517,13 @@ a {
   transition: transform 0.3s ease, border 0.3s ease;
 }
 .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card:hover {
-  transform: scale(1.05) translateZ(20px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
   border: 1px solid #fff;
+}
+@media (max-width: 390px) {
+  .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card:hover {
+    transform: translateY(0);
+  }
 }
 .content-section .movies-wrapper .genre-section .section-header .card-grid .genre-card .card9 {
   flex: 1;
@@ -2529,18 +2533,24 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: var(--Black-06, #0F0F0F);
   }
   .content-section .movies-wrapper .tabs-for-mobile .button {
+    border: 1px solid transparent;
     display: flex;
     padding: 12px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
-    border-radius: 100px;
+    border-radius: 6px;
     color: var(--Grey-60, #999);
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    transition: 0.3s ease;
+  }
+  .content-section .movies-wrapper .tabs-for-mobile .button:hover {
+    border: 1px solid #ff1919;
+    border-radius: 6px;
   }
   .content-section .movies-wrapper .tabs-for-mobile .active {
     display: flex;

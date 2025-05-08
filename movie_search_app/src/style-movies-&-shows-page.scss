@@ -306,7 +306,7 @@ a {
         transition: 0.3s ease;
         border: 1px solid transparent;
 
-        &:hover{
+        &:hover {
           @include red-button
         }
 
@@ -375,7 +375,7 @@ a {
               background-color: #1a1a1a;
               transition: 0.3s ease;
 
-              &:hover{
+              &:hover {
                 background: #ff0000;
               }
             }
@@ -431,8 +431,8 @@ a {
             margin: 0;
             transition: transform 0.3s ease, border 0.3s ease;
 
-            &:hover{
-              @include card-transform-to-user;
+            &:hover {
+              @include card-transform-up;
             }
 
             .card9 {
@@ -690,7 +690,7 @@ a {
     gap: 20px;
     transition: transform 0.3s ease, border 0.3s ease;
 
-    &:hover{
+    &:hover {
       @include card-transform-to-user;
     }
 
@@ -1695,18 +1695,25 @@ footer {
         background: var(--Black-06, #0F0F0F);
 
         .button {
+          border: 1px solid transparent;
           display: flex;
           padding: 12px 20px;
           justify-content: center;
           align-items: center;
           gap: 10px;
           flex: 1 0 0;
-          border-radius: 100px;
+          border-radius: 6px;
           color: var(--Grey-60, #999);
           font-size: 18px;
           font-style: normal;
           font-weight: 500;
           line-height: 150%;
+          transition: 0.3s ease;
+
+          &:hover {
+            border: 1px solid #ff1919;
+            border-radius:6px ;
+          }
         }
 
         .active {
