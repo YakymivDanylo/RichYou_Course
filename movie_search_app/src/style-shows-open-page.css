@@ -243,6 +243,12 @@ a {
   justify-content: flex-start;
   padding: 14px 24px;
   gap: 4px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.movie-banner .movie-wrapper .hero-actions .primary-button:hover {
+  border: 1px solid #ff1919;
+  background: #141414;
 }
 .movie-banner .movie-wrapper .hero-actions .primary-button .button-icon {
   width: 28px;
@@ -272,6 +278,10 @@ a {
   border-radius: 8px;
   border: 1px solid var(--Black-15, #262626);
   background: var(--Black-06, #0F0F0F);
+  transition: 0.3s ease;
+}
+.movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button:hover {
+  border: 1px solid #ff1919;
 }
 .movie-banner .movie-wrapper .hero-actions .secondary-actions .action-button .button-icon2 {
   width: 24px;
@@ -416,6 +426,10 @@ a {
   border-radius: 100px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .icon-season:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .closed-list .icon-season .icon {
   width: 24px;
@@ -467,6 +481,10 @@ a {
   border-radius: 100px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .icon-season:hover {
+  border: 1px solid #ff1919;
 }
 .movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-header .icon-season .icon {
   width: 24px;
@@ -486,6 +504,12 @@ a {
   align-self: stretch;
   border-top: 1px solid #262626;
   border-bottom: 1px solid #262626;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode:hover {
+  transform: scale(1.05) translateZ(20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
 }
 .movie-details .movie-detail-wrapper .details-content-left .seasons-and-episodes .list-seasons .opened-list .opened-list-main .episode .number-episode {
   padding-top: 0.6rem;
@@ -1231,6 +1255,9 @@ a {
   font-weight: 500;
   line-height: 150%;
   margin: 0;
+}
+.movie-details .movie-detail-wrapper .movie-meta .meta-section .genre-list .genre-item p {
+  font-size: 15px;
 }
 
 .container-free-trial {

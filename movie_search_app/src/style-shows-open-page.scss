@@ -126,6 +126,13 @@ a {
         justify-content: flex-start;
         padding: 14px 24px;
         gap: 4px;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+
+        &:hover{
+          border: 1px solid #ff1919;
+          background: #141414;
+        }
 
 
         .button-icon {
@@ -160,6 +167,11 @@ a {
           border-radius: 8px;
           border: 1px solid var(--Black-15, #262626);
           background: var(--Black-06, #0F0F0F);
+          transition: 0.3s ease;
+
+          &:hover{
+            border:1px solid #ff1919 ;
+          }
 
           .button-icon2 {
             width: 24px;
@@ -315,6 +327,11 @@ a {
               border-radius: 100px;
               border: 1px solid $black-15;
               background: $black-08;
+              transition: 0.3s ease;
+
+              &:hover{
+                border: 1px solid #ff1919;
+              }
 
               .icon {
                 width: 24px;
@@ -333,6 +350,7 @@ a {
             border-radius: 12px;
             border: 1px solid $black-15;
             background: $black-06;
+
 
             .opened-list-header {
               display: flex;
@@ -372,6 +390,11 @@ a {
                 border-radius: 100px;
                 border: 1px solid $black-15;
                 background: $black-08;
+                transition: 0.3s ease;
+
+                &:hover{
+                  border: 1px solid #ff1919;
+                }
 
                 .icon {
                   width: 24px;
@@ -394,6 +417,14 @@ a {
                 align-self: stretch;
                 border-top: 1px solid $black-15;
                 border-bottom: 1px solid $black-15;
+                transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+                &:hover{
+                  transform: scale(1.05) translateZ(20px);
+                  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                  border: 1px solid $white;
+                }
+
 
                 .number-episode {
                   padding-top: 0.6rem;
@@ -509,6 +540,15 @@ a {
 
     .movie-meta {
       @include movie-meta-desktop;
+      .meta-section{
+          .genre-list{
+            .genre-item{
+              p{
+                font-size: 15px;
+              }
+            }
+          }
+      }
     }
   }
 
