@@ -269,10 +269,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
-}
-.form-container .form-wrapper .contact-form .form-group1 .form-name .name-input::placeholder {
-  font-family: "Manrope", sans-serif;
-  font-size: 18px;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group1 .form-name .name-input {
   width: 373px;
@@ -285,6 +282,24 @@ a {
   border: 1px solid #262626;
   background: #141414;
   color: var(--Grey-60, #999);
+  transition: 0.3s ease;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-name .name-input::placeholder {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-name .name-input:focus {
+  border-color: #ff1919;
+  outline: none;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-name .name-input:focus::placeholder {
+  color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-name:focus-within .name-header {
+  color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group1 .form-surname {
   display: flex;
@@ -300,6 +315,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input {
   width: 373px;
@@ -312,10 +328,24 @@ a {
   border: 1px solid #262626;
   background: #141414;
   color: var(--Grey-60, #999);
+  transition: 0.3s ease;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
 }
 .form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input::placeholder {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+  transition: 0.3s ease;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input:focus {
+  border-color: #ff1919;
+  outline: none;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input:focus::placeholder {
+  color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-surname:focus-within .surname-header {
+  color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group2 {
   margin: 50px;
@@ -339,6 +369,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-email .email-input {
   width: 373px;
@@ -351,10 +382,24 @@ a {
   border: 1px solid #262626;
   background: #141414;
   color: var(--Grey-60, #999);
+  transition: 0.3s ease;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-email .email-input::placeholder {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+  transition: 0.3s ease;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-email .email-input:focus {
+  border-color: #ff1919;
+  outline: none;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-email .email-input:focus::placeholder {
+  color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-email:focus-within .email-heading {
+  color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-phone-number {
   display: flex;
@@ -370,6 +415,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group {
   width: 413px;
@@ -388,6 +434,7 @@ a {
   border: 1px solid #262626;
   background: #141414;
   color: var(--Grey-60, #999);
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input {
   display: flex;
@@ -399,10 +446,28 @@ a {
   border: 1px solid #262626;
   background: #141414;
   color: var(--Grey-60, #999);
+  transition: 0.3s ease;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input::placeholder {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+  transition: 0.3s ease;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input:focus {
+  border-color: #ff1919;
+  outline: none;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input:focus::placeholder {
+  color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .country-select-wrapper:focus {
+  border-color: #ff1919;
+  outline: none;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-phone-number:focus-within .phone-label {
+  color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group3 {
   margin-top: 50px;
@@ -421,23 +486,37 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group3 .form-message {
   width: 836px;
-  display: flex;
   height: 163px;
   padding: 20px;
-  align-items: flex-start;
-  gap: 77px;
   align-self: stretch;
   border-radius: 8px;
   border: 1px solid #262626;
   background: #141414;
   color: var(--Grey-60, #999);
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  resize: none;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-group3 .form-message::placeholder {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+  color: var(--Grey-60, #999);
+  transition: 0.3s ease;
+}
+.form-container .form-wrapper .contact-form .form-group3 .form-message:focus {
+  border-color: #ff1919;
+  outline: none;
+}
+.form-container .form-wrapper .contact-form .form-group3 .form-message:focus::placeholder {
+  color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-group3:focus-within .form-heading {
+  color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-actions {
   display: flex;
@@ -451,6 +530,7 @@ a {
   align-items: center;
   gap: 10px;
   flex: 1 0 0;
+  transition: 0.3s ease;
 }
 .form-container .form-wrapper .contact-form .form-actions .check-box .field-check-box {
   width: 28px;
@@ -458,6 +538,16 @@ a {
   border-radius: 4px;
   border: 1px solid #262626;
   background: #141414;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.form-container .form-wrapper .contact-form .form-actions .check-box .field-check-box:focus {
+  outline: none;
+  border-color: #ff1919;
+  box-shadow: 0 0 0 2px rgba(255, 25, 25, 0.2);
+}
+.form-container .form-wrapper .contact-form .form-actions .check-box .field-check-box:hover {
+  border-color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-actions .check-box p {
   color: #999;
@@ -467,14 +557,32 @@ a {
   font-weight: 400;
   line-height: 150%;
   flex: 1 0 0;
+  transition: 0.3s ease;
+}
+.field-check-box:focus + .form-container .form-wrapper .contact-form .form-actions .check-box p {
+  color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-actions .check-box:focus-within .field-check-box {
+  border-color: #ff1919;
+}
+.form-container .form-wrapper .contact-form .form-actions .check-box:focus-within p {
+  color: #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-actions .submit-button {
+  border: 1px solid transparent;
   display: flex;
   padding: 18px 24px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 8px;
   background: #E50000;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.form-container .form-wrapper .contact-form .form-actions .submit-button:hover {
+  border: 1px solid #ff1919;
+  background-color: #141414;
+  transform: translateY(-1px);
 }
 .form-container .form-wrapper .contact-form .form-actions .submit-button p {
   color: #fff;
@@ -1258,6 +1366,10 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     border-radius: 6px;
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-08, #141414);
+    transition: 0.3s ease;
+  }
+  .form-container .form-wrapper .contact-form .form-group1 .form-name .name-input:hover {
+    border: 1px solid #ff1919;
   }
   .form-container .form-wrapper .contact-form .form-group1 .form-name .name-input::placeholder {
     font-family: "Manrope", sans-serif;
@@ -2160,6 +2272,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: var(--Black-08, #141414);
   }
   .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input {
+    width: 0;
     color: var(--Grey-60, #999);
     display: flex;
     padding: 16px;
@@ -2474,6 +2587,12 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     gap: 10px;
     border-radius: 6px;
     background: var(--Red-45, #E50000);
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+  }
+  .faq-section .faq-wrapper .section-header-reviews .primary-button:hover {
+    border: 1px solid #ff1919;
+    background-color: #141414;
   }
   .faq-section .faq-wrapper .section-header-reviews .primary-button .text {
     position: relative;

@@ -156,11 +156,7 @@ a {
             font-style: normal;
             font-weight: 600;
             line-height: 150%;
-          }
-
-          .name-input::placeholder {
-            font-family: $font-Manrope;
-            font-size: 18px;
+            transition: 0.3s ease;
           }
 
           .name-input {
@@ -174,6 +170,28 @@ a {
             border: 1px solid $black-15;
             background: $black-08;
             color: var(--Grey-60, #999);
+            transition: 0.3s ease;
+            font-family: $font-Manrope;
+            font-size: 18px;
+
+            &::placeholder {
+              font-family: $font-Manrope;
+              font-size: 18px;
+              transition: 0.3s ease;
+            }
+
+            &:focus {
+              border-color: #ff1919;
+              outline: none;
+
+              &::placeholder {
+                color: #ff1919;
+              }
+            }
+          }
+
+          &:focus-within .name-header {
+            color: #ff1919;
           }
         }
 
@@ -191,6 +209,7 @@ a {
             font-style: normal;
             font-weight: 600;
             line-height: 150%;
+            transition: 0.3s ease;
           }
 
           .surname-input {
@@ -204,11 +223,29 @@ a {
             border: 1px solid $black-15;
             background: $black-08;
             color: var(--Grey-60, #999);
-          }
-
-          .surname-input::placeholder {
+            transition: 0.3s ease;
             font-family: $font-Manrope;
             font-size: 18px;
+
+            &::placeholder {
+              font-family: $font-Manrope;
+              font-size: 18px;
+              transition: 0.3s ease;
+            }
+
+            &:focus {
+              border-color: #ff1919;
+              outline: none;
+
+              &::placeholder {
+                color: #ff1919;
+              }
+            }
+          }
+
+
+          &:focus-within .surname-header {
+            color: #ff1919;
           }
         }
       }
@@ -235,6 +272,7 @@ a {
             font-style: normal;
             font-weight: 600;
             line-height: 150%;
+            transition: 0.3s ease;
           }
 
           .email-input {
@@ -248,13 +286,29 @@ a {
             border: 1px solid $black-15;
             background: $black-08;
             color: var(--Grey-60, #999);
-          }
-
-          .email-input::placeholder {
+            transition: 0.3s ease;
             font-family: $font-Manrope;
             font-size: 18px;
+
+            &::placeholder {
+              font-family: $font-Manrope;
+              font-size: 18px;
+              transition: 0.3s ease;
+            }
+
+            &:focus {
+              border-color: #ff1919;
+              outline: none;
+
+              &::placeholder {
+                color: #ff1919;
+              }
+            }
           }
 
+          &:focus-within .email-heading {
+            color: #ff1919;
+          }
         }
 
         .form-phone-number {
@@ -271,6 +325,7 @@ a {
             font-style: normal;
             font-weight: 600;
             line-height: 150%;
+            transition: 0.3s ease;
           }
 
           .phone-input-group {
@@ -290,6 +345,7 @@ a {
               border: 1px solid $black-15;
               background: $black-08;
               color: var(--Grey-60, #999);
+              transition: 0.3s ease;
             }
 
             .phone-number-input {
@@ -302,12 +358,34 @@ a {
               border: 1px solid $black-15;
               background: $black-08;
               color: var(--Grey-60, #999);
-            }
-
-            .phone-number-input::placeholder {
+              transition: 0.3s ease;
               font-family: $font-Manrope;
               font-size: 18px;
+
+              &::placeholder {
+                font-family: $font-Manrope;
+                font-size: 18px;
+                transition: 0.3s ease;
+              }
+
+              &:focus {
+                border-color: #ff1919;
+                outline: none;
+
+                &::placeholder {
+                  color: #ff1919;
+                }
+              }
             }
+
+            .country-select-wrapper:focus {
+              border-color: #ff1919;
+              outline: none;
+            }
+          }
+
+          &:focus-within .phone-label {
+            color: #ff1919;
           }
         }
       }
@@ -329,25 +407,42 @@ a {
           font-style: normal;
           font-weight: 600;
           line-height: 150%;
+          transition: 0.3s ease;
         }
 
         .form-message {
           width: 836px;
-          display: flex;
           height: 163px;
           padding: 20px;
-          align-items: flex-start;
-          gap: 77px;
           align-self: stretch;
           border-radius: $border-radius-8;
           border: 1px solid $black-15;
           background: $black-08;
           color: var(--Grey-60, #999);
-        }
-
-        .form-message::placeholder {
           font-family: $font-Manrope;
           font-size: 18px;
+          resize: none;
+          transition: 0.3s ease;
+
+          &::placeholder {
+            font-family: $font-Manrope;
+            font-size: 18px;
+            color: var(--Grey-60, #999);
+            transition: 0.3s ease;
+          }
+
+          &:focus {
+            border-color: #ff1919;
+            outline: none;
+
+            &::placeholder {
+              color: #ff1919;
+            }
+          }
+        }
+
+        &:focus-within .form-heading {
+          color: #ff1919;
         }
       }
 
@@ -363,6 +458,7 @@ a {
           align-items: center;
           gap: 10px;
           flex: 1 0 0;
+          transition: 0.3s ease;
 
           .field-check-box {
             width: 28px;
@@ -370,6 +466,18 @@ a {
             border-radius: 4px;
             border: 1px solid $black-15;
             background: $black-08;
+            transition: 0.3s ease;
+            cursor: pointer;
+
+            &:focus {
+              outline: none;
+              border-color: #ff1919;
+              box-shadow: 0 0 0 2px rgba(255, 25, 25, 0.2);
+            }
+
+            &:hover {
+              border-color: #ff1919;
+            }
           }
 
           p {
@@ -380,16 +488,41 @@ a {
             font-weight: 400;
             line-height: 150%;
             flex: 1 0 0;
+            transition: 0.3s ease;
+
+
+            .field-check-box:focus + & {
+              color: #ff1919;
+            }
+          }
+
+
+          &:focus-within {
+            .field-check-box {
+              border-color: #ff1919;
+            }
+            p {
+              color: #ff1919;
+            }
           }
         }
 
         .submit-button {
+          border: 1px solid transparent;
           display: flex;
           padding: 18px 24px;
           align-items: flex-start;
           gap: 10px;
           border-radius: $border-radius-8;
           background: $red-45;
+          transition: 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            border: 1px solid #ff1919;
+            background-color: #141414;
+            transform: translateY(-1px);
+          }
 
 
           p {
@@ -566,6 +699,11 @@ footer {
               border-radius: 6px;
               border: 1px solid var(--Black-15, #262626);
               background: var(--Black-08, #141414);
+              transition: 0.3s ease;
+            }
+
+            .name-input:hover{
+              border: 1px solid #ff1919;
             }
 
             .name-input::placeholder {
@@ -821,8 +959,6 @@ footer {
         align-items: flex-end;
         justify-content: flex-start;
         gap: 100px;
-        //margin-right: 20px;
-        //margin-left: 20px;
 
 
         .text-content {
@@ -1267,6 +1403,7 @@ footer {
               }
 
               .phone-number-input {
+                width: 0;
                 color: var(--Grey-60, #999);
                 display: flex;
                 padding: 16px;
@@ -1446,6 +1583,13 @@ footer {
           gap: 10px;
           border-radius: 6px;
           background: var(--Red-45, #E50000);
+          border: 1px solid transparent;
+          transition: 0.3s ease;
+
+          &:hover{
+            border: 1px solid #ff1919;
+            background-color: #141414;
+          }
 
           .text {
             position: relative;
