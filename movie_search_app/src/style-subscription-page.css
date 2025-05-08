@@ -2028,7 +2028,13 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
-    border-radius: 100px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+  }
+  .pricing-section-table .table-wrapper .tabs-for-mobile .button-mobile-basic:hover {
+    border: 1px solid #ff1919;
+    border-radius: 6px;
   }
   .pricing-section-table .table-wrapper .tabs-for-mobile .button-mobile-basic p::before {
     content: "Basic";
@@ -2046,6 +2052,12 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     gap: 10px;
     flex: 1 0 0;
     border-radius: 100px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+  }
+  .pricing-section-table .table-wrapper .tabs-for-mobile .button-mobile-standard:hover {
+    border: 1px solid #ff1919;
+    border-radius: 6px;
   }
   .pricing-section-table .table-wrapper .tabs-for-mobile .button-mobile-standard p::before {
     content: "Standard";
@@ -2062,7 +2074,13 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: center;
     gap: 10px;
     flex: 1 0 0;
-    border-radius: 100px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+  }
+  .pricing-section-table .table-wrapper .tabs-for-mobile .button-mobile-premium:hover {
+    border: 1px solid #ff1919;
+    border-radius: 6px;
   }
   .pricing-section-table .table-wrapper .tabs-for-mobile .button-mobile-premium p::before {
     content: "Premium";
