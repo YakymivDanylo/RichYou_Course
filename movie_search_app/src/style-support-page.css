@@ -154,6 +154,9 @@ a {
   position: relative;
   line-height: 150%;
 }
+.site-header .navbar input[type=checkbox] {
+  display: none;
+}
 .site-header .burger-menu {
   display: none;
 }
@@ -286,6 +289,9 @@ a {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
 }
+.form-container .form-wrapper .contact-form .form-group1 .form-name .name-input:hover {
+  border: 1px solid #ff1919;
+}
 .form-container .form-wrapper .contact-form .form-group1 .form-name .name-input::placeholder {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -331,6 +337,9 @@ a {
   transition: 0.3s ease;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+}
+.form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input:hover {
+  border: 1px solid #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input::placeholder {
   font-family: "Manrope", sans-serif;
@@ -386,6 +395,9 @@ a {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
 }
+.form-container .form-wrapper .contact-form .form-group2 .form-email .email-input:hover {
+  border: 1px solid #ff1919;
+}
 .form-container .form-wrapper .contact-form .form-group2 .form-email .email-input::placeholder {
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -436,6 +448,9 @@ a {
   color: var(--Grey-60, #999);
   transition: 0.3s ease;
 }
+.form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .country-select-wrapper:hover {
+  border: 1px solid #ff1919;
+}
 .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input {
   display: flex;
   padding: 20px;
@@ -449,6 +464,9 @@ a {
   transition: 0.3s ease;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
+}
+.form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input:hover {
+  border: 1px solid #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input::placeholder {
   font-family: "Manrope", sans-serif;
@@ -501,6 +519,9 @@ a {
   font-size: 18px;
   resize: none;
   transition: 0.3s ease;
+}
+.form-container .form-wrapper .contact-form .form-group3 .form-message:hover {
+  border: 1px solid #ff1919;
 }
 .form-container .form-wrapper .contact-form .form-group3 .form-message::placeholder {
   font-family: "Manrope", sans-serif;
@@ -1248,6 +1269,9 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     line-height: 150%;
   }
+  .site-header .navbar input[type=checkbox] {
+    display: none;
+  }
   .site-header .burger-menu {
     display: none;
   }
@@ -1368,9 +1392,6 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     background: var(--Black-08, #141414);
     transition: 0.3s ease;
   }
-  .form-container .form-wrapper .contact-form .form-group1 .form-name .name-input:hover {
-    border: 1px solid #ff1919;
-  }
   .form-container .form-wrapper .contact-form .form-group1 .form-name .name-input::placeholder {
     font-family: "Manrope", sans-serif;
     font-size: 14px;
@@ -1401,7 +1422,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     border: 1px solid var(--Black-15, #262626);
     background: var(--Black-08, #141414);
   }
-  .form-container .form-wrapper .contact-form .form-group1 .form-surname .surnmae-input::placeholder {
+  .form-container .form-wrapper .contact-form .form-group1 .form-surname .surname-input::placeholder {
     font-family: "Manrope", sans-serif;
     font-size: 14px;
   }
@@ -1477,7 +1498,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   }
   .form-container .form-wrapper .contact-form .form-group2 .form-phone-number .phone-input-group .phone-number-input {
     color: var(--Grey-60, #999);
-    width: 260px;
+    width: 153px;
     display: flex;
     padding: 16px;
     align-items: center;
@@ -1620,7 +1641,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 14px 20px;
-    border: none;
+    border: 1px solid transparent;
   }
   .faq-section .faq-wrapper .section-header-reviews .primary-button .text {
     position: relative;
@@ -2381,7 +2402,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     width: 96%;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     padding: 2.5rem 1rem 0.875rem;
@@ -2417,9 +2438,14 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     padding: 10px 40px;
     align-items: center;
     gap: 20px;
+    position: absolute;
+    top: 90%;
+    left: 0;
     border-radius: 12px;
     border: 4px solid var(--Black-12, #1F1F1F);
     background: var(--Black-06, #0F0F0F);
+    width: 300px;
+    transition: 0.3s ease;
   }
   .site-header .navbar .buttons-container-slider .button-active {
     display: flex;
@@ -2435,7 +2461,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 27px */
+    line-height: 150%;
   }
   .site-header .navbar .buttons-container-slider .text {
     color: var(--Grey-75, #BFBFBF);
@@ -2487,6 +2513,14 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     line-height: 150%;
   }
+  .site-header .navbar input[type=checkbox] {
+    display: none;
+  }
+  .site-header .navbar #burger:checked ~ .buttons-container-slider {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+  }
   .site-header .burger-menu {
     display: flex;
     padding: 12px;
@@ -2530,6 +2564,17 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     width: 50%;
     left: 50%;
     background-color: #FFFFFF;
+  }
+  .site-header .burger-menu .burger-button.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .site-header .burger-menu .burger-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .site-header .burger-menu .burger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
   }
   .site-header .hidden-form {
     display: none;

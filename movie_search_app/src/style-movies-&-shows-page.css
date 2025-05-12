@@ -158,6 +158,9 @@ a {
   position: relative;
   line-height: 150%;
 }
+.site-header .navbar input[type=checkbox] {
+  display: none;
+}
 .site-header .burger-menu {
   display: none;
 }
@@ -1294,6 +1297,9 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     line-height: 150%;
   }
+  .site-header .navbar input[type=checkbox] {
+    display: none;
+  }
   .site-header .burger-menu {
     display: none;
   }
@@ -2223,7 +2229,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     width: 96%;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     padding: 2.5rem 1rem 0.875rem;
@@ -2259,9 +2265,14 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     padding: 10px 40px;
     align-items: center;
     gap: 20px;
+    position: absolute;
+    top: 90%;
+    left: 0;
     border-radius: 12px;
     border: 4px solid var(--Black-12, #1F1F1F);
     background: var(--Black-06, #0F0F0F);
+    width: 300px;
+    transition: 0.3s ease;
   }
   .site-header .navbar .buttons-container-slider .button-active {
     display: flex;
@@ -2277,7 +2288,7 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; /* 27px */
+    line-height: 150%;
   }
   .site-header .navbar .buttons-container-slider .text {
     color: var(--Grey-75, #BFBFBF);
@@ -2329,6 +2340,14 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     position: relative;
     line-height: 150%;
   }
+  .site-header .navbar input[type=checkbox] {
+    display: none;
+  }
+  .site-header .navbar #burger:checked ~ .buttons-container-slider {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+  }
   .site-header .burger-menu {
     display: flex;
     padding: 12px;
@@ -2372,6 +2391,17 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
     width: 50%;
     left: 50%;
     background-color: #FFFFFF;
+  }
+  .site-header .burger-menu .burger-button.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .site-header .burger-menu .burger-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .site-header .burger-menu .burger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
   }
   .site-header .hidden-form {
     display: none;
