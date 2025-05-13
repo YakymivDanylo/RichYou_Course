@@ -3820,6 +3820,7 @@ $font-size-small: 14px;
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
 
   .control-button {
     width: 58px;
@@ -4268,12 +4269,14 @@ $font-size-small: 14px;
       span:nth-child(1) {
         top: 0;
         background-color: #FFFFFF;
+        transform-origin: left center;
       }
 
       span:nth-child(2) {
         top: 50%;
         transform: translateY(-50%);
         background-color: #FFFFFF;
+        transform-origin:right center;
 
       }
 
@@ -4282,27 +4285,26 @@ $font-size-small: 14px;
         width: 50%;
         left: 50%;
         background-color: #FFFFFF;
+        transform-origin: left center;
       }
+    }
+  }
 
-      &.active {
-        span:nth-child(1) {
-          transform: rotate(45deg);
-          top: 50%;
-        }
-
-        span:nth-child(2) {
-          opacity: 0;
-        }
-
-        span:nth-child(3) {
-          transform: rotate(-45deg);
-          top: 50%;
-        }
-      }
-
+  #burger:checked ~ .burger-menu .burger-button {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(2px, -15px);
+      width: calc(100% + 6px);
     }
 
+    span:nth-child(2) {
+      transform: scaleX(0);
+      opacity: 0;
+    }
 
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(-16px, -14px);
+      width: calc(100% + 6px);
+    }
   }
 
   .hidden-form {

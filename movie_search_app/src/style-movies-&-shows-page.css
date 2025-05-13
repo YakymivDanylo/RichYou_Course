@@ -2380,28 +2380,32 @@ footer .footer .footer-bottom .copyright .copyright-buttons .copyright-line {
   .site-header .burger-menu .burger-button span:nth-child(1) {
     top: 0;
     background-color: #FFFFFF;
+    transform-origin: left center;
   }
   .site-header .burger-menu .burger-button span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
     background-color: #FFFFFF;
+    transform-origin: right center;
   }
   .site-header .burger-menu .burger-button span:nth-child(3) {
     bottom: 0;
     width: 50%;
     left: 50%;
     background-color: #FFFFFF;
+    transform-origin: left center;
   }
-  .site-header .burger-menu .burger-button.active span:nth-child(1) {
-    transform: rotate(45deg);
-    top: 50%;
+  .site-header #burger:checked ~ .burger-menu .burger-button span:nth-child(1) {
+    transform: rotate(45deg) translate(2px, -15px);
+    width: calc(100% + 6px);
   }
-  .site-header .burger-menu .burger-button.active span:nth-child(2) {
+  .site-header #burger:checked ~ .burger-menu .burger-button span:nth-child(2) {
+    transform: scaleX(0);
     opacity: 0;
   }
-  .site-header .burger-menu .burger-button.active span:nth-child(3) {
-    transform: rotate(-45deg);
-    top: 50%;
+  .site-header #burger:checked ~ .burger-menu .burger-button span:nth-child(3) {
+    transform: rotate(-45deg) translate(-16px, -14px);
+    width: calc(100% + 6px);
   }
   .site-header .hidden-form {
     display: none;
