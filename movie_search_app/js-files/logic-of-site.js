@@ -1,0 +1,22 @@
+document.getElementById('search-button').addEventListener('click', function() {
+    const searchButton = document.getElementById('search-button');
+    const form = document.getElementById('form-for-search');
+
+    searchButton.classList.toggle('active-search');
+    if (form.style.display === 'flex') {
+        form.style.display = 'none';
+    } else {
+        form.style.display = 'flex';
+        document.getElementById('search-input').focus();
+    }
+});
+
+document.addEventListener('click', function(event) {
+    const searchButton = document.getElementById('search-button');
+    const form = document.getElementById('form-for-search');
+
+    if (!form.contains(event.target) && event.target !== searchButton && !searchButton.contains(event.target)) {
+        form.style.display = 'none';
+        searchButton.classList.remove('active-search');
+    }
+});

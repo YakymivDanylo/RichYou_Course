@@ -77,6 +77,10 @@ a {
   border: 1px solid #ff0000;
   border-radius: 50px;
 }
+.site-header .navbar .buttons-container #search-button.active-search {
+  border: 1px solid #ff1919 !important;
+  border-radius: 50px;
+}
 .site-header .navbar .buttons-container-slider {
   display: flex;
   padding: 10px 40px;
@@ -168,6 +172,103 @@ a {
 }
 .site-header .hidden-form {
   display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 2%;
+  width: 400px;
+  background: var(--Black-06, #0F0F0F);
+  border-radius: 12px;
+  border: 1px solid var(--Black-12, #1F1F1F);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+  flex-direction: column;
+}
+.site-header .hidden-form .search-form {
+  width: 100%;
+}
+.site-header .hidden-form .search-field-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Black-12, #1F1F1F);
+  border-radius: 30px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  background: var(--Black-10, #1A1A1A);
+}
+.site-header .hidden-form .search-field-wrapper:focus-within {
+  border-color: #FF0000;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+.site-header .hidden-form .search-input-movie {
+  flex: 1;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+  color: #FFF;
+}
+.site-header .hidden-form .search-input-movie::placeholder {
+  color: #999;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+}
+.site-header .hidden-form .search-input-movie:focus {
+  color: #ff1919;
+}
+.site-header .hidden-form .search-input-movie:focus ~ .search-button {
+  color: #ff1919 !important;
+}
+.site-header .hidden-form .search-input-movie:focus::placeholder {
+  color: #ff1919;
+}
+.site-header .hidden-form .search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 8px;
+  cursor: pointer;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+.site-header .hidden-form .search-button:hover {
+  transform: scale(1.1);
+}
+.site-header .hidden-form .search-button svg {
+  width: 20px;
+  height: 20px;
+}
+.site-header .hidden-form .search-results {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  color: #FFF;
+}
+.site-header .hidden-form .section-header-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #FFF;
+  font-family: "Manrope", sans-serif;
+}
+.site-header .hidden-form .results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hidden-form {

@@ -2,7 +2,7 @@
   "name": "RichYou_Course",
   "version": "1.0.0",
   "description": "",
-  "main": "movie_search_app/js-files/index.js",
+  "main": "movie_search_app/js-files/logic-of-site.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
