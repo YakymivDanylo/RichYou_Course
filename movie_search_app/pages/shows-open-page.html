@@ -20,37 +20,44 @@
 
         <img class="logo-icon" alt="StreamVibe Logo" src="../icons/logo-icon.svg">
         <nav class="buttons-container-slider ">
-            <div class="text"><a href="home-page.html"> Home</a></div>
-            <div class="text  button-active"><a href="movies-&-shows-page.html"> Movies&Shows</a>
+            <div class="text "><a href="home-page.html"> Home</a></div>
+            <div class="text button-active"><a href="movies-&-shows-page.html"> Movies&Shows</a>
             </div>
             <div class="text"><a href="support-page.html"> Support</a></div>
             <div class="text"><a href="subscription-page.html"> Subscription</a></div>
         </nav>
-        <div class="buttons-container ">
-            <span aria-label="Search"><img class="icon" alt="Icon Search" src="../icons/icon-search.svg">
+
+        <div class="hidden-form" id="form-for-search">
+            <form id="search-form" class="search-form">
+                <div class="search-field-wrapper">
+                    <input type="text"
+                           class="search-input-movie"
+                           id="search-input"
+                           name="query"
+                           placeholder="Введіть запит..."
+                           required
+                           aria-label="Пошук фільмів">
+                    <button type="submit" class="search-button" aria-label="Виконати пошук">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <section id="search-results" class="search-results">
+                <h2 class="section-header-title">Результати пошуку</h2>
+                <div id="results-container" class="results-grid"></div>
+            </section>
+        </div>
+        <div class="buttons-container">
+            <span aria-label="Search" id="search-button"><img class="icon" alt="Icon Search"
+                                                              src="../icons/icon-search.svg">
             </span>
             <span aria-label="Notification"><img class="icon" alt="Icon Notification"
                                                  src="../icons/icon-notification.svg"></span>
         </div>
-
     </div>
-
-
-    <div class="hidden-form">
-        <form id="search-form" class="search-form">
-            <label for="search-input">Пошук:</label>
-            <input type="text" id="search-input" name="query" placeholder="Введіть запит..." required>
-            <button type="submit" class="search-button">Знайти</button>
-        </form>
-
-
-        <section id="search-results" class="search-results">
-            <h2 class="section-header-title">Результати пошуку</h2>
-            <div id="results-container" class="results-grid">
-            </div>
-        </section>
-    </div>
-
 </header>
 
 <main class="movie-page">
@@ -669,5 +676,6 @@
         </div>
     </div>
 </footer>
+<script src="../js-files/logic-of-site.js"></script>
 </body>
 </html>
