@@ -30,6 +30,7 @@ main {
   width: 100%;
   display: flex;
   z-index: 1;
+  position: relative;
 }
 .site-header .navbar {
   width: 100%;
