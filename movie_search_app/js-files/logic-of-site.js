@@ -24,4 +24,18 @@ document.addEventListener('click', function(event) {
 });
 
 //BURGER MENU
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerCheckbox = document.querySelector('#burger');
+    const burgerButton = document.querySelector('.burger-menu');
+    const navbar = document.querySelector('.buttons-container-slider');
 
+    document.addEventListener('click', function(event) {
+        if (!navbar.contains(event.target) &&
+            event.target !== burgerButton &&
+            !burgerButton.contains(event.target) &&
+            event.target !== burgerCheckbox) {
+
+            burgerCheckbox.checked = false;
+        }
+    });
+});
