@@ -39,3 +39,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+//FAQ-ITEMS
+
+document.querySelectorAll('.faq-item').forEach(item => {
+    const icon = item.querySelector('.faq-icon');
+    const text = item.querySelector('.faq-paragraph');
+
+    icon.addEventListener('click', () => {
+        if (icon.src.includes('icon-plus.svg')) {
+            icon.src = '../icons/icon-minus.svg';
+            text.classList.remove('disable');
+        } else {
+            icon.src = '../icons/icon-plus.svg';
+            text.classList.add('disable');
+        }
+    });
+});
