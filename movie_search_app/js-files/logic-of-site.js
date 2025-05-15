@@ -1,3 +1,5 @@
+//SEARCH FORM FOR MOVIES
+
 document.getElementById('search-button').addEventListener('click', function() {
     const searchButton = document.getElementById('search-button');
     const form = document.getElementById('form-for-search');

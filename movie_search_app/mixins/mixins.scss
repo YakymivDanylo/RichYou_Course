@@ -4326,7 +4326,7 @@ $font-size-small: 14px;
     width: 96%;
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 2.5rem 1rem 0.875rem;
@@ -4335,29 +4335,52 @@ $font-size-small: 14px;
 
     .logo-icon {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       width: 116.083px;
       gap: 1.75px;
       flex-shrink: 0;
+      order: 1;
     }
 
     .buttons-container {
-      display: none;
+      display: flex;
       width: 10.36456rem;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       gap: 2.15625rem;
-      background: none;
+      order: 2;
 
       span {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
         background: none;
+        transition: 0.5s ease;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:nth-child(2){
+          display:none;
+        }
 
         .icon {
           width: 24px;
           height: 24px;
-          background: none;
+
         }
+
+      }
+
+      span:hover {
+        border: 1px solid #ff0000;
+        border-radius: 50px;
+      }
+
+      #search-button.active-search {
+        border: 1px solid #ff1919 !important;
+        border-radius: 50px;
       }
     }
 
@@ -4471,6 +4494,7 @@ $font-size-small: 14px;
     border: 3px solid var(--Black-15, #262626);
     background: var(--Black-10, #1A1A1A);
     transition: 0.3s ease;
+    order: 3;
 
 
     &:hover {
@@ -4536,7 +4560,122 @@ $font-size-small: 14px;
   }
 
   .hidden-form {
-    display: $to-hide;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: -4%;
+    width: 345px;
+    background: $black-06;
+    border-radius: 12px;
+    border: 1px solid $black-12;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+    flex-direction: column;
+
+    .search-form {
+      width: 100%;
+    }
+
+    .search-field-wrapper {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--Black-12, #1F1F1F);
+      border-radius: 30px;
+      padding: 8px 16px;
+      transition: all 0.3s ease;
+      background: var(--Black-10, #1A1A1A);
+    }
+
+    .search-field-wrapper:focus-within {
+      border-color: #FF0000;
+      box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+    }
+
+    .search-input-movie {
+      flex: 1;
+      border: none;
+      padding: 8px;
+      font-size: 16px;
+      outline: none;
+      background: transparent;
+      color: #FFF;
+
+      &::placeholder {
+        color: $gray-60;
+        font-size: 14px;
+        font-family: $font-Manrope;
+      }
+
+      &:focus{
+        color: #ff1919;
+
+
+        &~.search-button{
+          color:#ff1919 !important;
+        }
+        &::placeholder {
+          color: #ff1919;
+        }
+
+      }
+    }
+
+    .search-button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin-left: 8px;
+      cursor: pointer;
+      color: $gray-60;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+    }
+
+    .search-results {
+      margin-top: 20px;
+      max-height: 400px;
+      overflow-y: auto;
+      color: #FFF;
+    }
+
+    .section-header-title {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: #FFF;
+      font-family: $font-Manrope;
+
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 12px;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
