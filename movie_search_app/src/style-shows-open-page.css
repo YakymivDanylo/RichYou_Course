@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+.disable {
+  display: none;
+}
+
 main {
   width: 100%;
   display: flex;

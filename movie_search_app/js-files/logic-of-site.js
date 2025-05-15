@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //FAQ-ITEMS
-
 document.querySelectorAll('.faq-item').forEach(item => {
     const icon = item.querySelector('.faq-icon');
     const text = item.querySelector('.faq-paragraph');
@@ -53,6 +52,23 @@ document.querySelectorAll('.faq-item').forEach(item => {
         } else {
             icon.src = '../icons/icon-plus.svg';
             text.classList.add('disable');
+        }
+    });
+});
+
+//SEASONS AND EPISODES
+document.querySelectorAll('.opened-list').forEach(item => {
+    const buttonEpisode = item.querySelector('.icon-season');
+    const listMain = item.querySelector('.opened-list-main');
+    const icon = buttonEpisode.querySelector('.icon');
+
+    buttonEpisode.addEventListener('click', () => {
+        if (icon.src.includes('icon-arrow-up.svg')) {
+            icon.src = '../icons/icon-arrow-down.svg';
+            listMain.style.display = 'none';
+        } else {
+            icon.src = '../icons/icon-arrow-up.svg';
+            listMain.style.display = 'flex';
         }
     });
 });

@@ -23,6 +23,10 @@ body {
   @include body;
 }
 
+.disable{
+  display: none;
+}
+
 main {
   @include main;
 }
@@ -382,7 +386,7 @@ a {
                 }
               }
 
-              .icon-season {
+              .icon-season{
                 display: flex;
                 padding: 14px;
                 align-items: center;
