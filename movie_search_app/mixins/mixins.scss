@@ -254,13 +254,14 @@ $font-size-small: 14px;
         font-family: $font-Manrope;
       }
 
-      &:focus{
+      &:focus {
         color: #ff1919;
 
 
-        &~.search-button{
-          color:#ff1919 !important;
+        & ~ .search-button {
+          color: #ff1919 !important;
         }
+
         &::placeholder {
           color: #ff1919;
         }
@@ -2477,13 +2478,14 @@ $font-size-small: 14px;
         font-family: $font-Manrope;
       }
 
-      &:focus{
+      &:focus {
         color: #ff1919;
 
 
-        &~.search-button{
-          color:#ff1919 !important;
+        & ~ .search-button {
+          color: #ff1919 !important;
         }
+
         &::placeholder {
           color: #ff1919;
         }
@@ -4361,8 +4363,8 @@ $font-size-small: 14px;
         border-radius: 50px;
         cursor: pointer;
 
-        &:nth-child(2){
-          display:none;
+        &:nth-child(2) {
+          display: none;
         }
 
         .icon {
@@ -4542,6 +4544,10 @@ $font-size-small: 14px;
     }
   }
 
+  #burger:checked ~ .burger-menu {
+    border: 3px solid #ff1919;
+  }
+
   #burger:checked ~ .burger-menu .burger-button {
     span:nth-child(1) {
       transform: rotate(45deg) translate(2px, -14px);
@@ -4608,13 +4614,14 @@ $font-size-small: 14px;
         font-family: $font-Manrope;
       }
 
-      &:focus{
+      &:focus {
         color: #ff1919;
 
 
-        &~.search-button{
-          color:#ff1919 !important;
+        & ~ .search-button {
+          color: #ff1919 !important;
         }
+
         &::placeholder {
           color: #ff1919;
         }

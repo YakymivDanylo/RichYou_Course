@@ -22,3 +22,6 @@ document.addEventListener('click', function(event) {
         searchButton.classList.remove('active-search');
     }
 });
+
+//BURGER MENU
+
